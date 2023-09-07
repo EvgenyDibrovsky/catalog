@@ -2,6 +2,7 @@
   "name": "catalog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://evgenydibrovsky.github.io/catalog/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
