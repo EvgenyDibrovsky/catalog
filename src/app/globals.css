@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-white dark:bg-black;
+  }
   h1 {
     @apply text-black dark:text-white text-[1.25rem];
   }

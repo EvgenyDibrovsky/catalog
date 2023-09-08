@@ -1,7 +1,13 @@
 import "./globals.css";
 import { Poppins } from "next/font/google";
-import { Header } from "./components/Header/Header";
+import { HeaderWrapper } from "./components/Header/HeaderWrapper/HeaderWrapper";
+import { NavMenu } from "./components/Header/NavMenu/NavMenu";
+import { ToggleTheme } from "./components/Header/ToggleTheme/ToggleTheme";
+import { Logo } from "./components/Logo/Logo";
+import { useState } from "react";
+
 import { Footer } from "./components/Footer/Footer";
+
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
@@ -13,10 +19,24 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Header />
+        <HeaderWrapper>
+          <Logo />
+          <NavMenu />
+          <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
+        </HeaderWrapper>
         <main>
           <section className="mt-20 pt-10">{children}</section>
         </main>

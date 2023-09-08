@@ -1,0 +1,295 @@
+{
+  "about-me": {
+    "title": "Tworzenie stron internetowych",
+    "name": "Jewgienij Dibrowski",
+    "web-development": "Frontend Developer",
+    "description-1": "Cześć!",
+    "description-2": "Jestem programistą stron internetowych, a moje hobby stopniowo zmieniło się w główną pracę. Zawodowo zajmuję się tworzeniem stron internetowych od kilku lat. Moje doświadczenie rośnie z każdym nowym projektem, za co jestem wdzięczny moim klientom za ich nie zawsze typowe pomysły i wymagania dotyczące realizacji projektu 😉.",
+    "description-3": "Moje umiejętności i zakres technologiczny pozwalają mi na przeprowadzenie pełnego cyklu rozwoju najbardziej pożądanych zasobów internetowych. Nawet jeśli zostanę poproszony o bardzo skomplikowany projekt, chętnie podejmę się go! Nie boję się wyzwań, mam doświadczonych kolegów, którzy zawsze są gotowi pomóc.",
+    "description-4": "Zapraszam do współpracy i tworzenia czegoś nowego razem!"
+  },
+  "contact-dedails": {
+    "phone-number": "+48537450501",
+    "email-address": "contact@edweb.site",
+    "localization": "Kraków, Polska"
+  },
+  "nav-menu": {
+    "home": "Strona glówna",
+    "resume": "CV",
+    "portfolio": "Portfolio",
+    "brief": "Brief",
+    "contacts": "Kontakt",
+    "сooperation": "Współpraca"
+  },
+  "footer": {
+    "rights-reserved": "© 2023 Wszelkie prawa zastrzeżone"
+  },
+  "main-services": {
+    "service-1": "Tworzenie stron internetowych ",
+    "service-2": "Marketing internetowy ",
+    "service-3": "Dostępne strony ",
+    "service-4": "Web Design ",
+    "service-5": "Optymalizacja stron (SEO)",
+    "service-6": "Obsługa i wsparcie"
+  },
+  "home-page": {
+    "title": "Strona główna",
+    "sub-title": "podtytuł",
+    "meta-title": "Tworzenie stron internetowych - edweb.site",
+    "meta-description": "Profesjonalne tworzenie stron internetowych pod klucz. Tylko aktualne i sprawdzone technologie."
+  },
+  "cooperation-page": {
+    "title": "Współpraca",
+    "sub-title": "Twój projekt to nasza wspólna misja",
+    "meta-title": "Jewgienij Dibrowski - Frontend Developer",
+    "meta-description": "Tworzenie stron internetowych pod klucz.",
+    "text-1": "Szukasz specjalisty od tworzenia stron internetowych? Rozważ współpracę ze mną. Tutaj oferuję różne formy współpracy, aby jak najlepiej spełnić Twoje potrzeby.",
+    "text-2": "Freelance:",
+    "text-3": "Jeśli masz jednorazowy projekt lub potrzebujesz długoterminowego partnera bez codziennej obecności w biurze, rozważę Twoje propozycje jako freelancer. Podchodzę do każdego projektu z odpowiedzialnością, uwzględniając Twoje wymagania.",
+    "text-4": "Pełny etat:",
+    "text-5": "Otwarty na oferty pracy na pełny etat. Cenię stabilność i możliwość głębokiego zaangażowania w długoterminowe projekty.",
+    "text-6": "B2B:",
+    "text-7": "Szukasz partnera do tworzenia stron internetowych? Gotowy omówić warunki współpracy, stać się częścią Twojego zespołu i skupić się na osiągnięciu wyników.",
+    "text-8": "Co zyskasz współpracując ze mną:",
+    "text-9": "Odpowiedzialność i niezawodność: Dążę do precyzji i przestrzegania terminów, zapewniając wysoką jakość wykonanej pracy. Możesz polegać na moim pełnym zaangażowaniu w Twój projekt.",
+    "text-10": "Doświadczenie: Mimo stosunkowo krótkiego doświadczenia posiadam szeroką wiedzę i umiejętności, podchodząc do każdego projektu z pełnym zaangażowaniem.",
+    "text-11": "Elastyczność: Gotowy uwzględnić Twoje życzenia i dostosować się do wymagań projektu.",
+    "text-12": "Czekam na Twoje propozycje i jestem gotowy do dyskusji. Razem znajdziemy optymalne rozwiązanie dla Twojego projektu!"
+  },
+  "resume-page": {
+    "title": "CV",
+    "sub-title": "Trochę o mnie i moim doświadczeniu",
+    "sub-title-1": "Certyfikaty",
+    "sub-title-2": "Umiejętności techniczne",
+    "sub-title-3": "Znajomość języków",
+    "sub-title-4": "Umiejętności miękkie",
+    "sub-title-5": "Edukacja",
+    "sub-title-6": "Doświadczenie zawodowe",
+    "link-pdf": "Zobacz w formacie PDF",
+    "meta-title": "CV - Frontend Developer",
+    "meta-description": "Zapoznaj się z moim CV, aby zobaczyć, jak bardzo lubię tworzyć strony internetowe"
+  },
+  "portfolio-page": {
+    "title": "Portfolio",
+    "sub-title": "Przegląd niektórych moich prac",
+    "meta-title": "Portfolio projektów internetowych - edweb.site",
+    "meta-description": "Portfolio projektów, które są tworzone w miarę mojego rozwoju i pracy"
+  },
+  "brief-page": {
+    "title": "Brief",
+    "sub-title": "Szybka ocena projektu",
+    "text-information-1": "Brief to zwięzły opis Twoich pomysłów, celów, preferencji i oczekiwań dotyczących projektu. Brief pomoże mi dokładniej zrozumieć Twoją wizję i opracować najbardziej odpowiedni i spersonalizowany plan dla Twojego projektu, zapewniając zbliżenie do pożądanego wyniku.",
+    "text-information-2": "Wypełniając brief, skup się na projekcie i pożądanym efekcie i opisz go własnymi słowami – zrozumiem Cię!",
+    "text-information-3": "Po wypełnieniu tego briefu będę w stanie oszacować zakres i złożoność pracy, zaproponować odpowiedni plan rozwoju oraz sformułować ofertę handlową z przybliżonymi terminami i kosztami realizacji projektu.",
+    "meta-title": "Brief - Formularz zamówienia usług związanych z tworzeniem stron internetowych",
+    "meta-description": "Wypełnij Brief, aby stworzyć skuteczne rozwiązanie"
+  },
+  "contacts-page": {
+    "title": "Kontakt",
+    "sub-title": "Skontaktuj się ze mną jeśli masz jakieś pytania",
+    "meta-title": "Formularz kontaktowy",
+    "meta-description": "Napisz do mnie, jeśli masz pytania dotyczące tworzenia projektu internetowego"
+  },
+  "regulations-edweb": {
+    "title": "Regulamin",
+    "sub-title": "Drogi odwiedzający!",
+    "meta-title": "Regulamin",
+    "meta-description": "Ważne informacje dla użytkowników witryny",
+    "terms-of-use": {
+      "title": "Warunki korzystania",
+      "descriptionHtml": "<p>Szanowny Użytkowniku!</p><p>Wszystkie materiały dostępne na tej stronie, w tym projekty, obrazy i teksty, są przeznaczone wyłącznie do celów informacyjnych w kontekście możliwej współpracy ze mną lub procesu niezbędnego do przeprowadzenia rekrutacji.</p><ul><p>Proszę uwzględnić następujące:</p><li><p>Informacji i materiałów z tej strony nie wolno używać w celach komercyjnych, reklamowych czy innych celach bez mojej pisemnej zgody.</p></li><li><p>Proszę szanować moje prawa autorskie i prywatność.</p></li><li><p>Jeśli masz pytania czy propozycje współpracy, proszę nie krępuj się i skontaktuj się ze mną bezpośrednio za pośrednictwem dostępnych danych kontaktowych.</p></li><li><p>Podając swoje dane kontaktowe lub inne dane osobowe na tej stronie, wyrażam zgodę na ich przetwarzanie wyłącznie w celu współpracy dotyczącej usług wymienionych na stronie lub rekrutacji.</p></li></ul><p>Dziękuję za zrozumienie i szacunek do mojej pracy!</p>"
+    }
+  },
+  "not-found-page": {
+    "not-found": "Strona nie została znaleziona",
+    "404": "404",
+    "meta-title": "404",
+    "meta-description": "Strona nie została znaleziona."
+  },
+  "contact-form": {
+    "name": "imię",
+    "enter-name": "Wprowadź imię",
+    "email": "Email",
+    "enter-email": "Wprowadź e-mail",
+    "message-subject": "Temat wiadomości",
+    "enter-message-subject": "Wprowadź temat wiadomości",
+    "message": "Wiadomość",
+    "enter-message": "Wprowadź wiadomość",
+    "send": "Wyślij",
+    "sent-successfully": "Wiadomość została wysłana pomyślnie",
+    "sent-no-successfully": "Wiadomość nie została wysłana",
+    "confirmation-of-conditions": "Potwierdzenie warunków",
+    "accept-form": "Zgadzam się z warunkami określonymi w regulaminie."
+  },
+  "portfolio": {
+    "portfolio-filter": {
+      "all": "Wszystkie projekty",
+      "educational": "Edukacyjne projekty",
+      "commercial": "Komercyjne projekty"
+    },
+    "project-description": "Opis projektu",
+    "project-participation": "Udział w projekcie",
+    "project-technologies": "Używane technologie",
+    "project-site": "Strona projektu",
+    "project-link": "Odwiedź stronę projektu"
+  },
+  "language-skills": {
+    "english": "Angielski",
+    "polish": "Polski",
+    "ukrainian": "Ukraiński",
+    "russian": "Rosyjski"
+  },
+  "brief-form": {
+    "step-1": "Krok 1: Dane kontaktowe",
+    "step-2": "Krok 2: Informacje o Twojej działalności",
+    "step-3": "Krok 3: Strony internetowe (Rozwój, tworzenie, modernizacja)",
+    "step-4": "Krok 4: Marketing internetowy",
+    "step-5": "Krok 5: Dodatkowe usługi",
+    "step-6": "Krok 6: Dodatkowe życzenia",
+    "name": "Imię",
+    "enter-name": "Wprowadź imię",
+    "last-name": "Nazwisko",
+    "enter-last-name": "Wprowadź nazwisko",
+    "email": "Email",
+    "enter-email": "Wprowadź adres email",
+    "message-subject": "Temat wiadomości",
+    "phone": "Numer telefonu",
+    "enter-phone": "Wprowadź numer telefonu",
+    "activity-sphere": "Sfera działalności",
+    "specify-activity-sphere": "Wskaż sferę działalności",
+    "www-address": "Adres www (jeśli istnieje)",
+    "specify-domain-name": "Podaj planowaną lub zarejestrowaną nazwę domeny",
+    "general-activity-info": "Ogólne informacje o działalności",
+    "enter-general-activity-info": "Wprowadź ogólne informacje o działalności",
+    "select-site-type": "Wybierz rodzaj strony",
+    "visit-card": "Wizytówka internetowa",
+    "corporate-site": "Strona korporacyjna",
+    "e-shop": "Sklep internetowy",
+    "internet-portal": "Portal internetowy",
+    "ads-service": "Serwis ogłoszeń",
+    "blog": "Blog",
+    "site-upgrade": "Modernizacja strony",
+    "site-redesign": "Redesign strony",
+    "online-catalog": "Katalog online",
+    "mobile-app": "Aplikacja mobilna",
+    "custom-project": "Projekt indywidualny",
+    "site-accessibility": "Dostępność strony",
+    "design": "Design",
+    "has-design-project": "Jest projekt designu",
+    "no-design-project": "Brak projektu designu",
+    "ready-templates": "Gotowe szablony",
+    "liked-sites": "Strony, które Ci się podobają",
+    "example-sites-prompt": "Podaj kilka stron jako przykład, które Ci się podobają...",
+    "email-marketing": "Marketing e-mailowy",
+    "smm-marketing": "Marketing SMM",
+    "site-monetization": "Monetyzacja strony",
+    "online-advertising": "Reklama online",
+    "site-promotion": "Promocja strony",
+    "ad-links": "Linki reklamowe",
+    "hosting": "Hosting",
+    "domain-registration": "Rejestracja domeny",
+    "ssl-certificate": "Certyfikat SSL",
+    "brand-emails": "Firmowe e-maile",
+    "additional-project-wishes": "Napisz wszystkie dodatkowe życzenia dotyczące projektu...",
+    "submit-brief": "Wyślij brief",
+    "sent-successfully": "Wiadomość została wysłana pomyślnie",
+    "sent-no-successfully": "Wiadomość nie została wysłana",
+    "confirmation-of-conditions": "Potwierdzenie warunków",
+    "accept-form": "Zgadzam się z warunkami określonymi w regulaminie."
+  },
+  "possibilities": {
+    "my-capabilities": "Moje możliwości",
+    "web-development": "Tworzenie stron internetowych",
+    "web-development-description": "Tworzenie stron internetowych i aplikacji pod klucz. Dzięki wyborowi optymalnych technologii zapewniam szybki rozwój i wygodne wsparcie projektów. W przypadku dużych projektów jesteśm w stanie utworzyć zespół programistów, aby zapewnić najlepsze możliwe wyniki.",
+    "web-design": "Web Design",
+    "web-design-description": "Projektowanie internetowych interfejsów użytkownika dla witryn lub aplikacji internetowych. Tworzenie logotypów, banerów i animacja stron internetowych. Na etapie projektowania serwisu istnieje również możliwość skorzystania z rozwiązań szablonowych.",
+    "e-marketing": "Marketing internetowy",
+    "e-marketing-description": "Zestaw działań mających na celu zwiększenie zysków ze sprzedaży towarów lub usług. Analiza rynku, tworzenie kampanii reklamowych w Internecie, w tym reklamę targetowaną, reklamę w wyszukiwarkach oraz w sieciach społecznościowych.",
+    "seo": "SEO",
+    "seo-description": "Zestaw działań do optymalizacji wewnętrznej i zewnętrznej w celu podniesienia pozycji witryny w wynikach wyszukiwarek dla określonych zapytań użytkowników, w celu zwiększenia ruchu w sieci i potencjalnych klientów.",
+    "site-availability": "Dostępne strony",
+    "site-availability-description": "Wykonanie/dostosowanie stron internetowych dostępnych dla osób z niepełnosprawnością zgodnie z wytycznymi WCAG 2.1. Mam duże doświadczenie oraz certyfikat w tym zakresie.",
+    "technical-support": "Obsługa i wsparcie",
+    "technical-support-description": "Obsługa i wsparcie stron internetowych, w tym projektów opracowanych nie tylko przeze mnie, ale także przez innych specjalistów. Aktualizacja, instalacja certyfikatów SSL, poprawianie układu, funkcjonalności, projektu i wiele innych."
+  },
+  "working-conditions": {
+    "freelance": "Freelance",
+    "full-employment": "Pełne zatrudnienie",
+    "b2b": "B2B"
+  },
+  "btn": {
+    "write-message": "Napisz wiadomość",
+    "back-to-home": "Wróć do strony głównej",
+    "contact-form": "Kontakty",
+    "download-resume": "Pobierz CV (.pdf)",
+    "nav-menu": "Menu nawigacyjne",
+    "theme-switcher": "Przełącznik motywów"
+  },
+  "cookies": {
+    "title": "Strona używa plików cookie",
+    "text": "Używamy plików cookie i Local Storage w celu poprawy komfortu korzystania z witryny oraz obsługi usług, takich jak wybór języka i przełączanie motywu kolorystycznego. Na stronie działa również Google Analytics do zbierania statystyk odwiedzin. Strona jest portfolio i nie przewiduje rejestracji. Dostępny jest dla Ciebie formularz kontaktowy, w którym możesz podać swoje imię, adres e-mail i treść wiadomości. Kontynuując korzystanie z witryny, wyrażasz zgodę na nasze stosowanie plików cookie i Local Storage. Jeśli się nie zgadzasz, opuść stronę. Dziękujemy za zrozumienie!",
+    "btn-accept": "Zgadzam się",
+    "btn-no-accept": "Nie zgadzam się"
+  },
+  "soft-skills": {
+    "skill-1": "Praca w zespole",
+    "skill-2": "Adaptacja",
+    "skill-3": "Zarządzanie czasem",
+    "skill-4": "Myślenie krytyczne",
+    "skill-5": "Odpowiedzialność",
+    "skill-6": "Umiejętność uczenia się"
+  },
+  "education": {
+    "title": "instytucja edukacyjna",
+    "Faculty": "Kierunek",
+    "speciality": "Specjalność",
+    "form": "Forma edukacji",
+    "country": "Kraj",
+    "Period": "Okres edukacji",
+    "id-4": {
+      "title-description": "GoIT Kursy programowania",
+      "faculty-description": "Full Stack",
+      "speciality-description": "Full Stack Developer",
+      "form-description": "Online",
+      "country-description": "Ukraina",
+      "period-description": "05.2022 - 04.2023"
+    },
+    "id-3": {
+      "title-description": "Centrum Edukacyjne Renoma",
+      "faculty-description": "Technika Administracji",
+      "speciality-description": "Technik Administracji",
+      "form-description": "Weekendowa",
+      "country-description": "Polska",
+      "period-description": "09.2020 - 01.2022"
+    },
+    "id-2": {
+      "title-description": "Klasyczny Prywatny Uniwersytet",
+      "faculty-description": "Ekonomika Cybernetyki",
+      "speciality-description": "Ekonomista-Cybernetyk | Bakalarz",
+      "form-description": "Zaocznie",
+      "country-description": "Ukraina",
+      "period-description": "09.2007 - 07.2012"
+    },
+    "id-1": {
+      "title-description": "Zaporoski Kolegium Radioelektroniki Narodowego Uniwersytetu Technicznego w Zaporożu",
+      "faculty-description": "Technika Obliczeniowa",
+      "speciality-description": "Technik Elektronik",
+      "form-description": "Dziennie",
+      "country-description": "Ukraina",
+      "period-description": "09.2003 - 06.2007"
+    }
+  },
+  "recaptcha": {
+    "text-1": "Ta strona jest chroniona przez reCAPTCHA oraz obowiązują ",
+    "privacy-policy": "Polityka prywatności ",
+    "text-2": "i ",
+    "terms-of-service": "Warunki korzystania z usług.",
+    "text-3": ""
+  },
+  "social-links": {
+    "github": "Link do github",
+    "telegram": "Link do telegram",
+    "facebook": "Link do facebook",
+    "linkedin": "Link do linkedin"
+  }
+}
