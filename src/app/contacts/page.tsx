@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Section from "../components/Base/Section";
 
 export const metadata: Metadata = {

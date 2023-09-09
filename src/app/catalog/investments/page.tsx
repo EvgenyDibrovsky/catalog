@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
-import Section from "../components/Base/Section";
+import Section from "../../components/Base/Section";
 
 export const metadata: Metadata = {
-  title: 'Catalog',
+  title: 'Contacts',
   description: 'Next app',
 }
 
-export default function Catalog() {
+export default function Investments() {
   return (
     <Section>
     <div className="container">
-      <h1>Каталог</h1>
+      <h1>Инвестиции</h1>
     </div>
     </Section>
   );
