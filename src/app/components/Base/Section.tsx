@@ -1,3 +1,3 @@
-export default function Section({ children }) {
-  return <section className="pt-20">{children}</section>;
+export default function Section({ children }: { children: React.ReactNode }) {
+  return <section className="pt-32">{children}</section>;
 }

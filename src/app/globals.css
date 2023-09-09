@@ -4,9 +4,9 @@
 
 @layer base {
   body {
-    @apply text-black ;
+    @apply text-black;
   }
   h1 {
-    @apply text-black text-[1.25rem];
+    @apply text-black text-[1.5rem];
   }
 }

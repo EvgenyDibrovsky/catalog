@@ -8,23 +8,23 @@ export default function CatalogLayout({
   return (
     <Section>
     <div className="container">
-      <ul className="grid grid-cols-3 gap-6 justify-center">
-        <li>
+      <ul className="grid grid-cols-3 gap-6">
+        <li className="flex justify-center items-center">
           <Link href="/catalog/developers">Застройщики</Link>
         </li>
-        <li>
+        <li className="flex justify-center items-center">
           <Link href="/catalog/flats">Квартиры</Link>
         </li>
-        <li>
+        <li className="flex justify-center items-center">
           <Link href="/catalog/houses">Дома</Link>
         </li>
-        <li>
+        <li className="flex justify-center items-center">
           <Link href="/catalog/investments">Инвестиции</Link>
         </li>
-        <li>
+        <li className="flex justify-center items-center">
           <Link href="/catalog/plots">Участки</Link>
         </li>
-        <li>
+        <li className="flex justify-center items-center">
           <Link href="/catalog/premises">Посредники</Link>
         </li>
       </ul>
