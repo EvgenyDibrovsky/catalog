@@ -3,7 +3,6 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
-    darkMode: "class",
     screens: {
       xs: "320px", // extra small devices, phones
       sm: "640px", // small devices, tablets
@@ -34,5 +33,7 @@ const config: Config = {
     extend: { },
   },
   plugins: [],
+    darkMode: "class",
+
 };
 export default config;

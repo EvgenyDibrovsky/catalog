@@ -22,14 +22,16 @@ export default function RootLayout({
   return (
 
     <html lang="en">
-        <Providers>
 
       <body className={poppins.className}>
+        <Providers>
+
           <Header />
           <main className="min-h-screen">{children}</main>
           <Footer />
-      </body>
         </Providers>
+
+      </body>
 
     </html>
 
