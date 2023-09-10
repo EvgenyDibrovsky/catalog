@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between fixed h-20 w-full top-0 left-0 right-0 bg-white dark:bg-black shadow-md  ">
-      <div className="container flex items-center justify-between">
+    <header className="bg-black z-50 w-full fixed top-0 left-0 h-20 flex items-center justify-between">
+      <div className="container flex justify-between items-center">
         <div>
           <Link href="/">
             {/* <Image src="/images/edweb.svg" alt="Vercel Logo" className="dark:invert" width={100} height={24} priority /> */}
