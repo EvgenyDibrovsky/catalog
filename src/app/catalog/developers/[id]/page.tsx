@@ -1,10 +1,7 @@
-import type { Metadata } from "next";
+import type { generateMetadata } from "next";
 import Section from "../../../components/Base/Section";
 
-export const metadata: Metadata = {
-  title: "Catalog",
-  description: "Next app",
-};
+
 async function getData(id: string) {
 
 
