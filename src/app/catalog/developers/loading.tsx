@@ -10,8 +10,6 @@ export default function LoadingCompany() {
         radius={1}
         color="#0064b0"
         ariaLabel="puff-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
         visible={true}
       />
     </div>
