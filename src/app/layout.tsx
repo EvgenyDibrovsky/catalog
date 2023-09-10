@@ -8,6 +8,7 @@ import Providers from "./providers.js";
 const poppins = Poppins({
   display: "swap",
   weight: ["400", "500", "600", "700"],
+  subsets: ["latin"]
 });
 export const metadata: Metadata = {
   title: "New Project",
@@ -29,7 +30,6 @@ export default function RootLayout({
           <main className="min-h-screen">{children}</main>
           <Footer />
         </Providers>
-
       </body>
 
     </html>
