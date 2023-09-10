@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="text-sky-400 transition-all duration-500 text-[1.2rem] dark:text-orange-500"
+      className="text-sky-400 transition-all duration-500 text-[1.2rem] dark:text-yellow-500"
     >
       {theme === "light" ? <BsSun /> : <BsMoon />}
     </button>
