@@ -25,7 +25,6 @@ export default function RootLayout({
 
       <body className={poppins.className}>
         <Providers>
-
           <Header />
           <main className="min-h-screen">{children}</main>
           <Footer />
