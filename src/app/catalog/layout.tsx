@@ -8,7 +8,7 @@ export default function CatalogLayout({
   return (
     <Section>
     <div className="container">
-      <ul className="grid grid-cols-3 gap-6">
+      <ul className="grid grid-cols-3 gap-6 mb-10">
         <li className="flex justify-center items-center">
           <Link href="/catalog/developers">Застройщики</Link>
         </li>

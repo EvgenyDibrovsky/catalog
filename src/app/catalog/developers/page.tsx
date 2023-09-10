@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Section from "../../components/Base/Section";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -13,8 +12,7 @@ async function getData() {
     },
   });
 
-if (!response.ok) throw new Error('No companies found')
-
+  if (!response.ok) throw new Error("No companies found");
 
   return response.json();
 }
@@ -22,17 +20,15 @@ if (!response.ok) throw new Error('No companies found')
 export default async function Developers() {
   const posts = await getData();
   return (
-    <Section>
-      <div className="container">
-        <h1>Застройщики</h1>
-        <ul className="grid grid-cols-3 gap-4">
-          {posts.map((post: any) => (
-            <li key={post.id} className="shadow-md p-2">
-              <Link href={`/catalog/developers/${post.id}`}>{post.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </Section>
+    <>
+      <h1>Застройщики</h1>
+      <ul className="grid grid-cols-3 gap-4">
+        {posts.map((post: any) => (
+          <li key={post.id} className="shadow-md p-2">
+            <Link href={`/catalog/developers/${post.id}`}>{post.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }

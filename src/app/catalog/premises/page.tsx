@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Section from "../../components/Base/Section";
 
 export const metadata: Metadata = {
   title: 'Contacts',
@@ -8,10 +7,9 @@ export const metadata: Metadata = {
 
 export default function Premises() {
   return (
-    <Section>
-    <div className="container">
+    <>
       <h1>Посредники</h1>
-    </div>
-    </Section>
+
+    </>
   );
 }
