@@ -1,6 +1,5 @@
-import type { generateMetadata } from "next";
+import type { Metadata } from "next";
 import Section from "../../../components/Base/Section";
-
 
 async function getData(id: string) {
 
