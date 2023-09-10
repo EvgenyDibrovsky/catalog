@@ -4,9 +4,15 @@
 
 @layer base {
   body {
-    @apply text-black;
+    @apply text-black dark:text-white bg-white dark:bg-black;
   }
   h1 {
-    @apply text-black text-[1.5rem];
+    @apply text-black dark:text-white text-[1.5rem];
+  }
+  h2 {
+    @apply text-black dark:text-white;
+  }
+  p {
+    @apply text-black dark:text-white;
   }
 }
