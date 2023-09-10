@@ -11,6 +11,7 @@ export default function LoadingCompany() {
         color="#0064b0"
         ariaLabel="puff-loading"
         wrapperStyle={{}}
+        wrapperClass=""
         visible={true}
       />
     </div>
