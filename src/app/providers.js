@@ -10,6 +10,8 @@ export default function Providers({ children }) {
   }, []);
 
   return (
-    <ThemeProvider attribute="class">{mounted ? children : null}</ThemeProvider>
+    <ThemeProvider attribute="class" defaultTheme="light">
+      {mounted ? children : null}
+    </ThemeProvider>
   );
 }
