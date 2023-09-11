@@ -1,8 +1,6 @@
-import { useTranslation } from 'react-i18next';
 import { BsPersonPlus, BsPerson } from 'react-icons/bs';
 
 export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
-  const { t } = useTranslation();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 my-5">
       <button
@@ -15,7 +13,7 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
       >
         <span className="flex items-center justify-center gap-2">
           <BsPerson />
-          {t('login-btn')}
+          Login
         </span>
       </button>
 
@@ -29,7 +27,7 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
       >
         <span className="flex items-center justify-center gap-2">
           <BsPersonPlus />
-          {t('registration')}
+        Registration
         </span>
       </button>
     </div>
