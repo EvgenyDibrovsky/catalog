@@ -2,6 +2,7 @@
 import { NavMenu } from "./NavMenu";
 import { Logo } from "./Logo";
 import ThemeSwitcher from "./ThemeSwitcher";
+import Auth from "./Auth"
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
         <Logo />
         <NavMenu />
         <ThemeSwitcher />
+        <Auth/>
       </div>
     </header>
   );
