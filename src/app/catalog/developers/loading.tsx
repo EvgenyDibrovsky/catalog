@@ -8,7 +8,7 @@ export default function LoadingCompany() {
         height="80"
         width="80"
         radius={1}
-        color="#0064b0"
+        color="#38bdf8"
         ariaLabel="puff-loading"
         wrapperStyle={{}}
         wrapperClass=""
