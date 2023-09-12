@@ -15,20 +15,26 @@ export const metadata: Metadata = {
   description: "Next app",
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutProps = {
   children: React.ReactNode;
-}) {
-  return (
-  
-    <body className={poppins.className}>
-      <Providers>
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
-      </Providers>
-      <div id="modal-root"></div>
-    </body>
+  params: {
+    lang: string;
+  };
+};
+
+export default function RootLayout({ children, params }: RootLayoutProps) {
+    console.log(params, 'params');
+
+    return (
+    <html lang={params.lang}>
+      <body className={poppins.className} >
+        <Providers>
+          <Header />
+          <main className="min-h-screen" >{children}</main>
+          <Footer />
+        </Providers>
+        <div id="modal-root"></div>
+      </body>
+    </html>
   );
 }

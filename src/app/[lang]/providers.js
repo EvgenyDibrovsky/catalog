@@ -3,7 +3,7 @@ import { ThemeProvider } from "next-themes";
 
 export default function Providers({ children }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
+    <ThemeProvider attribute="class" storageKey="theme" defaultTheme="light">
       {children}
     </ThemeProvider>
   );
