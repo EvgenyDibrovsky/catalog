@@ -17,6 +17,7 @@
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.2",
     "next": "13.4.19",
+    "next-i18next": "^14.0.3",
     "next-themes": "^0.2.1",
     "postcss": "8.4.29",
     "react": "18.2.0",
