@@ -23,14 +23,6 @@ const LanguageSwitcher = async ({ lng }) => {
 
   return (
     <>
-      <div className="flex items-center gap-2">
-        <div className="flex items-center gap-4">
-          <span className={languageFlags[lng]}></span>
-          <p>{languageNames[lng]}</p>
-        </div>
-        <BsChevronDown className="h-4" />
-      </div>
-
       <ul className="flex flex-col items-center gap-4 mt-20">
         {languages
           .filter((l) => l !== lng)
