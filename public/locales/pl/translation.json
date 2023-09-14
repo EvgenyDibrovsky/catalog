@@ -1,0 +1,43 @@
+{
+  "about-us": "O nas",
+  "sub-about-us": "Podtytuł",
+  "contacts": "Kontakty",
+  "sub-contacts": "Podtytuł",
+  "rights reserved": "© 2023 Wszelkie prawa zastrzeżone",
+  "logo-text-1": "Katalog ",
+  "logo-text-2": "nieruchomości ",
+
+  "login": "login",
+  "login-btn": "Zaloguj się",
+  "enter-login": "Wprowadź login",
+  "registration": "Zarejestruj się",
+  "email": "Email",
+  "enter-email": "Wprowadź email",
+  "password": "Hasło",
+  "enter-password": "Wprowadź hasło",
+  "password-recovery": "Zapomniałeś hasła?",
+  "reset-password-btn": "Zresetuj hasło",
+  "agreed": "Zgadzam się na warunki",
+  "agreed-read": "Przeczytaj warunki",
+  "terms-of-Use-title": "Warunki korystania",
+  "name": "Imię",
+  "enter-name": "Wpisz Imię",
+  "message-subject": "Temat wiadomości",
+  "enter-message-subject": "Wpisz temat wiadomości",
+  "message": "Wiadomość",
+  "enter-message": "Napisz wiadomość",
+  "send": "Wyślij",
+  "reset": "Zresetować",
+  "select-country": "Wybierz kraj",
+  "select-region": "Wybierz region",
+  "not-found": "Strona nie znaleziona",
+  "404": "404",
+  "nothing-found": "Przepraszamy, nic nie znaleziono.",
+
+  "select_language": {
+    "english": "Angielski",
+    "poland": "Polski",
+    "ukraine": "Ukraiński",
+    "russian": "Rosyjski"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "about-us": "Про нас",
+  "sub-about-us": "Підзаголовок",
+  "contacts": "Контакти",
+  "sub-contacts": "Підзаголовок",
+  "rights reserved": "© 2023 Всі права захищені",
+  "logo-text-1": "Каталог",
+  "logo-text-2": "недвижимости",
+
+  "login": "Логiн",
+  "login-btn": "Увійти",
+  "enter-login": "Впишiть свiй логiн",
+  "registration": "Зареєструватися",
+  "email": "Email",
+  "enter-email": "Впишiть свiй email",
+  "password": "Пароль",
+  "enter-password": "Введіть пароль",
+  "password-recovery": "Забули ваш пароль?",
+  "reset-password-btn": "Скинути пароль",
+  "agreed": "Погоджуюсь з умовами",
+  "agreed-read": "Прочитати умови",
+  "terms-of-Use-title": "Варунки користання",
+  "name": "Ім'я",
+  "enter-name": "Введіть ім'я",
+  "message-subject": "Тема повідомлення",
+  "enter-message-subject": "Введіть тему повідомлення",
+  "message": "Повідомлення",
+  "enter-message": "Напишіть повідомлення",
+  "send": "Надіслати",
+  "reset": "Cкинути",
+  "select-country": "Виберіть країну",
+  "select-region": "Виберіть регіон",
+  "not-found": "Сторінку не знайдено",
+  "404": "404",
+  "nothing-found": "Вибачте, нічого не знайдено.",
+
+  "select_language": {
+    "english": "Анлийский",
+    "poland": "Польский",
+    "ukraine": "Украинский",
+    "russian": "Русский"
+  }
+}

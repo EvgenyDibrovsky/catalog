@@ -1,0 +1,43 @@
+{
+  "about-us": "About US",
+  "sub-about-us": "Subtitle",
+  "contacts": "Contacts",
+  "sub-contacts": "Subtitle",
+  "rights reserved": "© 2023 All rights reserved.",
+  "logo-text-1": "Real estate ",
+  "logo-text-2": "catalog",
+
+  "login": "Login",
+  "login-btn": "Log in",
+  "enter-login": "Enter login",
+  "registration": "Registration",
+  "email": "Email",
+  "enter-email": "Enter email",
+  "password": "Password",
+  "enter-password": "Enter password",
+  "password-recovery": "Forgot your password?",
+  "reset-password-btn": "Reset Password",
+  "agreed": "Agree to terms",
+  "agreed-read": "Read the terms",
+  "terms-of-Use-title": "Terms of Use",
+  "name": "Name",
+  "enter-name": "Enter name",
+  "message-subject": "Message subject",
+  "enter-message-subject": "Enter message-subject",
+  "message": "Message",
+  "enter-message": "Enter message",
+  "send": "Send",
+  "reset": "Reset",
+  "select-country": "Select country",
+  "select-region": "Select region",
+  "not-found": "Page not found",
+  "404": "404",
+  "nothing-found": "Sorry, nothing found.",
+
+  "select_language": {
+    "english": "English",
+    "poland": "Polish",
+    "ukraine": "Ukrainian",
+    "russian": "Russian"
+  }
+}
