@@ -10,15 +10,15 @@ const LanguageSwitcher = async ({ lng }) => {
   const languageNames = {
     en: t("language.english"),
     pl: t("language.poland"),
-    ua: t("language.ukraine"),
-    // ru: t("language.russian"),
+    uk: t("language.ukraine"),
+    ru: t("language.russian"),
   };
 
   const languageFlags = {
     en: "fi fi-us",
     pl: "fi fi-pl",
-    ua: "fi fi-uk",
-    // ru: "fi fi-ru",
+    uk: "fi fi-ua",
+    ru: "fi fi-ru",
   };
 
   return (
