@@ -1,6 +1,7 @@
 import { NavMenu } from "./NavMenu";
 import { Logo } from "./Logo";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const Header = ({ lng }) => {
   return (
@@ -8,6 +9,7 @@ const Header = ({ lng }) => {
       <div className="container flex justify-between items-center">
         <Logo lng={lng} />
         <NavMenu lng={lng} />
+        <LanguageSwitcher lng={lng} />
         <ThemeSwitcher />
       </div>
     </header>
