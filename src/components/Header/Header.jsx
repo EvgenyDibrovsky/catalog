@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import NavMenu from './NavMenu';
 import { SiHomebridge } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
+import ToggleTheme from './ToggleTheme';
+import ToggleLang from './ToggleLang';
+import AuthHeader from '../AuthForms/AuthHeader';
 
 export default function Header({ theme, toggleTheme }) {
   const { t } = useTranslation();
@@ -22,7 +25,12 @@ export default function Header({ theme, toggleTheme }) {
             </div>
           </div>
         </Link>
-        <NavMenu theme={theme} toggleTheme={toggleTheme} />
+        <NavMenu />
+        <div className="flex items-center gap-8">
+          <AuthHeader />
+          <ToggleLang />
+          <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
+        </div>
       </div>
     </header>
   );

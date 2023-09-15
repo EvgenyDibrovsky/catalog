@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
 import { BsWindows, BsXLg } from 'react-icons/bs';
 import { useState } from 'react';
-import ToggleTheme from './ToggleTheme';
-import ToggleLang from './ToggleLang';
 import { useTranslation } from 'react-i18next';
-import AuthHeader from '../AuthForms/AuthHeader';
 
 export default function NavHeader({ theme, toggleTheme }) {
   const { t } = useTranslation();
@@ -46,11 +43,6 @@ export default function NavHeader({ theme, toggleTheme }) {
         </li>
       </ul>
       <div className="flex md:flex-row-reverse items-center gap-8 ml-10 z-50">
-        <ToggleLang />
-
-        <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
-        <AuthHeader />
-
         <button
           className="md:hidden block ml-8 text-2xl font-normal text-colorMobileMenuIcon dark:text-white duration-200 "
           onClick={() => setIsOpen(!isOpen)}
