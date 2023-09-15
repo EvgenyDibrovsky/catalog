@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../../../node_modules/flag-icons/css/flag-icons.min.css';
 import { BsChevronDown } from 'react-icons/bs';
+
 export default function ToggleLang() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -32,13 +33,21 @@ export default function ToggleLang() {
       setIsOpen(false);
     }
   };
+  const currentLanguage = languages.includes(i18n.language)
+    ? i18n.language
+    : 'en';
 
   React.useEffect(() => {
+    const languages = ['en', 'pl', 'uk', 'ru'];
+    if (!languages.includes(i18n.language)) {
+      i18n.changeLanguage('en');
+    }
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [i18n]);
 
   return (
     <div ref={wrapperRef} className="relative w-full">
@@ -47,8 +56,8 @@ export default function ToggleLang() {
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex items-center gap-2 cursor-pointer text-black dark:text-white">
-          <span className={languageFlags[i18n.language]}></span>
-          <p>{languageNames[i18n.language]}</p>
+          <span className={languageFlags[currentLanguage]}></span>
+          <p>{languageNames[currentLanguage]}</p>
         </div>
         <BsChevronDown className="w-4 h-4 cursor-pointer duration-200 group-hover:mt-1" />
       </div>
