@@ -1,6 +1,6 @@
-import paypal from '../image/paypal.svg';
-import mastercard from '../image/mastercard.svg';
-import visa from '../image/visa.svg';
+import paypal from '../../image/paypal.svg';
+import mastercard from '../../image/mastercard.svg';
+import visa from '../../image/visa.svg';
 import { useTranslation } from 'react-i18next';
 
 export default function Footer() {

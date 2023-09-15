@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import '../../node_modules/flag-icons/css/flag-icons.min.css';
+import '../../../node_modules/flag-icons/css/flag-icons.min.css';
 
 export default function ToggleLang() {
   const { t, i18n } = useTranslation();
@@ -51,7 +51,7 @@ export default function ToggleLang() {
       </div>
 
       {isOpen && (
-        <ul className="flex flex-col items-start gap-4 absolute top-10 right-0 px-8 py-2 bg-white dark:bg-black border text-black dark:text-white">
+        <ul className="flex flex-col items-start gap-4 absolute top-10 right-0 shadow-md  dark:shadow-white px-8 py-2 bg-white dark:bg-black  text-black dark:text-white">
           {languages
             .filter(l => l !== i18n.language)
             .map(l => (

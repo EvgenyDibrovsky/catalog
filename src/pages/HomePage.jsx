@@ -1,18 +1,19 @@
-import CardsList from '../components/CardsList';
-import CountryRegionSelector from '../components/CountryRegionSelector';
-import { useState } from 'react';
+import MetaTags from '../components/MetaTags/MetaTags';
+import { useTranslation } from 'react-i18next';
 
 export default function HomePage() {
-  const [selectedCountry, setSelectedCountry] = useState('');
-  const [selectedRegion, setSelectedRegion] = useState('');
+  const { t } = useTranslation();
 
   return (
-    <div>
-      <CountryRegionSelector
-        onCountryChange={setSelectedCountry}
-        onRegionChange={setSelectedRegion}
+    <>
+      <MetaTags
+        metaTitle={t('pages.home.meta_title')}
+        metaDescription={t('pages.home.meta_description')}
       />
-      <CardsList country={selectedCountry} region={selectedRegion} />
-    </div>
+
+      <div className="min-h-screen">
+        <h1>Home</h1>
+      </div>
+    </>
   );
 }

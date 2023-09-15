@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import NavHeader from './NavHeader';
-import { TbWorldWww } from 'react-icons/tb';
+import { SiHomebridge } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 
 export default function Header({ theme, toggleTheme }) {
@@ -11,8 +11,8 @@ export default function Header({ theme, toggleTheme }) {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/">
           <div className="flex gap-4 items-center">
-            <TbWorldWww className="text-colorLogo dark:text-yellow-500 transition-all duration-500 text-[3rem] z-50" />
-            <div className="hidden sm:flex flex-col z-50">
+            <SiHomebridge className="text-colorLogo dark:text-yellow-500 transition-all duration-500 text-[3rem] z-50" />
+            <div SiHomebridge="hidden sm:flex flex-col z-50">
               <p className="text-[0.6rem] font-semibold text-black dark:text-white transition-all duration-200">
                 {t('logo-text-1')}
               </p>

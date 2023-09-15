@@ -4,7 +4,7 @@ import { useState } from 'react';
 import ToggleTheme from './ToggleTheme';
 import ToggleLang from './ToggleLang';
 import { useTranslation } from 'react-i18next';
-import AuthHeader from './AuthHeader';
+import AuthHeader from '../AuthForms/AuthHeader';
 
 export default function NavHeader({ theme, toggleTheme }) {
   const { t } = useTranslation();
@@ -24,6 +24,15 @@ export default function NavHeader({ theme, toggleTheme }) {
             onClick={() => setIsOpen(false)}
           >
             {t('about-us')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/catalog"
+            className="font-semibold  text-black dark:text-white  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
+            onClick={() => setIsOpen(false)}
+          >
+            {t('catalog')}
           </Link>
         </li>
         <li>
