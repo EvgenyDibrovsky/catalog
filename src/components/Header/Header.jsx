@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import NavHeader from './NavHeader';
+import NavMenu from './NavMenu';
 import { SiHomebridge } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
 
@@ -14,15 +14,15 @@ export default function Header({ theme, toggleTheme }) {
             <SiHomebridge className="text-colorLogo dark:text-yellow-500 transition-all duration-500 text-[3rem] z-50" />
             <div SiHomebridge="hidden sm:flex flex-col z-50">
               <p className="text-[0.6rem] font-semibold text-black dark:text-white transition-all duration-200">
-                {t('logo-text-1')}
+                {t('header.logo.logo_text_1')}
               </p>
               <p className="text-[0.6rem] font-semibold text-black dark:text-white transition-all duration-200">
-                {t('logo-text-2')}
+                {t('header.logo.logo_text_2')}
               </p>
             </div>
           </div>
         </Link>
-        <NavHeader theme={theme} toggleTheme={toggleTheme} />
+        <NavMenu theme={theme} toggleTheme={toggleTheme} />
       </div>
     </header>
   );

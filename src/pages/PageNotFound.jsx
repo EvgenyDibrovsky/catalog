@@ -1,4 +1,4 @@
-import PageTitle from 'components/PageTitle';
+import PageTitle from 'components/PageSettings/PageTitle';
 import { useTranslation } from 'react-i18next';
 import { TbDeviceIpadHorizontalSearch } from 'react-icons/tb';
 

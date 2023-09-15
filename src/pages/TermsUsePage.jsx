@@ -1,5 +1,5 @@
-import PageTitle from 'components/PageTitle';
-import SubTitle from 'components/SubTitle';
+import PageTitle from 'components/PageSettings/PageTitle';
+import SubTitle from 'components/PageSettings/SubTitle';
 import { useTranslation } from 'react-i18next';
 export default function TermsUsePage() {
   const { t } = useTranslation();

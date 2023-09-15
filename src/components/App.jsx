@@ -2,15 +2,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import Section from './Section';
-import Container from './Container';
+import Section from './PageSettings/Section';
+import Container from './PageSettings/Container';
 import About from '../pages/AboutPage';
 import Catalog from '../pages/CatalogPage';
 import Contact from '../pages/ContactPage';
 import HomePage from '../pages/HomePage';
 import TermsUsePage from '../pages/TermsUsePage';
 import PageNotFound from '../pages/PageNotFound';
-import Loading from './Loader';
+import Loading from './Base/Loader';
 import { HelmetProvider } from 'react-helmet-async';
 
 export const App = () => {

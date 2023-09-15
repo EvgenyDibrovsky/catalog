@@ -1,43 +1,123 @@
 {
-  "about-us": "Про нас",
-  "sub-about-us": "Підзаголовок",
-  "contacts": "Контакти",
-  "sub-contacts": "Підзаголовок",
-  "rights reserved": "© 2023 Всі права захищені",
-  "logo-text-1": "Каталог ",
-  "logo-text-2": "нерухомості",
-
-  "login": "Логiн",
-  "login-btn": "Увійти",
-  "enter-login": "Впишiть свiй логiн",
-  "registration": "Зареєструватися",
-  "email": "Email",
-  "enter-email": "Впишiть свiй email",
-  "password": "Пароль",
-  "enter-password": "Введіть пароль",
-  "password-recovery": "Забули ваш пароль?",
-  "reset-password-btn": "Скинути пароль",
-  "agreed": "Погоджуюсь з умовами",
-  "agreed-read": "Прочитати умови",
-  "terms-of-Use-title": "Варунки користання",
-  "name": "Ім'я",
-  "enter-name": "Введіть ім'я",
-  "message-subject": "Тема повідомлення",
-  "enter-message-subject": "Введіть тему повідомлення",
-  "message": "Повідомлення",
-  "enter-message": "Напишіть повідомлення",
-  "send": "Надіслати",
-  "reset": "Cкинути",
-  "select-country": "Виберіть країну",
-  "select-region": "Виберіть регіон",
-  "not-found": "Сторінку не знайдено",
-  "404": "404",
-  "nothing-found": "Вибачте, нічого не знайдено.",
-
+  "header": {
+    "logo": {
+      "logo_text_1": "Real estate ",
+      "logo_text_2": "catalog"
+    }
+  },
+  "footer": {
+    "reserved": "© 2023 All rights reserved."
+  },
+  "nav_menu": {
+    "nav_item_1": "Home",
+    "nav_item_2": "Catalog",
+    "nav_item_3": "Contacts"
+  },
+  "pages": {
+    "home": {
+      "meta_title": "title",
+      "meta_description": "description",
+      "title": "",
+      "sub_title": ""
+    },
+    "about": {
+      "meta_title": "",
+      "meta_description": "",
+      "title": "",
+      "sub_title": ""
+    },
+    "catalog": {
+      "meta_title": "",
+      "meta_description": "",
+      "title": "",
+      "sub_title": ""
+    },
+    "contacts": {
+      "meta_title": "",
+      "meta_description": "",
+      "title": "",
+      "sub_title": ""
+    },
+    "regulations": {
+      "meta_title": "",
+      "meta_description": "",
+      "title": "",
+      "sub_title": ""
+    },
+    "not_found": {
+      "meta_title": "Page not found",
+      "meta_description": "404",
+      "title": "",
+      "sub_title": ""
+    }
+  },
+  "forms": {
+    "contact_form": {}
+  },
+  "social_links": {
+    "github": "Link to github",
+    "telegram": "Link to telegram",
+    "facebook": "Link to facebook",
+    "linkedin": "Link to linkedin"
+  },
   "select_language": {
-    "english": "Анлійська",
-    "poland": "Польська",
-    "ukraine": "Українська",
-    "russian": "Російська"
-  }
+    "english": "English",
+    "poland": "Polish",
+    "ukraine": "Ukrainian",
+    "russian": "Russian"
+  },
+  "bottons": {
+    "write_message": "Write a Message",
+    "back_to_home": "Back to Home",
+    "contact_form": "Contacts",
+    "download_resume": "Download resume (.pdf)",
+    "nav_menu": "Nav menu",
+    "theme_switcher": "Theme switcher"
+  },
+  "cookies": {
+    "title": "The site uses cookies",
+    "text": "We use cookies and Local Storage to enhance your user experience, as well as for services like language selection and color theme switching. The site also uses Google Analytics for visitor statistics gathering. This site is a portfolio and does not require registration. A contact form is available for you to get in touch with me, where you can leave your name, email, and message text. By continuing to use the site, you agree to our use of cookies and Local Storage. If you disagree, please leave the site. Thank you for your understanding!",
+    "btn_accept": "I agree",
+    "btn_no_accept": "I don't agree"
+  },
+  "recaptcha": {
+    "text_1": "This site is protected by reCAPTCHA and the ",
+    "privacy_policy": "Privacy Policy ",
+    "text_2": "and ",
+    "terms_of_service": "Terms of Service ",
+    "text_3": "apply."
+  },
+  "about_us": "About US",
+  "sub_about_us": "Subtitle",
+  "contacts": "Contacts",
+  "sub_contacts": "Subtitle",
+  "rights reserved": "© 2023 All rights reserved.",
+  "logo_text_1": "Real estate ",
+  "logo_text_2": "catalog",
+  "login": "Login",
+  "login_btn": "Log in",
+  "enter_login": "Enter login",
+  "registration": "Registration",
+  "email": "Email",
+  "enter_email": "Enter email",
+  "password": "Password",
+  "enter_password": "Enter password",
+  "password_recovery": "Forgot your password?",
+  "reset_password_btn": "Reset Password",
+  "agreed": "Agree to terms",
+  "agreed_read": "Read the terms",
+  "terms_of_Use_title": "Terms of Use",
+  "name": "Name",
+  "enter_name": "Enter name",
+  "message_subject": "Message subject",
+  "enter_message_subject": "Enter message_subject",
+  "message": "Message",
+  "enter_message": "Enter message",
+  "send": "Send",
+  "reset": "Reset",
+  "select_country": "Select country",
+  "select_region": "Select region",
+  "not_found": "Page not found",
+  "404": "404",
+  "nothing_found": "Sorry, nothing found."
 }

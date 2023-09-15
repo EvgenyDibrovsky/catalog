@@ -23,7 +23,7 @@ export default function NavHeader({ theme, toggleTheme }) {
             className="font-semibold text-black dark:text-white duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500"
             onClick={() => setIsOpen(false)}
           >
-            {t('about-us')}
+            {t('nav_menu.nav_item_1')}
           </Link>
         </li>
         <li>
@@ -32,7 +32,7 @@ export default function NavHeader({ theme, toggleTheme }) {
             className="font-semibold  text-black dark:text-white  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
             onClick={() => setIsOpen(false)}
           >
-            {t('catalog')}
+            {t('nav_menu.nav_item_2')}
           </Link>
         </li>
         <li>
@@ -41,7 +41,7 @@ export default function NavHeader({ theme, toggleTheme }) {
             className="font-semibold  text-black dark:text-white  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
             onClick={() => setIsOpen(false)}
           >
-            {t('contacts')}
+            {t('nav_menu.nav_item_3')}
           </Link>
         </li>
       </ul>
