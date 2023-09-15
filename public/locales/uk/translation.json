@@ -1,123 +1,130 @@
 {
   "header": {
     "logo": {
-      "logo_text_1": "Real estate ",
-      "logo_text_2": "catalog"
+      "logo_text_1": "Каталог",
+      "logo_text_2": "нерухомості"
     }
   },
   "footer": {
-    "reserved": "© 2023 All rights reserved."
+    "reserved": "© 2023 Всі права захищені."
   },
   "nav_menu": {
-    "nav_item_1": "Home",
-    "nav_item_2": "Catalog",
-    "nav_item_3": "Contacts"
+    "nav_item_1": "Головна",
+    "nav_item_2": "Каталог",
+    "nav_item_3": "Контакти"
   },
   "pages": {
     "home": {
-      "meta_title": "title",
-      "meta_description": "description",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Головна сторінка",
+      "sub_title": "Підзаголовок"
     },
     "about": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Про нас",
+      "sub_title": "Підзаголовок"
     },
     "catalog": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Каталог компаній",
+      "sub_title": "Підзаголовок"
     },
     "contacts": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Контакти",
+      "sub_title": "Підзаголовок"
     },
     "regulations": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Регламент",
+      "sub_title": "Підзаголовок"
     },
     "not_found": {
-      "meta_title": "Page not found",
+      "meta_title": "Сторінка не знайдена",
       "meta_description": "404",
-      "title": "",
-      "sub_title": ""
+      "title": "Сторінка не знайдена",
+      "sub_title": "Підзаголовок"
     }
   },
   "forms": {
-    "contact_form": {}
+    "contact_form": {
+      "name": "Ім'я",
+      "enter_name": "Введіть ім'я",
+      "email": "Email",
+      "enter_email": "Введіть email",
+      "message_subject": "Тема повідомлення",
+      "enter_message_subject": "Введіть тему повідомлення",
+      "message": "Повідомлення",
+      "enter_message": "Введіть повідомлення",
+      "send": "Надіслати повідомлення"
+    },
+    "select_forms": {
+      "authorization": "Авторизація",
+      "registration": "Реєстрація",
+      "reset_password": "Скидання пароля"
+    },
+    "authorization": {
+      "email": "Email",
+      "enter_email": "Введіть email",
+      "password": "Пароль",
+      "enter_password": "Введіть пароль",
+      "btn_authorization": "Увійти",
+      "btn_password_recovery": "Відновити пароль"
+    },
+    "registration": {
+      "login": "Логін",
+      "enter_login": "Введіть логін",
+      "email": "Email",
+      "enter_email": "Введіть email",
+      "password": "Пароль",
+      "enter_password": "Введіть пароль",
+      "enter_password-repeat": "Введіть пароль ще раз",
+      "btn_registration": "Реєстрація",
+      "regulations_checkbox": "Згоден(на) з умовами, викладеними в регламенті",
+      "regulations_page": "Регламент"
+    },
+    "password_recovery": {
+      "email": "Email",
+      "enter_email": "Введіть email",
+      "btn_password_recovery": "Відновити пароль"
+    }
   },
   "social_links": {
-    "github": "Link to github",
-    "telegram": "Link to telegram",
-    "facebook": "Link to facebook",
-    "linkedin": "Link to linkedin"
+    "github": "Посилання на github",
+    "telegram": "Посилання на telegram",
+    "facebook": "Посилання на facebook",
+    "linkedin": "Посилання на linkedin"
   },
   "select_language": {
-    "english": "English",
-    "poland": "Polish",
-    "ukraine": "Ukrainian",
-    "russian": "Russian"
+    "english": "Англійська",
+    "poland": "Польська",
+    "ukraine": "Українська",
+    "russian": "Російська"
   },
   "bottons": {
-    "write_message": "Write a Message",
-    "back_to_home": "Back to Home",
-    "contact_form": "Contacts",
-    "download_resume": "Download resume (.pdf)",
-    "nav_menu": "Nav menu",
-    "theme_switcher": "Theme switcher"
+    "write_message": "Написати повідомлення",
+    "back_to_home": "Повернутися на головну",
+    "contact_form": "Контакти",
+    "download_resume": "Завантажити резюме (.pdf)",
+    "nav_menu": "Навігаційне меню",
+    "theme_switcher": "Перемикач теми"
   },
   "cookies": {
-    "title": "The site uses cookies",
-    "text": "We use cookies and Local Storage to enhance your user experience, as well as for services like language selection and color theme switching. The site also uses Google Analytics for visitor statistics gathering. This site is a portfolio and does not require registration. A contact form is available for you to get in touch with me, where you can leave your name, email, and message text. By continuing to use the site, you agree to our use of cookies and Local Storage. If you disagree, please leave the site. Thank you for your understanding!",
-    "btn_accept": "I agree",
-    "btn_no_accept": "I don't agree"
+    "title": "Сайт використовує файли cookie",
+    "text": "Ми використовуємо файли cookie та Локальне зберігання для покращення вашого користувацького досвіду, а також для таких послуг, як вибір мови та перемикання кольорової теми. Сайт також використовує Google Analytics для збору статистики відвідувань. Цей сайт є портфоліо і не вимагає реєстрації. Форма контактів доступна для зв'язку зі мною, де ви можете залишити своє ім'я, електронну пошту та текст повідомлення. Продовжуючи використовувати сайт, ви погоджуєтеся на наше використання файлів cookie та Локального зберігання. Якщо ви не згодні, будь ласка, залиште сайт. Дякую за розуміння!",
+    "btn_accept": "Згоден",
+    "btn_no_accept": "Не згоден"
   },
   "recaptcha": {
-    "text_1": "This site is protected by reCAPTCHA and the ",
-    "privacy_policy": "Privacy Policy ",
-    "text_2": "and ",
-    "terms_of_service": "Terms of Service ",
-    "text_3": "apply."
-  },
-  "about_us": "About US",
-  "sub_about_us": "Subtitle",
-  "contacts": "Contacts",
-  "sub_contacts": "Subtitle",
-  "rights reserved": "© 2023 All rights reserved.",
-  "logo_text_1": "Real estate ",
-  "logo_text_2": "catalog",
-  "login": "Login",
-  "login_btn": "Log in",
-  "enter_login": "Enter login",
-  "registration": "Registration",
-  "email": "Email",
-  "enter_email": "Enter email",
-  "password": "Password",
-  "enter_password": "Enter password",
-  "password_recovery": "Forgot your password?",
-  "reset_password_btn": "Reset Password",
-  "agreed": "Agree to terms",
-  "agreed_read": "Read the terms",
-  "terms_of_Use_title": "Terms of Use",
-  "name": "Name",
-  "enter_name": "Enter name",
-  "message_subject": "Message subject",
-  "enter_message_subject": "Enter message_subject",
-  "message": "Message",
-  "enter_message": "Enter message",
-  "send": "Send",
-  "reset": "Reset",
-  "select_country": "Select country",
-  "select_region": "Select region",
-  "not_found": "Page not found",
-  "404": "404",
-  "nothing_found": "Sorry, nothing found."
+    "text_1": "Цей сайт захищений reCAPTCHA та ",
+    "privacy_policy": "Політикою конфіденційності ",
+    "text_2": "та ",
+    "terms_of_service": "Умовами обслуговування ",
+    "text_3": "діють."
+  }
 }
