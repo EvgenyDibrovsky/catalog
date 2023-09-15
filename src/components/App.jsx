@@ -38,7 +38,6 @@ export const App = () => {
 
   return (
     // <Router basename={process.env.PUBLIC_URL}>
-<<<<<<< Updated upstream
     <HelmetProvider>
       <Router>
         <div>
@@ -59,22 +58,5 @@ export const App = () => {
         </div>
       </Router>
     </HelmetProvider>
-=======
-    <Router>
-      <div>
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        <Section>
-          <Container>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </Container>
-        </Section>
-        <Footer />
-      </div>
-    </Router>
->>>>>>> Stashed changes
   );
 };
