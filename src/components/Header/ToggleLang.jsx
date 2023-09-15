@@ -68,7 +68,7 @@ export default function ToggleLang() {
             .map(l => (
               <li
                 key={l}
-                className="flex items-center gap-4 cursor-pointer border-b w-full px-8 py-2 bg-white dark:bg-black text-black dark:text-white"
+                className="flex items-center gap-4 cursor-pointer border-b w-full px-8 py-2 bg-white hover:bg-gray-100 dark:bg-black dark:hover:bg-gray-900 text-black dark:text-white"
                 onClick={() => changeLanguage(l)}
               >
                 <span className={languageFlags[l]}></span>
