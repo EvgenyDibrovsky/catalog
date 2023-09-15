@@ -65,7 +65,7 @@
     },
     "select_forms": {
       "authorization": "Авторизация",
-      "registration": "Реоистрация",
+      "registration": "Регистрация",
       "reset_password": "Сброс пароля"
     },
     "authorization": {
@@ -84,7 +84,15 @@
       "password": "Пароль",
       "enter_password": "Введите пароль",
       "enter_password-repeat": "Введите пароль еще раз",
-      "btn_authorization": "Войти",
+      "btn_registration": "Регистрация",
+      "regulations_checkbox": "Согласен(а) с условиями, изложенными в регламенте",
+      "regulations_page": "Регламент"
+
+    },
+      
+    "password_recovery": {
+      "email": "Email",
+      "enter_email": "Введите email",
       "btn_password_recovery": "Восстановить пароль"
     }
   },
