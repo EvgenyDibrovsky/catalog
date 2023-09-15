@@ -1,14 +1,17 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../../../node_modules/flag-icons/css/flag-icons.min.css';
 import { BsChevronDown } from 'react-icons/bs';
+
+// Declare static data outside of the component
+const languages = ['en', 'pl', 'uk', 'ru'];
 
 export default function ToggleLang() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef(null);
 
-  const languages = ['en', 'pl', 'uk', 'ru'];
+  // Initialize language-specific data inside the component, but without re-initializing on each render
   const languageNames = {
     en: t('select_language.english'),
     pl: t('select_language.poland'),
@@ -23,22 +26,25 @@ export default function ToggleLang() {
     ru: 'fi fi-ru',
   };
 
-  const changeLanguage = language => {
-    i18n.changeLanguage(language);
-    setIsOpen(false);
-  };
+  const changeLanguage = useCallback(
+    language => {
+      i18n.changeLanguage(language);
+      setIsOpen(false);
+    },
+    [i18n]
+  );
 
-  const handleClickOutside = event => {
+  const handleClickOutside = useCallback(event => {
     if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
       setIsOpen(false);
     }
-  };
+  }, []);
+
   const currentLanguage = languages.includes(i18n.language)
     ? i18n.language
     : 'en';
 
-  React.useEffect(() => {
-    const languages = ['en', 'pl', 'uk', 'ru'];
+  useEffect(() => {
     if (!languages.includes(i18n.language)) {
       i18n.changeLanguage('en');
     }
@@ -47,7 +53,7 @@ export default function ToggleLang() {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [i18n]);
+  }, [i18n, handleClickOutside]);
 
   return (
     <div ref={wrapperRef} className="relative w-full">
@@ -62,13 +68,13 @@ export default function ToggleLang() {
         <BsChevronDown className="w-4 h-4 cursor-pointer duration-200 group-hover:mt-1" />
       </div>
       {isOpen && (
-        <ul className="flex flex-col items-start absolute top-10 right-0 shadow-md  dark:shadow-white  bg-white dark:bg-black  text-black dark:text-white">
+        <ul className="flex flex-col items-start absolute top-10 right-0 shadow-md dark:shadow-white bg-white dark:bg-black text-black dark:text-white">
           {languages
             .filter(l => l !== i18n.language)
             .map(l => (
               <li
                 key={l}
-                className="flex items-center gap-4 cursor-pointer border-b w-full px-8 py-2 bg-white hover:bg-gray-100 dark:bg-black dark:hover:bg-gray-900 text-black dark:text-white"
+                className="flex items-center gap-4 cursor-pointer border-b dark:border-b-gray-900 w-full px-8 py-2 bg-white hover:bg-gray-100 dark:bg-black dark:hover:bg-gray-900 text-black dark:text-white"
                 onClick={() => changeLanguage(l)}
               >
                 <span className={languageFlags[l]}></span>
