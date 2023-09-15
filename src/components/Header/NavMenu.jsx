@@ -8,7 +8,7 @@ export default function NavHeader({ theme, toggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex md:justify-between items-center">
+    <nav className="flex items-center">
       <ul
         className={`transition duration-500 ease-in-out transform fixed md:relative top-0 left-0 w-full h-[100vh] md:h-0 flex items-center flex-col sm:flex-row justify-center gap-4 bg-white dark:bg-black ${
           isOpen ? 'flex' : 'hidden'
