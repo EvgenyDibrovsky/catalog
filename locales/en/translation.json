@@ -1,8 +1,8 @@
 {
   "header": {
     "logo": {
-      "logo_text_1": "Real estate ",
-      "logo_text_2": "catalog"
+      "logo_text_1": "Catalog",
+      "logo_text_2": "of Real Estate"
     }
   },
   "footer": {
@@ -15,44 +15,84 @@
   },
   "pages": {
     "home": {
-      "meta_title": "title",
-      "meta_description": "description",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "Main Page",
+      "sub_title": "Subtitle"
     },
     "about": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "About Us",
+      "sub_title": "Subtitle"
     },
     "catalog": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "Company Catalog",
+      "sub_title": "Subtitle"
     },
     "contacts": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "Contacts",
+      "sub_title": "Subtitle"
     },
     "regulations": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "Regulations",
+      "sub_title": "Subtitle"
     },
     "not_found": {
-      "meta_title": "Page not found",
+      "meta_title": "Page Not Found",
       "meta_description": "404",
-      "title": "",
-      "sub_title": ""
+      "title": "Page Not Found",
+      "sub_title": "Subtitle"
     }
   },
   "forms": {
-    "contact_form": {}
+    "contact_form": {
+      "name": "Name",
+      "enter_name": "Enter Name",
+      "email": "Email",
+      "enter_email": "Enter Email",
+      "message_subject": "Message Subject",
+      "enter_message_subject": "Enter Message Subject",
+      "message": "Message",
+      "enter_message": "Enter Message",
+      "send": "Send Message"
+    },
+    "select_forms": {
+      "authorization": "Authorization",
+      "registration": "Registration",
+      "reset_password": "Reset Password"
+    },
+    "authorization": {
+      "email": "Email",
+      "enter_email": "Enter Email",
+      "password": "Password",
+      "enter_password": "Enter Password",
+      "btn_authorization": "Log In",
+      "btn_password_recovery": "Recover Password"
+    },
+    "registration": {
+      "login": "Login",
+      "enter_login": "Enter Login",
+      "email": "Email",
+      "enter_email": "Enter Email",
+      "password": "Password",
+      "enter_password": "Enter Password",
+      "enter_password-repeat": "Enter Password Again",
+      "btn_registration": "Register",
+      "regulations_checkbox": "I agree with the terms outlined in the regulations",
+      "regulations_page": "Regulations"
+    },
+    "password_recovery": {
+      "email": "Email",
+      "enter_email": "Enter Email",
+      "btn_password_recovery": "Recover Password"
+    }
   },
   "social_links": {
     "github": "Link to github",
@@ -86,38 +126,5 @@
     "text_2": "and ",
     "terms_of_service": "Terms of Service ",
     "text_3": "apply."
-  },
-  "about_us": "About US",
-  "sub_about_us": "Subtitle",
-  "contacts": "Contacts",
-  "sub_contacts": "Subtitle",
-  "rights reserved": "© 2023 All rights reserved.",
-  "logo_text_1": "Real estate ",
-  "logo_text_2": "catalog",
-  "login": "Login",
-  "login_btn": "Log in",
-  "enter_login": "Enter login",
-  "registration": "Registration",
-  "email": "Email",
-  "enter_email": "Enter email",
-  "password": "Password",
-  "enter_password": "Enter password",
-  "password_recovery": "Forgot your password?",
-  "reset_password_btn": "Reset Password",
-  "agreed": "Agree to terms",
-  "agreed_read": "Read the terms",
-  "terms_of_Use_title": "Terms of Use",
-  "name": "Name",
-  "enter_name": "Enter name",
-  "message_subject": "Message subject",
-  "enter_message_subject": "Enter message_subject",
-  "message": "Message",
-  "enter_message": "Enter message",
-  "send": "Send",
-  "reset": "Reset",
-  "select_country": "Select country",
-  "select_region": "Select region",
-  "not_found": "Page not found",
-  "404": "404",
-  "nothing_found": "Sorry, nothing found."
+  }
 }

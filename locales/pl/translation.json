@@ -1,123 +1,130 @@
 {
   "header": {
     "logo": {
-      "logo_text_1": "Real estate ",
-      "logo_text_2": "catalog"
+      "logo_text_1": "Katalog",
+      "logo_text_2": "nieruchomości"
     }
   },
   "footer": {
-    "reserved": "© 2023 All rights reserved."
+    "reserved": "© 2023 Wszelkie prawa zastrzeżone."
   },
   "nav_menu": {
-    "nav_item_1": "Home",
-    "nav_item_2": "Catalog",
-    "nav_item_3": "Contacts"
+    "nav_item_1": "Strona główna",
+    "nav_item_2": "Katalog",
+    "nav_item_3": "Kontakt"
   },
   "pages": {
     "home": {
-      "meta_title": "title",
-      "meta_description": "description",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "Strona główna",
+      "sub_title": "Podtytuł"
     },
     "about": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "O nas",
+      "sub_title": "Podtytuł"
     },
     "catalog": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "Katalog firm",
+      "sub_title": "Podtytuł"
     },
     "contacts": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "Kontakt",
+      "sub_title": "Podtytuł"
     },
     "regulations": {
-      "meta_title": "",
-      "meta_description": "",
-      "title": "",
-      "sub_title": ""
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "Regulamin",
+      "sub_title": "Podtytuł"
     },
     "not_found": {
-      "meta_title": "Page not found",
+      "meta_title": "Strona nie znaleziona",
       "meta_description": "404",
-      "title": "",
-      "sub_title": ""
+      "title": "Strona nie znaleziona",
+      "sub_title": "Podtytuł"
     }
   },
   "forms": {
-    "contact_form": {}
+    "contact_form": {
+      "name": "Imię",
+      "enter_name": "Wprowadź imię",
+      "email": "Email",
+      "enter_email": "Wprowadź email",
+      "message_subject": "Temat wiadomości",
+      "enter_message_subject": "Wprowadź temat wiadomości",
+      "message": "Wiadomość",
+      "enter_message": "Wprowadź wiadomość",
+      "send": "Wyślij wiadomość"
+    },
+    "select_forms": {
+      "authorization": "Autoryzacja",
+      "registration": "Rejestracja",
+      "reset_password": "Resetuj hasło"
+    },
+    "authorization": {
+      "email": "Email",
+      "enter_email": "Wprowadź email",
+      "password": "Hasło",
+      "enter_password": "Wprowadź hasło",
+      "btn_authorization": "Zaloguj się",
+      "btn_password_recovery": "Odzyskaj hasło"
+    },
+    "registration": {
+      "login": "Login",
+      "enter_login": "Wprowadź login",
+      "email": "Email",
+      "enter_email": "Wprowadź email",
+      "password": "Hasło",
+      "enter_password": "Wprowadź hasło",
+      "enter_password-repeat": "Wprowadź hasło ponownie",
+      "btn_registration": "Rejestracja",
+      "regulations_checkbox": "Zgadzam się z warunkami zawartymi w regulaminie",
+      "regulations_page": "Regulamin"
+    },
+    "password_recovery": {
+      "email": "Email",
+      "enter_email": "Wprowadź email",
+      "btn_password_recovery": "Odzyskaj hasło"
+    }
   },
   "social_links": {
-    "github": "Link to github",
-    "telegram": "Link to telegram",
-    "facebook": "Link to facebook",
-    "linkedin": "Link to linkedin"
+    "github": "Link do github",
+    "telegram": "Link do telegram",
+    "facebook": "Link do facebook",
+    "linkedin": "Link do linkedin"
   },
   "select_language": {
-    "english": "English",
-    "poland": "Polish",
-    "ukraine": "Ukrainian",
-    "russian": "Russian"
+    "english": "Angielski",
+    "poland": "Polski",
+    "ukraine": "Ukraiński",
+    "russian": "Rosyjski"
   },
   "bottons": {
-    "write_message": "Write a Message",
-    "back_to_home": "Back to Home",
-    "contact_form": "Contacts",
-    "download_resume": "Download resume (.pdf)",
-    "nav_menu": "Nav menu",
-    "theme_switcher": "Theme switcher"
+    "write_message": "Napisz wiadomość",
+    "back_to_home": "Wróć do strony głównej",
+    "contact_form": "Kontakt",
+    "download_resume": "Pobierz CV (.pdf)",
+    "nav_menu": "Menu nawigacyjne",
+    "theme_switcher": "Przełącznik motywu"
   },
   "cookies": {
-    "title": "The site uses cookies",
-    "text": "We use cookies and Local Storage to enhance your user experience, as well as for services like language selection and color theme switching. The site also uses Google Analytics for visitor statistics gathering. This site is a portfolio and does not require registration. A contact form is available for you to get in touch with me, where you can leave your name, email, and message text. By continuing to use the site, you agree to our use of cookies and Local Storage. If you disagree, please leave the site. Thank you for your understanding!",
-    "btn_accept": "I agree",
-    "btn_no_accept": "I don't agree"
+    "title": "Strona używa plików cookies",
+    "text": "Używamy plików cookies i Local Storage do poprawy jakości korzystania z serwisu, a także do takich usług jak wybór języka i przełącznik kolorów. Strona korzysta również z Google Analytics do zbierania statystyk odwiedzin. Ta strona to portfolio i nie wymaga rejestracji. Dostępny jest formularz kontaktowy, w którym możesz podać swoje imię, email i treść wiadomości. Kontynuując korzystanie z serwisu, zgadzasz się na używanie przez nas plików cookies i Local Storage. Jeśli się nie zgadzasz, opuść stronę. Dziękujemy za zrozumienie!",
+    "btn_accept": "Zgadzam się",
+    "btn_no_accept": "Nie zgadzam się"
   },
   "recaptcha": {
-    "text_1": "This site is protected by reCAPTCHA and the ",
-    "privacy_policy": "Privacy Policy ",
-    "text_2": "and ",
-    "terms_of_service": "Terms of Service ",
-    "text_3": "apply."
-  },
-  "about_us": "About US",
-  "sub_about_us": "Subtitle",
-  "contacts": "Contacts",
-  "sub_contacts": "Subtitle",
-  "rights reserved": "© 2023 All rights reserved.",
-  "logo_text_1": "Real estate ",
-  "logo_text_2": "catalog",
-  "login": "Login",
-  "login_btn": "Log in",
-  "enter_login": "Enter login",
-  "registration": "Registration",
-  "email": "Email",
-  "enter_email": "Enter email",
-  "password": "Password",
-  "enter_password": "Enter password",
-  "password_recovery": "Forgot your password?",
-  "reset_password_btn": "Reset Password",
-  "agreed": "Agree to terms",
-  "agreed_read": "Read the terms",
-  "terms_of_Use_title": "Terms of Use",
-  "name": "Name",
-  "enter_name": "Enter name",
-  "message_subject": "Message subject",
-  "enter_message_subject": "Enter message_subject",
-  "message": "Message",
-  "enter_message": "Enter message",
-  "send": "Send",
-  "reset": "Reset",
-  "select_country": "Select country",
-  "select_region": "Select region",
-  "not_found": "Page not found",
-  "404": "404",
-  "nothing_found": "Sorry, nothing found."
+    "text_1": "Ta strona jest chroniona przez reCAPTCHA i ",
+    "privacy_policy": "Polityka prywatności ",
+    "text_2": "oraz ",
+    "terms_of_service": "Warunki korzystania z usługi ",
+    "text_3": "obowiązują."
+  }
 }

@@ -87,9 +87,7 @@
       "btn_registration": "Регистрация",
       "regulations_checkbox": "Согласен(а) с условиями, изложенными в регламенте",
       "regulations_page": "Регламент"
-
     },
-      
     "password_recovery": {
       "email": "Email",
       "enter_email": "Введите email",
@@ -128,32 +126,5 @@
     "text_2": "and ",
     "terms_of_service": "Terms of Service ",
     "text_3": "apply."
-  },
-  "about_us": "About US",
-  "sub_about_us": "Subtitle",
-  "contacts": "Contacts",
-  "sub_contacts": "Subtitle",
-  "rights reserved": "© 2023 All rights reserved.",
-  "logo_text_1": "Real estate ",
-  "logo_text_2": "catalog",
-  "login": "Login",
-  "login_btn": "Log in",
-  "enter_login": "Enter login",
-  "registration": "Registration",
-  "email": "Email",
-  "enter_email": "Enter email",
-  "password": "Password",
-  "enter_password": "Enter password",
-  "password_recovery": "Forgot your password?",
-  "reset_password_btn": "Reset Password",
-  "agreed": "Agree to terms",
-  "agreed_read": "Read the terms",
-  "terms_of_Use_title": "Terms of Use",
-  "send": "Send",
-  "reset": "Reset",
-  "select_country": "Select country",
-  "select_region": "Select region",
-  "not_found": "Page not found",
-  "404": "404",
-  "nothing_found": "Sorry, nothing found."
+  }
 }
