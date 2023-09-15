@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-bgFooter dark:bg-darkBgFooter h-20 flex justify-between items-center">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <p className="flex text-black dark:text-gray-400">
-          {t('rights reserved')}
+          {t('footer.reserved')}
         </p>
         <div className="flex gap-4 items-center">
           <img src={paypal} alt="paypal" className="h-6" />

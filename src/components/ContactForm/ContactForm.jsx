@@ -29,12 +29,12 @@ function ContactForm() {
       className="w-11/12 max-w-[40rem] mx-auto my-10"
     >
       <label className="text-black dark:text-white">
-        {t('name')}
+        {t('forms.contact_form.name')}
 
         <input
           type="text"
           name="name"
-          placeholder={t('enter-name')}
+          placeholder={t('forms.contact_form.enter_name')}
           value={formState.name}
           onChange={handleChange}
           required
@@ -43,11 +43,11 @@ function ContactForm() {
       </label>
 
       <label className="text-black dark:text-white">
-        {t('email')}
+        {t('forms.contact_form.email')}
         <input
           type="email"
           name="email"
-          placeholder={t('enter-email')}
+          placeholder={t('forms.contact_form.enter_email')}
           value={formState.email}
           onChange={handleChange}
           required
@@ -56,11 +56,11 @@ function ContactForm() {
       </label>
 
       <label className="text-black dark:text-white">
-        {t('message-subject')}
+        {t('forms.contact_form.message_subject')}
         <input
           type="text"
           name="subject"
-          placeholder={t('enter-message-subject')}
+          placeholder={t('forms.contact_form.enter_message_subject')}
           value={formState.subject}
           onChange={handleChange}
           required
@@ -69,12 +69,12 @@ function ContactForm() {
       </label>
 
       <label className="text-black dark:text-white">
-        {t('message')}
+        {t('forms.contact_form.message')}
 
         <textarea
           name="message"
           value={formState.message}
-          placeholder={t('enter-message')}
+          placeholder={t('forms.contact_form.enter_message')}
           onChange={handleChange}
           required
           className="w-full h-32  bg-white dark:bg-black border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2 mb-5"
@@ -82,7 +82,7 @@ function ContactForm() {
       </label>
 
       <button type="submit" className="btn-contact-form">
-        {t('send')}
+        {t('forms.contact_form.send')}
       </button>
     </form>
   );

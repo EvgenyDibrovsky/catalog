@@ -52,7 +52,41 @@
     }
   },
   "forms": {
-    "contact_form": {}
+    "contact_form": {
+      "name": "Имя",
+      "enter_name": "Введите имя",
+      "email": "Email",
+      "enter_email": "Введите email",
+      "message_subject": "Тема сообщения",
+      "enter_message_subject": "Введите тему сообщения",
+      "message": "Сообщение",
+      "enter_message": "Введите сообщение",
+      "send": "Отправить сообщение"
+    },
+    "select_forms": {
+      "authorization": "Авторизация",
+      "registration": "Реоистрация",
+      "reset_password": "Сброс пароля"
+    },
+    "authorization": {
+      "email": "Email",
+      "enter_email": "Введите email",
+      "password": "Пароль",
+      "enter_password": "Введите пароль",
+      "btn_authorization": "Войти",
+      "btn_password_recovery": "Восстановить пароль"
+    },
+    "registration": {
+      "login": "Логин",
+      "enter_login": "Введите логин",
+      "email": "Email",
+      "enter_email": "Введите email",
+      "password": "Пароль",
+      "enter_password": "Введите пароль",
+      "enter_password-repeat": "Введите пароль еще раз",
+      "btn_authorization": "Войти",
+      "btn_password_recovery": "Восстановить пароль"
+    }
   },
   "social_links": {
     "github": "Link to github",
@@ -107,12 +141,6 @@
   "agreed": "Agree to terms",
   "agreed_read": "Read the terms",
   "terms_of_Use_title": "Terms of Use",
-  "name": "Name",
-  "enter_name": "Enter name",
-  "message_subject": "Message subject",
-  "enter_message_subject": "Enter message_subject",
-  "message": "Message",
-  "enter_message": "Enter message",
   "send": "Send",
   "reset": "Reset",
   "select_country": "Select country",

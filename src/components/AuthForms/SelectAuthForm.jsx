@@ -15,7 +15,7 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
       >
         <span className="flex items-center justify-center gap-2">
           <BsPerson />
-          {t('login-btn')}
+          {t('forms.select_forms.authorization')}
         </span>
       </button>
 
@@ -29,7 +29,7 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
       >
         <span className="flex items-center justify-center gap-2">
           <BsPersonPlus />
-          {t('registration')}
+          {t('forms.select_forms.registration')}
         </span>
       </button>
     </div>

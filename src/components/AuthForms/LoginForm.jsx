@@ -34,11 +34,11 @@ class LoginForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label className="text-black dark:text-white">
-          {t('email')}
+          {t('forms.authorization.email')}
 
           <input
             type="email"
-            placeholder={t('enter-email')}
+            placeholder={t('forms.authorization.enter_email')}
             name="email"
             value={email}
             onChange={this.handleChange}
@@ -47,11 +47,11 @@ class LoginForm extends React.Component {
           />
         </label>
         <label className="text-black dark:text-white">
-          {t('password')}
+          {t('forms.authorization.password')}
 
           <input
             type="password"
-            placeholder={t('enter-password')}
+            placeholder={t('forms.authorization.password')}
             name="password"
             value={password}
             onChange={this.handleChange}
@@ -61,7 +61,7 @@ class LoginForm extends React.Component {
         </label>
 
         <button type="submit" className="btn-sign-up-form">
-          {t('login-btn')}
+          {t('forms.authorization.btn_authorization')}
         </button>
 
         <button
@@ -69,7 +69,7 @@ class LoginForm extends React.Component {
           onClick={() => this.props.setSelectedForm('Reset')}
           className="text-textSecondary dark:text-white my-4 mx-auto block transition-all duration-200 hover:underline"
         >
-          {t('password-recovery')}
+          {t('forms.authorization.btn_password_recovery')}
         </button>
       </form>
     );

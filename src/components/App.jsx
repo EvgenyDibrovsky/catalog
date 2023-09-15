@@ -8,7 +8,7 @@ import About from '../pages/AboutPage';
 import Catalog from '../pages/CatalogPage';
 import Contact from '../pages/ContactPage';
 import HomePage from '../pages/HomePage';
-import TermsUsePage from '../pages/TermsUsePage';
+import RegulationsPage from '../pages/RegulationsPage';
 import PageNotFound from '../pages/PageNotFound';
 import Loading from './Base/Loader';
 import { HelmetProvider } from 'react-helmet-async';
@@ -49,7 +49,7 @@ export const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/terms-use-page" element={<TermsUsePage />} />
+                <Route path="/terms-use-page" element={<RegulationsPage />} />
                 <Route path="*" element={<PageNotFound />} />
               </Routes>
             </Container>
