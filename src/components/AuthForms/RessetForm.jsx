@@ -32,10 +32,10 @@ class RessetForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label className="text-black dark:text-white">
-          {t('email')}
+          {t('forms.password_recovery.email')}
           <input
             type="email"
-            placeholder={t('enter-email')}
+            placeholder={t('forms.password_recovery.enter_email')}
             name="email"
             value={email}
             onChange={this.handleChange}
@@ -45,7 +45,7 @@ class RessetForm extends React.Component {
         </label>
 
         <button type="submit" className="btn-sign-up-form">
-          {t('reset-password-btn')}
+          {t('forms.password_recovery.btn_password_recovery')}
         </button>
       </form>
     );
