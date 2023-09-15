@@ -42,6 +42,7 @@ export const App = () => {
         {/* <Router> */}
         <div>
           <Header theme={theme} toggleTheme={toggleTheme} />
+
           <Section>
             <Container>
               <Routes>

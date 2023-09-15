@@ -41,7 +41,7 @@ export default function ToggleLang() {
   }, []);
 
   return (
-    <div ref={wrapperRef} className="relative">
+    <div ref={wrapperRef} className="relative w-full">
       <div
         className="flex items-center gap-2 cursor-pointer text-black dark:text-white"
         onClick={() => setIsOpen(!isOpen)}
