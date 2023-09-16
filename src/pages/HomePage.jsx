@@ -1,7 +1,6 @@
 import MetaTags from '../components/MetaTags/MetaTags';
 import { useTranslation } from 'react-i18next';
 import Titles from 'components/PageSettings/Titles';
-// import Swiper from '../components/Swiper/Swiper';
 import HeroSlider from '../components/HeroSlider/HeroSlider';
 export default function HomePage() {
   const { t } = useTranslation();

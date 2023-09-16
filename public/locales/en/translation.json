@@ -126,5 +126,9 @@
     "text_2": "and ",
     "terms_of_service": "Terms of Service ",
     "text_3": "apply."
+  },
+  "hero_slider": {
+    "btn_offer": "Offer",
+    "btn_site": "Company website"
   }
 }

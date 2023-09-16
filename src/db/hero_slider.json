@@ -1,0 +1,74 @@
+[
+  {
+    "hero_slider": {
+      "id": 3,
+      "banner": "/images/hero_slider/slide-3.jpg",
+      "offer": true,
+      "link_site": "https://google.com",
+      "EN": {
+        "title": "Company name",
+        "description": "Company description"
+      },
+      "PL": {
+        "title": "Nazwa firmy",
+        "description": "Opis firmy"
+      },
+      "UK": {
+        "title": "Назва компанії",
+        "description": "Опис компанії"
+      },
+      "RU": {
+        "title": "Название компании",
+        "description": "Описание компании"
+      }
+    }
+  },
+  {
+    "hero_slider": {
+      "id": 2,
+      "banner": "/images/hero_slider/slide-2.jpg",
+      "offer": true,
+      "link_site": "https://google.com",
+      "EN": {
+        "title": "Company name",
+        "description": "Company description"
+      },
+      "PL": {
+        "title": "Nazwa firmy",
+        "description": "Opis firmy"
+      },
+      "UK": {
+        "title": "Назва компанії",
+        "description": "Опис компанії"
+      },
+      "RU": {
+        "title": "Название компании",
+        "description": "Описание компании"
+      }
+    }
+  },
+  {
+    "hero_slider": {
+      "id": 1,
+      "banner": "/images/hero_slider/slide-1.jpg",
+      "offer": true,
+      "link_site": "https://google.com",
+      "EN": {
+        "title": "Company name",
+        "description": "Company description"
+      },
+      "PL": {
+        "title": "Nazwa firmy",
+        "description": "Opis firmy"
+      },
+      "UK": {
+        "title": "Назва компанії",
+        "description": "Опис компанії"
+      },
+      "RU": {
+        "title": "Название компании",
+        "description": "Описание компании"
+      }
+    }
+  }
+]
