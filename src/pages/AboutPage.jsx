@@ -10,7 +10,7 @@ export default function AboutPage() {
         metaTitle={t('pages.about.meta_title')}
         metaDescription={t('pages.about.meta_description')}
       />
-      <div className="container mx-auto h-[calc(100vh-20rem)]">
+      <div className="container h-[calc(100vh-20rem)]">
         <Titles
           title={t('pages.about.title')}
           subTitle={t('pages.about.sub_title')}

@@ -10,7 +10,7 @@ export default function TermsUsePage() {
         metaTitle={t('pages.regulations.meta_title')}
         metaDescription={t('pages.regulations.meta_description')}
       />
-      <div className="container mx-auto content-text">
+      <div className="container content-text">
         <Titles
           title={t('pages.regulations.title')}
           subTitle={t('pages.regulations.sub_title')}

@@ -11,7 +11,7 @@ export default function ContactPage({ title, subTitle }) {
         metaTitle={t('pages.contacts.meta_title')}
         metaDescription={t('pages.contacts.meta_description')}
       />
-      <div className="container mx-auto">
+      <div className="container">
         <Titles
           title={t('pages.contacts.title')}
           subTitle={t('pages.contacts.sub_title')}

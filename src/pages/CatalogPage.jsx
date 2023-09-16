@@ -11,7 +11,7 @@ export default function CatalogPage() {
         metaTitle={t('pages.catalog.meta_title')}
         metaDescription={t('pages.catalog.meta_description')}
       />
-      <div className="container mx-auto">
+      <div className="container">
         <Titles
           title={t('pages.catalog.title')}
           subTitle={t('pages.catalog.sub_title')}

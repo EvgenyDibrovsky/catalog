@@ -9,7 +9,7 @@ export default function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="border-t">
-      <div className="bg-footerBg dark:bg-footerBgDark py-8 flex justify-between items-center">
+      <div className="bg-white dark:bg-footerBgDark py-8 flex justify-between items-center">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 ">
             <div>
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-footerBgMini dark:bg-footerBgMiniDark text-footerTextMini py-5 flex justify-between items-center">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+        <div className="container flex flex-col sm:flex-row justify-between items-center">
           <p className="flex">{t('footer.reserved')}</p>
           <p className="flex items-baseline">
             Powered by

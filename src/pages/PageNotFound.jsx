@@ -11,7 +11,7 @@ export default function ErrorPage() {
         metaTitle={t('pages.not_found.meta_title')}
         metaDescription={t('pages.not_found.meta_description')}
       />
-      <div className="container mx-auto">
+      <div className="container">
         <Titles title={t('pages.not_found.title')} />
 
         <p className="text-[5rem] text-center text-black dark:text-white">

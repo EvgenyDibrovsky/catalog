@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Section from './PageSettings/Section';
-import Container from './PageSettings/Container';
 import About from '../pages/AboutPage';
 import Catalog from '../pages/CatalogPage';
 import Contact from '../pages/ContactPage';
@@ -38,23 +37,61 @@ export const App = () => {
 
   return (
     <HelmetProvider>
-      <Router basename={process.env.PUBLIC_URL}>
-        {/* <Router> */}
+      {/* <Router basename={process.env.PUBLIC_URL}> */}
+      <Router>
         <div>
           <Header theme={theme} toggleTheme={toggleTheme} />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Section noPadding>
+                  <HomePage />
+                </Section>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <Section>
+                  <About />
+                </Section>
+              }
+            />
+            <Route
+              path="/catalog"
+              element={
+                <Section>
+                  <Catalog />
+                </Section>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <Section>
+                  <Contact />
+                </Section>
+              }
+            />
+            <Route
+              path="/terms-use-page"
+              element={
+                <Section>
+                  <RegulationsPage />
+                </Section>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <Section>
+                  <PageNotFound />
+                </Section>
+              }
+            />
+          </Routes>
 
-          <Section>
-            <Container>
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/catalog" element={<Catalog />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/terms-use-page" element={<RegulationsPage />} />
-                <Route path="*" element={<PageNotFound />} />
-              </Routes>
-            </Container>
-          </Section>
           <Footer />
         </div>
       </Router>
