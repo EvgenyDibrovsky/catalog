@@ -1,20 +1,48 @@
-import paypal from '../../image/paypal.svg';
-import mastercard from '../../image/mastercard.svg';
-import visa from '../../image/visa.svg';
 import { useTranslation } from 'react-i18next';
+import MenuFooter from './MenuFooter';
+import LogoFooter from './LogoFooter';
+import LinksFooter from './LinksFooter';
+import SocialLinks from './SocialLinks';
+import PayLogo from './PayLogo';
 
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="bg-bgFooter dark:bg-darkBgFooter h-20 flex justify-between items-center">
-      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-        <p className="flex text-black dark:text-gray-400">
-          {t('footer.reserved')}
-        </p>
-        <div className="flex gap-4 items-center">
-          <img src={paypal} alt="paypal" className="h-6" />
-          <img src={mastercard} alt="paypal" className="h-8" />
-          <img src={visa} alt="paypal" className="h-10" />
+    <footer className="border-t">
+      <div className="bg-footerBg dark:bg-footerBgDark py-8 flex justify-between items-center">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 ">
+            <div>
+              <LogoFooter />
+              <p className="mt-5">Contacts infos</p>
+            </div>
+            <div>
+              <MenuFooter />
+            </div>
+            <div>
+              <LinksFooter />
+            </div>
+            <div className="flex flex-col justify-end">
+              <SocialLinks />
+              <PayLogo />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-footerBgMini dark:bg-footerBgMiniDark text-footerTextMini py-5 flex justify-between items-center">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+          <p className="flex">{t('footer.reserved')}</p>
+          <p className="flex items-baseline">
+            Powered by
+            <a
+              href="https://edweb.site"
+              target="_blank"
+              rel="noreferrer"
+              className="duration-200 hover:underline"
+            >
+              <span className="ml-1 font-semibold text-[1.1rem]">edWeb</span>
+            </a>
+          </p>
         </div>
       </div>
     </footer>

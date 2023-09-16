@@ -1,5 +1,4 @@
-import PageTitle from 'components/PageSettings/PageTitle';
-import SubTitle from 'components/PageSettings/SubTitle';
+import Titles from 'components/PageSettings/Titles';
 import { useTranslation } from 'react-i18next';
 import MetaTags from '../components/MetaTags/MetaTags';
 
@@ -12,8 +11,10 @@ export default function TermsUsePage() {
         metaDescription={t('pages.regulations.meta_description')}
       />
       <div className="container mx-auto content-text">
-        <PageTitle title={t('pages.regulations.title')} />
-        <SubTitle subTitle={t('pages.regulations.sub_title')} />
+        <Titles
+          title={t('pages.regulations.title')}
+          subTitle={t('pages.regulations.sub_title')}
+        />
         <p className="text-xl text-center text-black dark:text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quo
           maiores? Eveniet, fugit non ab corporis laudantium a nobis aspernatur

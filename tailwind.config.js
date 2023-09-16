@@ -32,17 +32,26 @@ module.exports = {
     },
     extend: {
       colors: {
-        bgBody: '#fff',
+        textColor: '#333333',
+        textColorDark: '#f2f2f2',
+        colorLoader: '#0A192F',
+
+        // Footer
+        footerBg: '#e3e3e3',
+        footerBgDark: '#1f1f1f',
+        footerBgMini: '#333333',
+        footerBgMiniDark: '#111111',
+        footerTextMini: '#919191',
+        // Header
         bgHeader: '#e3e3e3',
         darkBgHeader: '#1f1f1f',
-        bgFooter: '#e3e3e3',
-        darkBgFooter: '#1f1f1f',
+        // Page
         bgSection: '#FAFAFA',
         bgContainer: '#F3F3F3',
+
         bgCardsItem: '#ffffff',
         textPrimary: '#000',
         textSecondary: '#36a6de',
-        colorLoader: '#0A192F',
         borderCardsListCompanyItem: '#0A192F',
         bgCardsListCompanyItem: '#0A192F',
         hoverMenuHeaader: '#36a6de',

@@ -3,7 +3,7 @@ import { BsWindows, BsXLg } from 'react-icons/bs';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export default function NavHeader({ theme, toggleTheme }) {
+export default function NavHeader() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 

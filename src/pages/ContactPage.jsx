@@ -1,10 +1,9 @@
-import PageTitle from 'components/PageSettings/PageTitle';
-import SubTitle from 'components/PageSettings/SubTitle';
+import Titles from 'components/PageSettings/Titles';
 import { useTranslation } from 'react-i18next';
 import ContactForm from 'components/ContactForm/ContactForm';
 import MetaTags from '../components/MetaTags/MetaTags';
 
-export default function ContactPage() {
+export default function ContactPage({ title, subTitle }) {
   const { t } = useTranslation();
   return (
     <>
@@ -13,8 +12,10 @@ export default function ContactPage() {
         metaDescription={t('pages.contacts.meta_description')}
       />
       <div className="container mx-auto">
-        <PageTitle title={t('pages.contacts.title')} />
-        <SubTitle subTitle={t('pages.contacts.sub_title')} />
+        <Titles
+          title={t('pages.contacts.title')}
+          subTitle={t('pages.contacts.sub_title')}
+        />
         <ContactForm />
       </div>
     </>

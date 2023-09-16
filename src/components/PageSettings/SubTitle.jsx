@@ -1,7 +1,3 @@
 export default function SubTitle({ subTitle }) {
-  return (
-    <h2 className="text-3xl text-center mb-5 text-gray-500 dark:text-white">
-      {subTitle}
-    </h2>
-  );
+  return <h2 className="text-[1.25rem]">{subTitle}</h2>;
 }

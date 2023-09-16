@@ -1,5 +1,4 @@
-import PageTitle from 'components/PageSettings/PageTitle';
-import SubTitle from 'components/PageSettings/SubTitle';
+import Titles from 'components/PageSettings/Titles';
 import { useTranslation } from 'react-i18next';
 import MetaTags from '../components/MetaTags/MetaTags';
 
@@ -12,8 +11,11 @@ export default function AboutPage() {
         metaDescription={t('pages.about.meta_description')}
       />
       <div className="container mx-auto h-[calc(100vh-20rem)]">
-        <PageTitle title={t('pages.about.title')} />
-        <SubTitle subTitle={t('pages.about.sub_title')} />
+        <Titles
+          title={t('pages.about.title')}
+          subTitle={t('pages.about.sub_title')}
+        />
+
         <p className="text-xl text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
           voluptate optio consequatur obcaecati, eum ipsam dolores tempore
