@@ -42,7 +42,7 @@ export default function NavHeader() {
           </Link>
         </li>
       </ul>
-      <div className="flex md:flex-row-reverse items-center gap-8 ml-10 z-50">
+      <div className="flex md:flex-row-reverse items-center md:gap-8 md:ml-10 z-50">
         <button
           className="md:hidden block ml-8 text-2xl font-normal text-colorMobileMenuIcon dark:text-white duration-200 "
           onClick={() => setIsOpen(!isOpen)}

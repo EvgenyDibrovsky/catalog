@@ -18,6 +18,12 @@ export default function ToggleLang() {
     uk: t('select_language.ukraine'),
     ru: t('select_language.russian'),
   };
+  const languageAbbreviated = {
+    en: t('select_language_abbreviated.english'),
+    pl: t('select_language_abbreviated.poland'),
+    uk: t('select_language_abbreviated.ukraine'),
+    ru: t('select_language_abbreviated.russian'),
+  };
 
   const languageFlags = {
     en: 'fi fi-us',
@@ -63,7 +69,8 @@ export default function ToggleLang() {
       >
         <div className="flex items-center gap-2 cursor-pointer text-black dark:text-white">
           <span className={languageFlags[currentLanguage]}></span>
-          <p>{languageNames[currentLanguage]}</p>
+          <p className="hidden md:block">{languageNames[currentLanguage]}</p>
+          <p className=" md:hidden">{languageAbbreviated[currentLanguage]}</p>
         </div>
         <BsChevronDown className="w-4 h-4 cursor-pointer duration-200 group-hover:mt-1" />
       </div>

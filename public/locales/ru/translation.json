@@ -106,6 +106,12 @@
     "ukraine": "Ukrainian",
     "russian": "Russian"
   },
+  "select_language_abbreviated": {
+    "english": "EN",
+    "poland": "PL",
+    "ukraine": "UA",
+    "russian": "RU"
+  },
   "bottons": {
     "write_message": "Write a Message",
     "back_to_home": "Back to Home",
