@@ -9,14 +9,18 @@ export default function Header({ theme, toggleTheme }) {
     <header className="bg-white dark:bg-darkBgHeader z-50 w-full fixed top-0 left-0 h-20 flex items-center justify-between">
       <div className="container flex justify-between items-center">
         <Logo />
-        <div className="ml-auto">
-          <NavMenu />
-        </div>
-
-        <div className=" flex items-center gap-8">
-          <AuthHeader />
-          <ToggleLang />
-          <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
+        <div className="flex justify-between items-center ">
+          <div className="hidden md:block ml-auto">
+            <NavMenu />
+          </div>
+          <div className=" flex items-center gap-8">
+            <AuthHeader />
+            <ToggleLang />
+            <ToggleTheme theme={theme} toggleTheme={toggleTheme} />
+            <div className="block md:hidden ml-auto">
+              <NavMenu />
+            </div>
+          </div>
         </div>
       </div>
     </header>

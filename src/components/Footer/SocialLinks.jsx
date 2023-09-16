@@ -6,7 +6,7 @@ export default function SocialBtn() {
 
   return (
     <>
-      <ul className="list-none flex flex-wrap justify-end gap-2 mb-4 ">
+      <ul className="list-none flex flex-wrap  justify-center lg:justify-end gap-2 mb-4 ">
         <li className="cursor-pointer inline-flex justify-center items-center w-10 h-10 text-sky-600 focus:outline-none duration-200 text-[1.5rem] hover:scale-95 ">
           <a
             href="https://#"
