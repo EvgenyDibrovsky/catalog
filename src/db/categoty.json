@@ -2,7 +2,7 @@
   {
     "category": {
       "id": 1,
-      "bg": "/images/bg-category/bg-1.jpg",
+      "bg": "/images/bg-category/developer.jpg",
       "link_page": "/category/developers",
       "EN": {
         "title": "Developers"
@@ -15,6 +15,44 @@
       },
       "RU": {
         "title": "Застройщики"
+      }
+    }
+  },
+    {
+    "category": {
+      "id": 1,
+      "bg": "/images/bg-category/intermediaries.jpg",
+      "link_page": "/category/Intermediaries",
+      "EN": {
+        "title": "Intermediaries"
+      },
+      "PL": {
+        "title": "Pośrednicy"
+      },
+      "UK": {
+        "title": "Посередники"
+      },
+      "RU": {
+        "title": "Посредники"
+      }
+    }
+  },
+    {
+    "category": {
+      "id": 1,
+      "bg": "/images/bg-category/investments.jpg",
+      "link_page": "/category/investments",
+      "EN": {
+        "title": "Investments"
+      },
+      "PL": {
+        "title": "Inwestycje"
+      },
+      "UK": {
+        "title": "Інвестиції"
+      },
+      "RU": {
+        "title": "Инвестиции"
       }
     }
   }

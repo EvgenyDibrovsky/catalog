@@ -10,6 +10,8 @@ import RegulationsPage from '../../pages/RegulationsPage';
 import PageNotFound from '../../pages/PageNotFound';
 import Offer from '../../pages/OfferPage';
 import Developers from '../../pages/category/DevelopersPage';
+import IntermediariesPage from '../../pages/category/IntermediariesPage';
+import InvestmentsPage from '../../pages/category/InvestmentsPage';
 
 export default function AppRoutes() {
   return (
@@ -46,6 +48,23 @@ export default function AppRoutes() {
           </Section>
         }
       />
+      <Route
+        path="/category/intermediaries"
+        element={
+          <Section>
+            <IntermediariesPage />
+          </Section>
+        }
+      />
+      <Route
+        path="/category/investments"
+        element={
+          <Section>
+            <InvestmentsPage />
+          </Section>
+        }
+      />
+
       <Route
         path="/offer"
         element={
