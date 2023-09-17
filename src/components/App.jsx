@@ -9,6 +9,8 @@ import Contact from '../pages/ContactPage';
 import HomePage from '../pages/HomePage';
 import RegulationsPage from '../pages/RegulationsPage';
 import PageNotFound from '../pages/PageNotFound';
+import Offer from '../pages/OfferPage';
+
 import Loading from './Base/Loader';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -61,7 +63,7 @@ export const App = () => {
             <Route
               path="/catalog"
               element={
-                <Section>
+                <Section noPadding>
                   <Catalog />
                 </Section>
               }
@@ -74,11 +76,20 @@ export const App = () => {
                 </Section>
               }
             />
+
             <Route
               path="/terms-use-page"
               element={
                 <Section>
                   <RegulationsPage />
+                </Section>
+              }
+            />
+            <Route
+              path="/offer"
+              element={
+                <Section>
+                  <Offer />
                 </Section>
               }
             />

@@ -24,4 +24,7 @@
   .btn-country-filter {
     @apply flex items-center justify-center w-full md:w-2/12 h-10 transition-all duration-200 border bg-white dark:bg-black border-btnSignUpForm dark:border-yellow-500 text-btnSignUpForm dark:text-yellow-500 text-lg rounded-md hover:bg-btnSignUpForm hover:text-white hover:dark:bg-yellow-500 hover:dark:text-black;
   }
+  .linePageTitle {
+    @apply after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-full after:h-[2px] after:bg-titleLine dark:after:bg-yellow-500;
+  }
 }

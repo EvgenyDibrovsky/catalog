@@ -1,7 +1,7 @@
 import MetaTags from '../components/MetaTags/MetaTags';
 import { useTranslation } from 'react-i18next';
-import Titles from 'components/PageSettings/Titles';
-import HeroSlider from '../components/HeroSlider/HeroSlider';
+import HeroFilter from 'components/HeroFilter/HeroFilter';
+import CategoryCards from 'components/CategoryCards/CategoryCards';
 export default function HomePage() {
   const { t } = useTranslation();
 
@@ -11,12 +11,9 @@ export default function HomePage() {
         metaTitle={t('pages.home.meta_title')}
         metaDescription={t('pages.home.meta_description')}
       />
-      <HeroSlider />
+      <HeroFilter />
       <div className="container mt-10">
-        <Titles
-          title={t('pages.home.title')}
-          subTitle={t('pages.home.sub_title')}
-        />
+        <CategoryCards />
       </div>
     </div>
   );

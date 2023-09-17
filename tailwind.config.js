@@ -45,6 +45,8 @@ module.exports = {
         // Header
         bgHeader: '#e3e3e3',
         darkBgHeader: '#1f1f1f',
+        bgDark: ' #0000006b',
+
         // Page
         bgSection: '#FAFAFA',
         bgContainer: '#F3F3F3',
@@ -66,6 +68,9 @@ module.exports = {
         btnAuthForm: '#36a6de',
         checkboxColor: '#36a6de',
         titleLine: '#36a6de',
+      },
+      backgroundImage: {
+        'hero-filter': "url('images/bg/bg-filter.jpg')",
       },
       boxShadow: {
         'md-up':

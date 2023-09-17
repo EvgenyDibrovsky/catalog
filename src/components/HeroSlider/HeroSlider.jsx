@@ -21,6 +21,7 @@ export default function HeroSlider() {
       ...languageSpecificData,
       id: item.hero_slider.id,
       banner: item.hero_slider.banner,
+      logo: item.hero_slider.logo,
       offer: item.hero_slider.offer,
       link_site: item.hero_slider.link_site,
     };

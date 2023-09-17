@@ -16,7 +16,7 @@ export default function NavHeader() {
       >
         <li>
           <Link
-            to="/about"
+            to="/"
             className="font-semibold text-black dark:text-white duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500"
             onClick={() => setIsOpen(false)}
           >

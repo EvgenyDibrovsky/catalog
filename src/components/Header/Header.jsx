@@ -6,7 +6,7 @@ import Logo from './Logo';
 
 export default function Header({ theme, toggleTheme }) {
   return (
-    <header className="bg-white dark:bg-darkBgHeader z-50 w-full fixed top-0 left-0 h-20 flex items-center justify-between">
+    <header className="bg-white dark:bg-darkBgHeader shadow-md dark:shadow-yellow-500 z-50 w-full fixed top-0 left-0 h-20 flex items-center justify-between">
       <div className="container flex justify-between items-center">
         <Logo />
         <div className="flex justify-between items-center ">

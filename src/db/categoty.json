@@ -1,0 +1,21 @@
+[
+  {
+    "category": {
+      "id": 1,
+      "bg": "/images/bg-category/bg-1.jpg",
+      "link_page": "/",
+      "EN": {
+        "title": "Categoty name"
+      },
+      "PL": {
+        "title": "Categoty name"
+      },
+      "UK": {
+        "title": "Назва категорії"
+      },
+      "RU": {
+        "title": "Название категории"
+      }
+    }
+  }
+]

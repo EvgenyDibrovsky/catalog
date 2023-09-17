@@ -3,7 +3,8 @@
     "hero_slider": {
       "id": 3,
       "banner": "/images/hero_slider/slide-3.jpg",
-      "offer": true,
+      "logo": "",
+      "offer": "/oferta",
       "link_site": "https://google.com",
       "EN": {
         "title": "Company name",
@@ -26,16 +27,17 @@
   {
     "hero_slider": {
       "id": 2,
-      "banner": "/images/hero_slider/slide-2.jpg",
-      "offer": true,
-      "link_site": "https://google.com",
+      "banner": "/images/hero_slider/budimex/slide-2.jpg",
+      "logo": "/images/hero_slider/budimex/logo-budimex.jpg",
+      "offer": "/oferta",
+      "link_site": "https://www.budimex.pl/",
       "EN": {
         "title": "Company name",
         "description": "Company description"
       },
       "PL": {
-        "title": "Nazwa firmy",
-        "description": "Opis firmy"
+        "title": "Budimex SA",
+        "description": "Jesteśmy firmą budowlaną o ogólnopolskim zasięgu. Oferujemy pełen zakres usług w obszarze budownictwa ogólnego, które jest jednym z podstawowych obszarów naszej działalności. Potencjał spółki umożliwia nam realizację wielu projektów równocześnie. Nasza oferta obejmuje generalne wykonawstwo budynków użyteczności publicznej, budownictwa komercyjnego, przemysłowego, mieszkaniowego oraz obiektów sportowych. Zapewniamy kompleksową obsługę na wszystkich etapach procesu budowlanego. Korzystamy z własnego biura technicznego i proponujemy naszym klientom optymalne rozwiązania technologiczne."
       },
       "UK": {
         "title": "Назва компанії",
@@ -51,7 +53,8 @@
     "hero_slider": {
       "id": 1,
       "banner": "/images/hero_slider/slide-1.jpg",
-      "offer": true,
+      "logo": "",
+      "offer": "/oferta",
       "link_site": "https://google.com",
       "EN": {
         "title": "Company name",
