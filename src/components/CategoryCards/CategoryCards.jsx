@@ -21,7 +21,7 @@ export default function CategoryCards() {
       {data.map(item => (
         <Link to={item.link_page} key={item.id}>
           <li
-            className="py-4 px-4 h-40 bg-hero-filter bg-cover bg-center bg-no-repeat shadow-md shadow-gray-400 dark:shadow-white duration-200 hover:p-0"
+            className="py-4 px-4 h-40 bg-hero-filter bg-cover bg-center bg-no-repeat shadow-md shadow-gray-400 dark:shadow-yellow-500 duration-200 hover:p-0"
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL + item.bg})`,
             }}
