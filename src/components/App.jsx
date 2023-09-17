@@ -1,16 +1,8 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import AppRoutes from 'components/AppRoutes/AppRoutes';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import Section from './PageSettings/Section';
-import About from '../pages/AboutPage';
-import Catalog from '../pages/CatalogPage';
-import Contact from '../pages/ContactPage';
-import HomePage from '../pages/HomePage';
-import RegulationsPage from '../pages/RegulationsPage';
-import PageNotFound from '../pages/PageNotFound';
-import Offer from '../pages/OfferPage';
-
 import Loading from './Base/Loader';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -43,66 +35,7 @@ export const App = () => {
         {/* <Router> */}
         <div>
           <Header theme={theme} toggleTheme={toggleTheme} />
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <Section noPadding>
-                  <HomePage />
-                </Section>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <Section>
-                  <About />
-                </Section>
-              }
-            />
-            <Route
-              path="/catalog"
-              element={
-                <Section noPadding>
-                  <Catalog />
-                </Section>
-              }
-            />
-            <Route
-              path="/contact"
-              element={
-                <Section>
-                  <Contact />
-                </Section>
-              }
-            />
-
-            <Route
-              path="/terms-use-page"
-              element={
-                <Section>
-                  <RegulationsPage />
-                </Section>
-              }
-            />
-            <Route
-              path="/offer"
-              element={
-                <Section>
-                  <Offer />
-                </Section>
-              }
-            />
-            <Route
-              path="*"
-              element={
-                <Section>
-                  <PageNotFound />
-                </Section>
-              }
-            />
-          </Routes>
-
+          <AppRoutes />
           <Footer />
         </div>
       </Router>

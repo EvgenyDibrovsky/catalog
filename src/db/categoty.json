@@ -3,18 +3,18 @@
     "category": {
       "id": 1,
       "bg": "/images/bg-category/bg-1.jpg",
-      "link_page": "/",
+      "link_page": "/category/developers",
       "EN": {
-        "title": "Categoty name"
+        "title": "Developers"
       },
       "PL": {
-        "title": "Categoty name"
+        "title": "Deweloperzy"
       },
       "UK": {
-        "title": "Назва категорії"
+        "title": "Забудовники"
       },
       "RU": {
-        "title": "Название категории"
+        "title": "Застройщики"
       }
     }
   }

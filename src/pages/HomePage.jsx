@@ -1,7 +1,7 @@
 import MetaTags from '../components/MetaTags/MetaTags';
 import { useTranslation } from 'react-i18next';
 import HeroFilter from 'components/HeroFilter/HeroFilter';
-import CategoryCards from 'components/CategoryCards/CategoryCards';
+import CategoryCardsHonePage from 'components/CategoryCards/CategoryCardsHonePage';
 export default function HomePage() {
   const { t } = useTranslation();
 
@@ -13,7 +13,7 @@ export default function HomePage() {
       />
       <HeroFilter />
       <div className="container mt-10">
-        <CategoryCards />
+        <CategoryCardsHonePage />
       </div>
     </div>
   );

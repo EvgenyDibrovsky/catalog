@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import dbCategory from '../../db/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
 
-export default function CategoryCards() {
+export default function CategoryCardsHonePage() {
   const currentLanguage = useCurrentLanguage();
+  const location = useLocation();
 
   const data = dbCategory.map(item => {
     const languageSpecificData = item.category[currentLanguage];
@@ -21,14 +22,13 @@ export default function CategoryCards() {
       {data.map(item => (
         <Link to={item.link_page} key={item.id}>
           <li
-            className="py-4 px-4 h-40 bg-hero-filter bg-cover bg-center bg-no-repeat shadow-md shadow-gray-400 dark:shadow-yellow-500 duration-200 hover:p-0"
-            style={{
-              backgroundImage: `url(${process.env.PUBLIC_URL + item.bg})`,
-            }}
+            className={`flex justify-center items-center h-12 py-2 px-4  shadow-md shadow-gray-400 dark:shadow-yellow-500 duration-200 hover:shadow-sky-500  ${
+              location.pathname === item.link_page
+                ? 'shadow-sky-500 dark:shadow-sky-500 pointer-events-none'
+                : ''
+            }`}
           >
-            <div className="w-full h-full flex justify-center items-center bg-bgDark">
-              <h3 className=" text-white font-semibold ">{item.title}</h3>
-            </div>
+            <h3 className="  font-semibold ">{item.title}</h3>
           </li>
         </Link>
       ))}
