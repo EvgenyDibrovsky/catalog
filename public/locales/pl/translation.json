@@ -51,6 +51,26 @@
       "sub_title": "Podtytuł"
     }
   },
+  "page-category": {
+    "developers": {
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "Deweloperzy",
+      "sub_title": "Podtytuł"
+    },
+    "intermediaries": {
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "Pośrednicy",
+      "sub_title": "Podtytuł"
+    },
+    "investments": {
+      "meta_title": "Meta tytuł",
+      "meta_description": "Meta opis",
+      "title": "Inwestycje",
+      "sub_title": "Podtytuł"
+    }
+  },
   "forms": {
     "contact_form": {
       "name": "Imię",
@@ -137,12 +157,11 @@
     "btn_offer": "Oferta",
     "btn_site": "Strona firmy"
   },
-"hero_filter": {
-  "title": "Twój partner w poszukiwaniu nieruchomości",
-  "select_country": "Wybierz kraj",
-  "select_region": "Wszystkie regiony",
-  "select_city": "Wszystkie miasta",
-  "btn_search": "Szukaj"
-}
-
+  "hero_filter": {
+    "title": "Twój partner w poszukiwaniu nieruchomości",
+    "select_country": "Wybierz kraj",
+    "select_region": "Wszystkie regiony",
+    "select_city": "Wszystkie miasta",
+    "btn_search": "Szukaj"
+  }
 }

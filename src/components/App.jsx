@@ -31,8 +31,8 @@ export const App = () => {
 
   return (
     <HelmetProvider>
-      <Router basename={process.env.PUBLIC_URL}>
-        {/* <Router> */}
+      {/* <Router basename={process.env.PUBLIC_URL}> */}
+      <Router>
         <div>
           <Header theme={theme} toggleTheme={toggleTheme} />
           <AppRoutes />

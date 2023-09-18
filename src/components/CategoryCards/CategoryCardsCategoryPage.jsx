@@ -18,14 +18,12 @@ export default function CategoryCardsHonePage() {
   });
 
   return (
-    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 ">
       {data.map(item => (
         <Link to={item.link_page} key={item.id}>
           <li
             className={`flex justify-center items-center h-12 py-2 px-4  shadow-md shadow-gray-400 dark:shadow-yellow-500 duration-200 hover:shadow-sky-500  ${
-              location.pathname === item.link_page
-                ? 'shadow-sky-500 dark:shadow-sky-500 pointer-events-none'
-                : ''
+              location.pathname === item.link_page ? 'shadow-sky-500 dark:shadow-sky-500 pointer-events-none' : ''
             }`}
           >
             <h3 className="  font-semibold ">{item.title}</h3>

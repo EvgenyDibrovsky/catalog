@@ -51,6 +51,26 @@
       "sub_title": "Подзаголовок"
     }
   },
+  "page-category": {
+    "developers": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета описание",
+      "title": "Застройщики",
+      "sub_title": "Подзаголовок"
+    },
+    "intermediaries": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета описание",
+      "title": "Посредники",
+      "sub_title": "Подзаголовок"
+    },
+    "investments": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета описание",
+      "title": "Инвестиции",
+      "sub_title": "Подзаголовок"
+    }
+  },
   "forms": {
     "contact_form": {
       "name": "Имя",

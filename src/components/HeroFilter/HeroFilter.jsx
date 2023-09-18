@@ -10,7 +10,13 @@ export default function HeroFilter() {
   const [regions, setRegions] = useState([]);
   const [allCities, setAllCities] = useState([]);
   const [filteredCities, setFilteredCities] = useState([]);
-
+  const [selectedChecks, setSelectedChecks] = useState({});
+  const toggleCheck = checkName => {
+    setSelectedChecks(prevSelectedChecks => ({
+      ...prevSelectedChecks,
+      [checkName]: !prevSelectedChecks[checkName],
+    }));
+  };
   const countriesOptions = [
     { value: 'PL', label: t('Польша') },
     { value: 'UA', label: t('Украина') },
@@ -50,7 +56,7 @@ export default function HeroFilter() {
 
   return (
     <>
-      <div className="relative py-20 h-auto bg-hero-filter bg-cover bg-bottom bg-no-repeat bg-fixed">
+      <div className="relative pt-20 pb-28 h-auto bg-hero-filter bg-cover bg-bottom bg-no-repeat bg-fixed">
         <div className="absolute top-0 left-0 w-full h-full bg-bgDark"></div>
         <div className="relative container">
           <h1 className="text-white font-semibold text-center text-[2rem] mb-10">{t('hero_filter.title')}</h1>
@@ -61,17 +67,24 @@ export default function HeroFilter() {
                 value={selectedCountry}
                 onChange={option => setSelectedCountry(option)}
                 placeholder={t('hero_filter.select_country')}
-                className="text-black shadow-md shadow-black dark:shadow-yellow-500"
+                className="text-black shadow-md shadow-sky-500 dark:shadow-yellow-500"
                 theme={theme => ({
                   ...theme,
                   borderRadius: 0,
 
                   colors: {
                     ...theme.colors,
-                    neutral90: 'sky-900',
+
                     primary: '#0982c7',
                   },
                 })}
+                styles={{
+                  control: (base, state) => ({
+                    ...base,
+                    height: '3rem', // Задаем высоту
+                    minHeight: '3rem', // Задаем минимальную высоту
+                  }),
+                }}
               />
 
               <Select
@@ -79,19 +92,67 @@ export default function HeroFilter() {
                 value={selectedRegion}
                 onChange={option => setSelectedRegion(option)}
                 placeholder={t('hero_filter.select_region')}
-                className="text-black shadow-md  shadow-black dark:shadow-yellow-500   "
+                className="text-black shadow-md  shadow-sky-500 dark:shadow-yellow-500   "
+                theme={theme => ({
+                  ...theme,
+                  borderRadius: 0,
+
+                  colors: {
+                    ...theme.colors,
+
+                    primary: '#0982c7',
+                  },
+                })}
+                styles={{
+                  control: (base, state) => ({
+                    ...base,
+                    height: '3rem', // Задаем высоту
+                    minHeight: '3rem', // Задаем минимальную высоту
+                  }),
+                }}
               />
               <Select
                 options={filteredCities}
                 value={selectedCity}
                 onChange={option => setSelectedCity(option)}
                 placeholder={t('hero_filter.select_city')}
-                className="text-black shadow-md shadow-black dark:shadow-yellow-500 "
+                className="text-black shadow-md shadow-sky-500 dark:shadow-yellow-500 "
+                theme={theme => ({
+                  ...theme,
+                  borderRadius: 0,
+
+                  colors: {
+                    ...theme.colors,
+
+                    primary: '#0982c7',
+                  },
+                })}
+                styles={{
+                  control: (base, state) => ({
+                    ...base,
+                    height: '3rem', // Задаем высоту
+                    minHeight: '3rem', // Задаем минимальную высоту
+                  }),
+                }}
               />
               <div>
-                <button className="w-full h-full py-1 px-4 bg-sky-600 text-white shadow-md shadow-black dark:shadow-yellow-500">{t('hero_filter.btn_search')}</button>
+                <button className="w-full h-full py-1 px-4 bg-sky-600 dark:bg-yellow-500 text-white shadow-md shadow-black dark:shadow-yellow-500">{t('hero_filter.btn_search')}</button>
               </div>
             </div>
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+              {['check 1', 'check 2', 'check 3', 'check 4', 'check 5', 'check 6'].map((check, index) => (
+                <li
+                  key={index}
+                  className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-md  shadow-sky-500 dark:shadow-yellow-500 ${
+                    selectedChecks[check] ? 'bg-sky-500' : 'shadow-sky-500'
+                  } dark:${selectedChecks[check] ? 'bg-yellow-500' : 'shadow-yellow-500'}`}
+                  onClick={() => toggleCheck(check)}
+                >
+                  {check}
+                  <input type="checkbox" className="hidden" checked={selectedChecks[check] || false} onChange={() => {}} />
+                </li>
+              ))}
+            </ul>
           </form>
         </div>
       </div>
