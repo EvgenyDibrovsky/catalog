@@ -136,5 +136,13 @@
   "hero_slider": {
     "btn_offer": "Пропозиція",
     "btn_site": "Сайт компанії"
-  }
+  },
+"hero_filter": {
+  "title": "Ваш партнер у пошуку нерухомості",
+  "select_country": "Виберіть країну",
+  "select_region": "Всі регіони",
+  "select_city": "Всі міста",
+  "btn_search": "Пошук"
+}
+
 }

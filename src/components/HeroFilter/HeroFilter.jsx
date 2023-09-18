@@ -53,32 +53,43 @@ export default function HeroFilter() {
       <div className="relative py-20 h-auto bg-hero-filter bg-cover bg-bottom bg-no-repeat bg-fixed">
         <div className="absolute top-0 left-0 w-full h-full bg-bgDark"></div>
         <div className="relative container">
-          <h1 className="text-white text-center mb-10">{t('pages.home.title')}</h1>
+          <h1 className="text-white font-semibold text-center text-[2rem] mb-10">{t('hero_filter.title')}</h1>
           <form>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
               <Select
                 options={countriesOptions}
                 value={selectedCountry}
                 onChange={option => setSelectedCountry(option)}
-                placeholder={t('Выберите страну')}
-                className="shadow-md shadow-black  dark:shadow-yellow-500  "
+                placeholder={t('hero_filter.select_country')}
+                className="text-black shadow-md shadow-black dark:shadow-yellow-500"
+                theme={theme => ({
+                  ...theme,
+                  borderRadius: 0,
+
+                  colors: {
+                    ...theme.colors,
+                    neutral90: 'sky-900',
+                    primary: '#0982c7',
+                  },
+                })}
               />
+
               <Select
                 options={regions}
                 value={selectedRegion}
                 onChange={option => setSelectedRegion(option)}
-                placeholder={t('Выберите регион')}
-                className="shadow-md shadow-black  dark:shadow-yellow-500   "
+                placeholder={t('hero_filter.select_region')}
+                className="text-black shadow-md  shadow-black dark:shadow-yellow-500   "
               />
               <Select
                 options={filteredCities}
                 value={selectedCity}
                 onChange={option => setSelectedCity(option)}
-                placeholder={t('Выберите город')}
-                className="shadow-md shadow-black  dark:shadow-yellow-500 "
+                placeholder={t('hero_filter.select_city')}
+                className="text-black shadow-md shadow-black dark:shadow-yellow-500 "
               />
               <div>
-                <button className="w-full h-full py-1 px-4 bg-sky-600 text-white">Search</button>
+                <button className="w-full h-full py-1 px-4 bg-sky-600 text-white shadow-md shadow-black dark:shadow-yellow-500">{t('hero_filter.btn_search')}</button>
               </div>
             </div>
           </form>

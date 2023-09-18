@@ -136,5 +136,13 @@
   "hero_slider": {
     "btn_offer": "Oferta",
     "btn_site": "Strona firmy"
-  }
+  },
+"hero_filter": {
+  "title": "Twój partner w poszukiwaniu nieruchomości",
+  "select_country": "Wybierz kraj",
+  "select_region": "Wszystkie regiony",
+  "select_city": "Wszystkie miasta",
+  "btn_search": "Szukaj"
+}
+
 }

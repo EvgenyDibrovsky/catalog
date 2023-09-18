@@ -136,5 +136,12 @@
   "hero_slider": {
     "btn_offer": "Предложение",
     "btn_site": "Сайт компании"
+  },
+  "hero_filter": {
+    "title": "Ваш партнер в поиске недвижимости",
+    "select_country": "Выберите страну",
+    "select_region": "Все регионы",
+    "select_city": "Все города",
+    "btn_search": "Поиск"
   }
 }
