@@ -51,6 +51,26 @@
       "sub_title": "Підзаголовок"
     }
   },
+  "page-category": {
+    "developers": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Забудовники",
+      "sub_title": "Підзаголовок"
+    },
+    "intermediaries": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Посередники",
+      "sub_title": "Підзаголовок"
+    },
+    "investments": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета опис",
+      "title": "Інвестиції",
+      "sub_title": "Підзаголовок"
+    }
+  },
   "forms": {
     "contact_form": {
       "name": "Ім'я",
@@ -137,12 +157,11 @@
     "btn_offer": "Пропозиція",
     "btn_site": "Сайт компанії"
   },
-"hero_filter": {
-  "title": "Ваш партнер у пошуку нерухомості",
-  "select_country": "Виберіть країну",
-  "select_region": "Всі регіони",
-  "select_city": "Всі міста",
-  "btn_search": "Пошук"
-}
-
+  "hero_filter": {
+    "title": "Ваш партнер у пошуку нерухомості",
+    "select_country": "Виберіть країну",
+    "select_region": "Всі регіони",
+    "select_city": "Всі міста",
+    "btn_search": "Пошук"
+  }
 }

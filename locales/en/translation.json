@@ -51,6 +51,26 @@
       "sub_title": "Subtitle"
     }
   },
+  "page-category": {
+    "developers": {
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "Developers",
+      "sub_title": "Subtitle"
+    },
+    "intermediaries": {
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "Intermediaries",
+      "sub_title": "Subtitle"
+    },
+    "investments": {
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "title": "Investments",
+      "sub_title": "Subtitle"
+    }
+  },
   "forms": {
     "contact_form": {
       "name": "Name",
@@ -137,12 +157,11 @@
     "btn_offer": "Offer",
     "btn_site": "Company website"
   },
-"hero_filter": {
-  "title": "Your partner in real estate search",
-  "select_country": "Select country",
-  "select_region": "All regions",
-  "select_city": "All cities",
-  "btn_search": "Search"
-}
-
+  "hero_filter": {
+    "title": "Your partner in real estate search",
+    "select_country": "Select country",
+    "select_region": "All regions",
+    "select_city": "All cities",
+    "btn_search": "Search"
+  }
 }
