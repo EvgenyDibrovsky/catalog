@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { BsWindows, BsXLg } from 'react-icons/bs';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -15,38 +15,35 @@ export default function NavHeader() {
         } md:flex`}
       >
         <li>
-          <Link
+          <NavLink
             to="/"
-            className="font-semibold text-black dark:text-white duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500"
+            className="font-semibold text-black dark:text-white duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 [&.active]:text-hoverMenuHeaader dark:[&.active]:text-yellow-500"
             onClick={() => setIsOpen(false)}
           >
             {t('nav_menu.nav_item_1')}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/catalog"
-            className="font-semibold  text-black dark:text-white  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
+            className="font-semibold  text-black dark:text-white  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 [&.active]:text-hoverMenuHeaader dark:[&.active]:text-yellow-500"
             onClick={() => setIsOpen(false)}
           >
             {t('nav_menu.nav_item_2')}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/contact"
-            className="font-semibold  text-black dark:text-white  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
+            className="font-semibold  text-black dark:text-white  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 [&.active]:text-hoverMenuHeaader dark:[&.active]:text-yellow-500"
             onClick={() => setIsOpen(false)}
           >
             {t('nav_menu.nav_item_3')}
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className="flex md:flex-row-reverse items-center md:gap-8 md:ml-10 z-50">
-        <button
-          className="md:hidden block ml-8 text-2xl font-normal text-colorMobileMenuIcon dark:text-white duration-200 "
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="md:hidden block ml-8 text-2xl font-normal text-colorMobileMenuIcon dark:text-white duration-200 " onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <BsXLg /> : <BsWindows />}
         </button>
       </div>

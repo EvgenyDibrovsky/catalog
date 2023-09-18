@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div className="flex flex-col justify-center md:justify-start">
               <LogoFooter />
-              <p className="text-center md:text-left mt-5">Contacts infos</p>
+              <p className="text-center md:text-left mt-5">Contacts</p>
             </div>
             <div className="flex justify-center md:justify-start">
               <MenuFooter />
@@ -34,12 +34,7 @@ export default function Footer() {
           <p className="flex">{t('footer.reserved')}</p>
           <p className="flex items-baseline">
             Powered by
-            <a
-              href="https://edweb.site"
-              target="_blank"
-              rel="noreferrer"
-              className="duration-200 hover:underline"
-            >
+            <a href="https://edweb.site" target="_blank" rel="noreferrer" className="duration-200 hover:underline">
               <span className="ml-1 font-semibold text-[1.1rem]">edWeb</span>
             </a>
           </p>

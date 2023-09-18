@@ -18,7 +18,7 @@ export const App = () => {
 
   useEffect(() => {
     // имитация асинхронной загрузки данных
-    setTimeout(() => setLoading(false), 2000);
+    setTimeout(() => setLoading(false), 500);
   }, []);
 
   useEffect(() => {
@@ -31,8 +31,8 @@ export const App = () => {
 
   return (
     <HelmetProvider>
-      {/* <Router basename={process.env.PUBLIC_URL}> */}
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
+        {/* <Router> */}
         <div>
           <Header theme={theme} toggleTheme={toggleTheme} />
           <AppRoutes />

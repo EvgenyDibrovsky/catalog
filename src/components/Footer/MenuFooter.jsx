@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 export default function NavHeader() {
@@ -6,30 +6,21 @@ export default function NavHeader() {
 
   return (
     <div className="flex items-center ">
-      <ul className="list-disc">
+      <ul className="list-disc marker:text-sky-500 dark:marker:text-yellow-500 group ">
         <li>
-          <Link
-            to="/about"
-            className="duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500"
-          >
+          <NavLink to="/about" className="duration-200 hover:text-sky-500 hover:dark:text-yellow-500 [&.active]:text-sky-500 dark:[&.active]:text-yellow-500">
             {t('nav_menu.nav_item_1')}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
-            to="/catalog"
-            className=" duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
-          >
+          <NavLink to="/catalog" className=" duration-200 hover:text-sky-500 hover:dark:text-yellow-500 [&.active]:text-sky-500 dark:[&.active]:text-yellow-500">
             {t('nav_menu.nav_item_2')}
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
-            to="/contact"
-            className=" duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
-          >
+          <NavLink to="/contact" className=" duration-200 hover:text-sky-500 hover:dark:text-yellow-500 [&.active]:text-sky-500 dark:[&.active]:text-yellow-500">
             {t('nav_menu.nav_item_3')}
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>

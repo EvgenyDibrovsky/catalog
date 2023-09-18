@@ -82,7 +82,7 @@ export default function AppRoutes() {
         }
       />
       <Route
-        path="/terms-use-page"
+        path="/regulations"
         element={
           <Section>
             <RegulationsPage />

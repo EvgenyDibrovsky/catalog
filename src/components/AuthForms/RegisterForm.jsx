@@ -83,7 +83,7 @@ class RegisterForm extends React.Component {
             {t('forms.registration.regulations_checkbox')}
           </label>
           <a
-            href={process.env.PUBLIC_URL + '/terms-use-page'}
+            href={process.env.PUBLIC_URL + '/regulations'}
             // href="/terms-use-page"
             target="_blank"
             rel="noopener noreferrer"

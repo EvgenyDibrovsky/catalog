@@ -6,28 +6,19 @@ export default function NavHeader() {
 
   return (
     <div className="flex items-center ">
-      <ul className="list-disc">
+      <ul className="list-disc marker:text-sky-500 dark:marker:text-yellow-500 group">
         <li>
-          <Link
-            to="#"
-            className="duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500"
-          >
+          <Link to="#" className="duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500">
             Link 1
           </Link>
         </li>
         <li>
-          <Link
-            to="#"
-            className="  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
-          >
+          <Link to="#" className="  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 ">
             Link 2
           </Link>
         </li>
         <li>
-          <Link
-            to="#"
-            className="  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 "
-          >
+          <Link to="#" className="  duration-200 hover:text-hoverMenuHeaader hover:dark:text-yellow-500 ">
             Link 3
           </Link>
         </li>

@@ -42,6 +42,8 @@ module.exports = {
         footerBgMini: '#333333',
         footerBgMiniDark: '#111111',
         footerTextMini: '#919191',
+        iconBgDark: '#f3f3f3',
+        iconBg: '#f0f0f0',
         // Header
         bgHeader: '#e3e3e3',
         darkBgHeader: '#1f1f1f',
@@ -73,8 +75,7 @@ module.exports = {
         'hero-filter': "url('images/bg/bg-filter.jpg')",
       },
       boxShadow: {
-        'md-up':
-          '0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 9px 0px rgba(0, 0, 0, 0.06)',
+        'md-up': '0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 9px 0px rgba(0, 0, 0, 0.06)',
       },
     },
   },
