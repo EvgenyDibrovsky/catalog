@@ -1,7 +1,7 @@
 [
   {
     "category": {
-      "id": 1,
+      "id": 3,
       "bg": "/images/bg-category/developer.jpg",
       "link_page": "/category/developers",
       "EN": {
@@ -20,7 +20,7 @@
   },
     {
     "category": {
-      "id": 1,
+      "id": 2,
       "bg": "/images/bg-category/intermediaries.jpg",
       "link_page": "/category/Intermediaries",
       "EN": {

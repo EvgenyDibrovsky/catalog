@@ -1,0 +1,862 @@
+[
+  {
+    "city": "Warsaw",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Kraków",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Łódź",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Wrocław",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Poznań",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Gdańsk",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Szczecin",
+    "country": "Poland",
+    "admin_name": "Zachodniopomorskie"
+  },
+  {
+    "city": "Bydgoszcz",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Lublin",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Bielsko-Biała",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Białystok",
+    "country": "Poland",
+    "admin_name": "Podlaskie"
+  },
+  {
+    "city": "Katowice",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Gdynia",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Częstochowa",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Radom",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Zielona Góra",
+    "country": "Poland",
+    "admin_name": "Lubuskie"
+  },
+  {
+    "city": "Toruń",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Rzeszów",
+    "country": "Poland",
+    "admin_name": "Podkarpackie"
+  },
+  {
+    "city": "Sosnowiec",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Kielce",
+    "country": "Poland",
+    "admin_name": "Świętokrzyskie"
+  },
+  {
+    "city": "Gliwice",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Olsztyn",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Zabrze",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Bytom",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Rybnik",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Ruda Śląska",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Tychy",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Opole",
+    "country": "Poland",
+    "admin_name": "Opolskie"
+  },
+  {
+    "city": "Gorzów Wielkopolski",
+    "country": "Poland",
+    "admin_name": "Lubuskie"
+  },
+  {
+    "city": "Płock",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Elbląg",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Dąbrowa Górnicza",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Wałbrzych",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Tarnów",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Koszalin",
+    "country": "Poland",
+    "admin_name": "Zachodniopomorskie"
+  },
+  {
+    "city": "Włocławek",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Chorzów",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Kalisz",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Legnica",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Nowy Sącz",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Inowrocław",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Mysłowice",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Ostrowiec Świętokrzyski",
+    "country": "Poland",
+    "admin_name": "Świętokrzyskie"
+  },
+  {
+    "city": "Ostrów Wielkopolski",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Lubin",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Gniezno",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Stargard Szczeciński",
+    "country": "Poland",
+    "admin_name": "Zachodniopomorskie"
+  },
+  {
+    "city": "Głogów",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Zamość",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Pruszków",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Pabianice",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Siemianowice Śląskie",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Leszno",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Ełk",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Chełm",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Mielec",
+    "country": "Poland",
+    "admin_name": "Podkarpackie"
+  },
+  {
+    "city": "Tomaszów Mazowiecki",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Bełchatów",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Tczew",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Świdnica",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Będzin",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Zgierz",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Legionowo",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Piekary Śląskie",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Ostrołęka",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Rumia",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Starogard Gdański",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Starachowice",
+    "country": "Poland",
+    "admin_name": "Świętokrzyskie"
+  },
+  {
+    "city": "Wejherowo",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Kołobrzeg",
+    "country": "Poland",
+    "admin_name": "Zachodniopomorskie"
+  },
+  {
+    "city": "Świętochłowice",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Dębica",
+    "country": "Poland",
+    "admin_name": "Podkarpackie"
+  },
+  {
+    "city": "Ząbki",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Świdnik",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Marki",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Mińsk Mazowiecki",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Kwidzyn",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Chojnice",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Zduńska Wola",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Nowa Sól",
+    "country": "Poland",
+    "admin_name": "Lubuskie"
+  },
+  {
+    "city": "Bolesławiec",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Żyrardów",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Oświęcim",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Malbork",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Żary",
+    "country": "Poland",
+    "admin_name": "Lubuskie"
+  },
+  {
+    "city": "Sopot",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Knurów",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Wołomin",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Brzeg",
+    "country": "Poland",
+    "admin_name": "Opolskie"
+  },
+  {
+    "city": "Oleśnica",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Lębork",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Czechowice-Dziedzice",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Cieszyn",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Sochaczew",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Kraśnik",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Iława",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Oława",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Dzierżoniów",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Luboń",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Ostróda",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Pruszcz Gdański",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Zgorzelec",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Czeladź",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Łowicz",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Rury",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Giżycko",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Brodnica",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Kętrzyn",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Gorlice",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Biłgoraj",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Kobyłka",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Wągrowiec",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Turek",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Skawina",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Kościan",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Kościerzyna",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Piastów",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Bartoszyce",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Szczytno",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Jawor",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Lubartów",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Grajewo",
+    "country": "Poland",
+    "admin_name": "Podlaskie"
+  },
+  {
+    "city": "Płońsk",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Koło",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Zambrów",
+    "country": "Poland",
+    "admin_name": "Podlaskie"
+  },
+  {
+    "city": "Mrągowo",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Działdowo",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Sulejówek",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Chełmno",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Lubań",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Chodzież",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Złotów",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Ozorków",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Tomaszów Lubelski",
+    "country": "Poland",
+    "admin_name": "Lubelskie"
+  },
+  {
+    "city": "Giszowiec",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Łomianki",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Jasien",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Łańcut",
+    "country": "Poland",
+    "admin_name": "Podkarpackie"
+  },
+  {
+    "city": "Rawa Mazowiecka",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Braniewo",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Rypin",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Milanówek",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Złotoryja",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Radzionków Nowy",
+    "country": "Poland",
+    "admin_name": "Śląskie"
+  },
+  {
+    "city": "Osowa",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Ustka",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Łęczyca",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Chełmża",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Biały Kamień",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Chojnów",
+    "country": "Poland",
+    "admin_name": "Dolnośląskie"
+  },
+  {
+    "city": "Człuchów",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Lipno",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Słupca",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Wąbrzeźno",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Sidlice",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Golub-Dobrzyń",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Aleksandrów Kujawski",
+    "country": "Poland",
+    "admin_name": "Kujawsko-Pomorskie"
+  },
+  {
+    "city": "Puck",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Suchanino",
+    "country": "Poland",
+    "admin_name": "Pomorskie"
+  },
+  {
+    "city": "Czarnków",
+    "country": "Poland",
+    "admin_name": "Wielkopolskie"
+  },
+  {
+    "city": "Ksawerów",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Wola Rzędzińska",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Sejny",
+    "country": "Poland",
+    "admin_name": "Podlaskie"
+  },
+  {
+    "city": "Raciąż",
+    "country": "Poland",
+    "admin_name": "Mazowieckie"
+  },
+  {
+    "city": "Górowo Iławeckie",
+    "country": "Poland",
+    "admin_name": "Warmińsko-Mazurskie"
+  },
+  {
+    "city": "Zgłobice",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Libertów",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Zbylitowska Góra",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Wiśniowa Góra",
+    "country": "Poland",
+    "admin_name": "Łódzkie"
+  },
+  {
+    "city": "Koszyce",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  },
+  {
+    "city": "Latoszyn",
+    "country": "Poland",
+    "admin_name": "Podkarpackie"
+  },
+  {
+    "city": "Jodłówka",
+    "country": "Poland",
+    "admin_name": "Małopolskie"
+  }
+]
