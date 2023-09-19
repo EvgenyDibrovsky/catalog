@@ -12,6 +12,9 @@ import Offer from '../../pages/OfferPage';
 import Developers from '../../pages/category/DevelopersPage';
 import IntermediariesPage from '../../pages/category/IntermediariesPage';
 import InvestmentsPage from '../../pages/category/InvestmentsPage';
+import HousesPage from '../../pages/category/HousesPage';
+import ApartmentsPage from '../../pages/category/ApartmentsPage';
+import PlotsPage from '../../pages/category/PlotsPage';
 
 export default function AppRoutes() {
   return (
@@ -64,7 +67,30 @@ export default function AppRoutes() {
           </Section>
         }
       />
-
+      <Route
+        path="/category/houses"
+        element={
+          <Section>
+            <HousesPage />
+          </Section>
+        }
+      />
+      <Route
+        path="/category/apartments"
+        element={
+          <Section>
+            <ApartmentsPage />
+          </Section>
+        }
+      />
+      <Route
+        path="/category/plots"
+        element={
+          <Section>
+            <PlotsPage />
+          </Section>
+        }
+      />
       <Route
         path="/offer"
         element={

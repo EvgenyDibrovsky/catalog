@@ -1,7 +1,7 @@
 [
   {
     "category": {
-      "id": 3,
+      "id": 1,
       "bg": "/images/bg-category/developer.jpg",
       "link_page": "/category/developers",
       "EN": {
@@ -18,7 +18,7 @@
       }
     }
   },
-    {
+  {
     "category": {
       "id": 2,
       "bg": "/images/bg-category/intermediaries.jpg",
@@ -37,9 +37,9 @@
       }
     }
   },
-    {
+  {
     "category": {
-      "id": 1,
+      "id": 3,
       "bg": "/images/bg-category/investments.jpg",
       "link_page": "/category/investments",
       "EN": {
@@ -53,6 +53,63 @@
       },
       "RU": {
         "title": "Инвестиции"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 4,
+      "bg": "/images/bg-category/investments.jpg",
+      "link_page": "/category/houses",
+      "EN": {
+        "title": "Houses"
+      },
+      "PL": {
+        "title": "Domy"
+      },
+      "UK": {
+        "title": "Будинки"
+      },
+      "RU": {
+        "title": "Дома"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 5,
+      "bg": "/images/bg-category/investments.jpg",
+      "link_page": "/category/apartments",
+      "EN": {
+        "title": "Apartments"
+      },
+      "PL": {
+        "title": "Mieszkania"
+      },
+      "UK": {
+        "title": "Квартири"
+      },
+      "RU": {
+        "title": "Квартиры"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 6,
+      "bg": "/images/bg-category/investments.jpg",
+      "link_page": "/category/plots",
+      "EN": {
+        "title": "Plots"
+      },
+      "PL": {
+        "title": "Działki"
+      },
+      "UK": {
+        "title": "Ділянки"
+      },
+      "RU": {
+        "title": "Участки"
       }
     }
   }

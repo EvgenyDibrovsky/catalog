@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
+import dbCategory from '../../db/categoty.json';
+import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
 
 export default function HeroFilter() {
+  const currentLanguage = useCurrentLanguage();
   const { t, i18n } = useTranslation();
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [selectedRegion, setSelectedRegion] = useState(null);
@@ -10,17 +13,26 @@ export default function HeroFilter() {
   const [regions, setRegions] = useState([]);
   const [allCities, setAllCities] = useState([]);
   const [filteredCities, setFilteredCities] = useState([]);
-  const [selectedChecks, setSelectedChecks] = useState({});
-  const toggleCheck = checkName => {
-    setSelectedChecks(prevSelectedChecks => ({
-      ...prevSelectedChecks,
-      [checkName]: !prevSelectedChecks[checkName],
-    }));
+
+  // Изменили на selectedRadio
+  const [selectedRadio, setSelectedRadio] = useState(null);
+
+  const toggleRadio = radioName => {
+    setSelectedRadio(radioName);
   };
+
   const countriesOptions = [
     { value: 'PL', label: t('Польша') },
     { value: 'UA', label: t('Украина') },
   ];
+
+  const checkboxData = dbCategory.map(item => {
+    const languageSpecificData = item.category[currentLanguage];
+    return {
+      ...languageSpecificData,
+      id: item.category.id,
+    };
+  });
 
   useEffect(() => {
     const loadCountryData = async countryCode => {
@@ -144,20 +156,18 @@ export default function HeroFilter() {
               </div>
             </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
-              {[t('hero_filter.checkbox_1'), t('hero_filter.checkbox_2'), t('hero_filter.checkbox_3'), t('hero_filter.checkbox_4'), t('hero_filter.checkbox_5'), t('hero_filter.checkbox_6')].map(
-                (check, index) => (
-                  <li
-                    key={index}
-                    className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg  hover:shadow-sky-500 dark:hover:shadow-yellow-500 ${
-                      selectedChecks[check] ? 'shadow-sky-500' : ' '
-                    } dark:${selectedChecks[check] ? 'shadow-yellow-500' : ' '}`}
-                    onClick={() => toggleCheck(check)}
-                  >
-                    {check}
-                    <input type="checkbox" className="hidden" checked={selectedChecks[check] || false} onChange={() => {}} />
-                  </li>
-                )
-              )}
+              {checkboxData.map(item => (
+                <li
+                  key={item.id}
+                  className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500 dark:hover:shadow-yellow-500 ${
+                    selectedRadio === item.title ? 'shadow-sky-500' : ''
+                  } dark:${selectedRadio === item.title ? 'shadow-yellow-500' : ''}`}
+                  onClick={() => toggleRadio(item.title)}
+                >
+                  {item.title}
+                  <input type="radio" name="categoryRadio" className="hidden" checked={selectedRadio === item.title} onChange={() => {}} />
+                </li>
+              ))}
             </ul>
           </form>
         </div>

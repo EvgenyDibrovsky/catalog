@@ -69,6 +69,24 @@
       "meta_description": "Мета опис",
       "title": "Інвестиції",
       "sub_title": "Підзаголовок"
+    },
+    "houses": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета описание",
+      "title": "Дома",
+      "sub_title": "Подзаголовок"
+    },
+    "apartments": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета описание",
+      "title": "Квартиры",
+      "sub_title": "Подзаголовок"
+    },
+    "plots": {
+      "meta_title": "Мета заголовок",
+      "meta_description": "Мета описание",
+      "title": "Участки",
+      "sub_title": "Подзаголовок"
     }
   },
   "forms": {
