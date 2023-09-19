@@ -3,6 +3,7 @@ import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 import dbCategory from '../../db/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
+import { BsSearch } from "react-icons/bs";
 
 const selectStyles = {
   control: base => ({
@@ -158,7 +159,7 @@ export default function HeroFilter() {
                 styles={selectStyles}
               />
               <div>
-                <button className="w-full h-full py-1 px-4 bg-sky-600 dark:bg-yellow-500 text-white shadow-md duration-200 hover:scale-95">{t('hero_filter.btn_search')}</button>
+                <button className="w-full h-full flex items-center justify-center gap-4 py-1 px-4 bg-sky-600 dark:bg-yellow-500 text-white shadow-md duration-200 group"><BsSearch className="duration-200 group-hover:scale-110"/>{t('hero_filter.btn_search')}</button>
               </div>
             </div>
 
