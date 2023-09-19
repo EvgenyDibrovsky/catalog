@@ -181,7 +181,7 @@ export default function HeroFilter() {
                   <li
                     key={index}
                     className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500 ${
-                      selectedCheckboxes.includes(option.value) ? 'shadow-sky-500' : ''
+                      selectedCheckboxes.includes(option.value) ? 'shadow-sky-500 ' : ''
                     }`}
                     onClick={() => toggleCheckbox(option.value)}
                   >

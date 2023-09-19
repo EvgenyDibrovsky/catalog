@@ -195,7 +195,7 @@
   {
     "category": {
       "id": 4,
-      "bg": "/images/bg-category/investments.jpg",
+      "bg": "/images/bg-category/house.jpg",
       "link_page": "/category/houses",
       "EN": {
         "title": "Houses",
@@ -287,7 +287,7 @@
   {
     "category": {
       "id": 5,
-      "bg": "/images/bg-category/investments.jpg",
+      "bg": "/images/bg-category/apartments.jpg",
       "link_page": "/category/apartments",
       "EN": {
         "title": "Apartments",
@@ -362,7 +362,7 @@
   {
     "category": {
       "id": 6,
-      "bg": "/images/bg-category/investments.jpg",
+      "bg": "/images/bg-category/plots.jpg",
       "link_page": "/category/plots",
       "EN": {
         "title": "Plots",
