@@ -7,10 +7,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      <MetaTags
-        metaTitle={t('pages.home.meta_title')}
-        metaDescription={t('pages.home.meta_description')}
-      />
+      <MetaTags metaTitle={t('pages.home.meta_title')} metaDescription={t('pages.home.meta_description')} />
       <HeroFilter />
       <div className="container mt-10">
         <CategoryCardsHonePage />

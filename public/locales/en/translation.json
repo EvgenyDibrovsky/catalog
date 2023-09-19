@@ -162,6 +162,12 @@
     "select_country": "Select country",
     "select_region": "All regions",
     "select_city": "All cities",
-    "btn_search": "Search"
+    "btn_search": "Search",
+    "checkbox_1": "Developers",
+    "checkbox_2": "Investments",
+    "checkbox_3": "Brokers",
+    "checkbox_4": "Houses",
+    "checkbox_5": "Apartments",
+    "checkbox_6": "Plots"
   }
 }

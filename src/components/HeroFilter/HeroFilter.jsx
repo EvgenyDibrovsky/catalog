@@ -144,18 +144,20 @@ export default function HeroFilter() {
               </div>
             </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
-              {['check 1', 'check 2', 'check 3', 'check 4', 'check 5', 'check 6'].map((check, index) => (
-                <li
-                  key={index}
-                  className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg  hover:shadow-sky-500 dark:hover:shadow-yellow-500 ${
-                    selectedChecks[check] ? 'shadow-sky-500' : ' '
-                  } dark:${selectedChecks[check] ? 'shadow-yellow-500' : ' '}`}
-                  onClick={() => toggleCheck(check)}
-                >
-                  {check}
-                  <input type="checkbox" className="hidden" checked={selectedChecks[check] || false} onChange={() => {}} />
-                </li>
-              ))}
+              {[t('hero_filter.checkbox_1'), t('hero_filter.checkbox_2'), t('hero_filter.checkbox_3'), t('hero_filter.checkbox_4'), t('hero_filter.checkbox_5'), t('hero_filter.checkbox_6')].map(
+                (check, index) => (
+                  <li
+                    key={index}
+                    className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg  hover:shadow-sky-500 dark:hover:shadow-yellow-500 ${
+                      selectedChecks[check] ? 'shadow-sky-500' : ' '
+                    } dark:${selectedChecks[check] ? 'shadow-yellow-500' : ' '}`}
+                    onClick={() => toggleCheck(check)}
+                  >
+                    {check}
+                    <input type="checkbox" className="hidden" checked={selectedChecks[check] || false} onChange={() => {}} />
+                  </li>
+                )
+              )}
             </ul>
           </form>
         </div>

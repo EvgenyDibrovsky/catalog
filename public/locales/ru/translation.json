@@ -162,6 +162,12 @@
     "select_country": "Выберите страну",
     "select_region": "Все регионы",
     "select_city": "Все города",
-    "btn_search": "Поиск"
+    "btn_search": "Поиск",
+    "checkbox_1": "Застройщики",
+    "checkbox_2": "Инвестиции",
+    "checkbox_3": "Посредники",
+    "checkbox_4": "Дома",
+    "checkbox_5": "Квартиры",
+    "checkbox_6": "Участки"
   }
 }

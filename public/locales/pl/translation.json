@@ -162,6 +162,12 @@
     "select_country": "Wybierz kraj",
     "select_region": "Wszystkie regiony",
     "select_city": "Wszystkie miasta",
-    "btn_search": "Szukaj"
+    "btn_search": "Szukaj",
+    "checkbox_1": "Deweloperzy",
+    "checkbox_2": "Inwestycje",
+    "checkbox_3": "Pośrednicy",
+    "checkbox_4": "Domy",
+    "checkbox_5": "Mieszkania",
+    "checkbox_6": "Działki"
   }
 }
