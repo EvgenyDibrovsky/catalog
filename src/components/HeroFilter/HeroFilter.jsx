@@ -4,6 +4,15 @@ import { useTranslation } from 'react-i18next';
 import dbCategory from '../../db/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
 
+const selectStyles = {
+  control: base => ({
+    ...base,
+    height: '3rem',
+    minHeight: '3rem',
+    border: 0,
+  }),
+};
+
 export default function HeroFilter() {
   const currentLanguage = useCurrentLanguage();
   const { t, i18n } = useTranslation();
@@ -18,13 +27,21 @@ export default function HeroFilter() {
   const [selectedRadio, setSelectedRadio] = useState(null);
   const [currentCheckboxes, setCurrentCheckboxes] = useState([]);
   const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
+  const [inputValues, setInputValues] = useState({});
+
   const toggleCheckbox = value => {
     setSelectedCheckboxes(prevState => (prevState.includes(value) ? prevState.filter(item => item !== value) : [...prevState, value]));
   };
   const toggleRadio = radioName => {
     setSelectedRadio(radioName);
-    const currentCategory = checkboxData.find(item => item.title === radioName);
+    const currentCategory = radioboxData.find(item => item.title === radioName);
     setCurrentCheckboxes(currentCategory ? currentCategory.checkboxes : []);
+  };
+  const handleInputChange = (title, value) => {
+    setInputValues({
+      ...inputValues,
+      [title]: value,
+    });
   };
 
   const countriesOptions = [
@@ -32,12 +49,15 @@ export default function HeroFilter() {
     { value: 'UA', label: t('Украина') },
   ];
 
-  const checkboxData = dbCategory.map(item => {
-    const languageSpecificData = item.category[currentLanguage];
+  const radioboxData = dbCategory.map(item => {
+    const languageSpecificData = item.category[currentLanguage] || {};
+    if (!languageSpecificData.option) {
+      languageSpecificData.option = []; // добавляем пустой массив, если опций нет
+    }
     return {
       ...languageSpecificData,
       id: item.category.id,
-      checkboxes: languageSpecificData.option, // добавим сюда опции для чекбоксов
+      checkboxes: languageSpecificData.option,
     };
   });
 
@@ -45,7 +65,7 @@ export default function HeroFilter() {
     const loadCountryData = async countryCode => {
       try {
         const data = await import(`../../db/country/${i18n.language}/${countryCode.toLowerCase()}.json`);
-        return data.default; // Используем .default для импорта
+        return data.default;
       } catch (error) {
         console.error('Error loading country data:', error);
         return [];
@@ -98,14 +118,7 @@ export default function HeroFilter() {
                     primary: '#0982c7',
                   },
                 })}
-                styles={{
-                  control: base => ({
-                    ...base,
-                    height: '3rem',
-                    minHeight: '3rem',
-                    border: 0,
-                  }),
-                }}
+                styles={selectStyles}
               />
 
               <Select
@@ -124,14 +137,7 @@ export default function HeroFilter() {
                     primary: '#0982c7',
                   },
                 })}
-                styles={{
-                  control: base => ({
-                    ...base,
-                    height: '3rem',
-                    minHeight: '3rem',
-                    border: 0,
-                  }),
-                }}
+                styles={selectStyles}
               />
               <Select
                 options={filteredCities}
@@ -149,14 +155,7 @@ export default function HeroFilter() {
                     primary: '#0982c7',
                   },
                 })}
-                styles={{
-                  control: base => ({
-                    ...base,
-                    height: '3rem',
-                    minHeight: '3rem',
-                    border: 0,
-                  }),
-                }}
+                styles={selectStyles}
               />
               <div>
                 <button className="w-full h-full py-1 px-4 bg-sky-600 dark:bg-yellow-500 text-white shadow-md duration-200 hover:scale-95">{t('hero_filter.btn_search')}</button>
@@ -164,7 +163,7 @@ export default function HeroFilter() {
             </div>
 
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mb-10">
-              {checkboxData.map(item => (
+              {radioboxData.map(item => (
                 <li
                   key={item.id}
                   className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500 dark:hover:shadow-yellow-500 ${
@@ -179,18 +178,32 @@ export default function HeroFilter() {
             </ul>
 
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
-              {currentCheckboxes.map((checkbox, index) => (
-                <li
-                  key={index}
-                  className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500 dark:hover:shadow-yellow-500 ${
-                    selectedCheckboxes.includes(checkbox) ? 'shadow-sky-500' : ''
-                  } dark:${selectedCheckboxes.includes(checkbox) ? 'shadow-yellow-500' : ''}`}
-                  onClick={() => toggleCheckbox(checkbox)}
-                >
-                  {checkbox}
-                  <input type="checkbox" value={checkbox} className="hidden" checked={selectedCheckboxes.includes(checkbox)} onChange={() => {}} />
-                </li>
-              ))}
+              {currentCheckboxes.map((option, index) =>
+                option.type === 'checkbox' ? (
+                  <li
+                    key={index}
+                    className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500 ${
+                      selectedCheckboxes.includes(option.value) ? 'shadow-sky-500' : ''
+                    }`}
+                    onClick={() => toggleCheckbox(option.value)}
+                  >
+                    <label>{option.value}</label>
+                    <input className="sr-only " type="checkbox" value={option.value} checked={selectedCheckboxes.includes(option.value)} onChange={() => toggleCheckbox(option.value)} />
+                  </li>
+                ) : (
+                  <li key={index} className="text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500">
+                    <label className="h-full w-full px-2 py-1">
+                      <input
+                        type="text"
+                        value={inputValues[option.value] || ''}
+                        onChange={e => handleInputChange(option.value, e.target.value)}
+                        placeholder={option.value}
+                        className="h-full w-full text-[1.2rem] outline-none text-center"
+                      />
+                    </label>
+                  </li>
+                )
+              )}
             </ul>
           </form>
         </div>

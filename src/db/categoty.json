@@ -7,45 +7,53 @@
       "EN": {
         "title": "Developers",
         "option": [
-          "option 1",
-          "option 2",
-          "option 3",
-          "option 4",
-          "option 5",
-          "option 6"
+          {
+            "type": "checkbox",
+            "value": "option 1"
+          },
+          {
+            "type": "input",
+            "value": "text"
+          }
         ]
       },
       "PL": {
         "title": "Deweloperzy",
         "option": [
-          "opcja 1",
-          "opcja 2",
-          "opcja 3",
-          "opcja 4",
-          "opcja 5",
-          "opcja 6"
+          {
+            "type": "checkbox",
+            "value": "opcja 1"
+          },
+          {
+            "type": "input",
+            "value": "text"
+          }
         ]
       },
       "UK": {
         "title": "Забудовники",
         "option": [
-          "опція 1",
-          "опція 2",
-          "опція 3",
-          "опція 4",
-          "опція 5",
-          "опція 6"
+          {
+            "type": "checkbox",
+            "value": "опція 1"
+          },
+          {
+            "type": "input",
+            "value": "text"
+          }
         ]
       },
       "RU": {
         "title": "Застройщики",
         "option": [
-          "опция 1",
-          "опция 2",
-          "опция 3",
-          "опция 4",
-          "опция 5",
-          "опция 6"
+          {
+            "type": "checkbox",
+            "value": "опция 1"
+          },
+          {
+            "type": "input",
+            "value": "default text"
+          }
         ]
       }
     }
@@ -58,29 +66,53 @@
       "EN": {
         "title": "Intermediaries",
         "option": [
-          "Real estate agency",
-          "Agents"
+          {
+            "type": "checkbox",
+            "value": "Real estate agency"
+          },
+          {
+            "type": "checkbox",
+            "value": "Agents"
+          }
         ]
       },
       "PL": {
         "title": "Pośrednicy",
         "option": [
-          "Agencji Nieruchomości",
-          "Agenci"
+          {
+            "type": "checkbox",
+            "value": "Agencji Nieruchomości"
+          },
+          {
+            "type": "checkbox",
+            "value": "Agenci"
+          }
         ]
       },
       "UK": {
         "title": "Посередники",
         "option": [
-          "Агентства нерухомості",
-          "Агенти"
+          {
+            "type": "checkbox",
+            "value": "Агентства нерухомості"
+          },
+          {
+            "type": "checkbox",
+            "value": "Агенти"
+          }
         ]
       },
       "RU": {
         "title": "Посредники",
         "option": [
-          "Агентства недвижимости",
-          "Агенты"
+          {
+            "type": "checkbox",
+            "value": "Агентства недвижимости"
+          },
+          {
+            "type": "checkbox",
+            "value": "Агенты"
+          }
         ]
       }
     }
@@ -93,45 +125,69 @@
       "EN": {
         "title": "Investments",
         "option": [
-          "option 1",
-          "option 2",
-          "option 3",
-          "option 4",
-          "option 5",
-          "option 6"
+          {
+            "type": "checkbox",
+            "value": "option 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 3"
+          }
         ]
       },
       "PL": {
         "title": "Inwestycje",
         "option": [
-          "opcja 1",
-          "opcja 2",
-          "opcja 3",
-          "opcja 4",
-          "opcja 5",
-          "opcja 6"
+          {
+            "type": "checkbox",
+            "value": "opcja 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 3"
+          }
         ]
       },
       "UK": {
         "title": "Інвестиції",
         "option": [
-          "опція 1",
-          "опція 2",
-          "опція 3",
-          "опція 4",
-          "опція 5",
-          "опція 6"
+          {
+            "type": "checkbox",
+            "value": "опція 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 3"
+          }
         ]
       },
       "RU": {
         "title": "Инвестиции",
         "option": [
-          "опция 1",
-          "опция 2",
-          "опция 3",
-          "опция 4",
-          "опция 5",
-          "опция 6"
+          {
+            "type": "checkbox",
+            "value": "опция 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 3"
+          }
         ]
       }
     }
@@ -144,45 +200,86 @@
       "EN": {
         "title": "Houses",
         "option": [
-          "option 1",
-          "option 2",
-          "option 3",
-          "option 4",
-          "option 5",
-          "option 6"
+          {
+            "type": "checkbox",
+            "value": "option 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 3"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 4"
+          }
         ]
       },
       "PL": {
         "title": "Domy",
         "option": [
-          "opcja 1",
-          "opcja 2",
-          "opcja 3",
-          "opcja 4",
-          "opcja 5",
-          "opcja 6"
+          {
+            "type": "checkbox",
+            "value": "opcja 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 3"
+          }
+          ,
+          {
+            "type": "checkbox",
+            "value": "opcja 4"
+          }
         ]
       },
       "UK": {
         "title": "Будинки",
         "option": [
-          "опція 1",
-          "опція 2",
-          "опція 3",
-          "опція 4",
-          "опція 5",
-          "опція 6"
+          {
+            "type": "checkbox",
+            "value": "опція 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 3"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 4"
+          }
         ]
       },
       "RU": {
         "title": "Дома",
         "option": [
-          "опция 1",
-          "опция 2",
-          "опция 3",
-          "опция 4",
-          "опция 5",
-          "опция 6"
+          {
+            "type": "checkbox",
+            "value": "опция 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 3"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 4"
+          }
         ]
       }
     }
@@ -195,45 +292,69 @@
       "EN": {
         "title": "Apartments",
         "option": [
-          "option 1",
-          "option 2",
-          "option 3",
-          "option 4",
-          "option 5",
-          "option 6"
+          {
+            "type": "checkbox",
+            "value": "option 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 3"
+          }
         ]
       },
       "PL": {
         "title": "Mieszkania",
         "option": [
-          "opcja 1",
-          "opcja 2",
-          "opcja 3",
-          "opcja 4",
-          "opcja 5",
-          "opcja 6"
+          {
+            "type": "checkbox",
+            "value": "opcja 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 3"
+          }
         ]
       },
       "UK": {
         "title": "Квартири",
         "option": [
-          "опція 1",
-          "опція 2",
-          "опція 3",
-          "опція 4",
-          "опція 5",
-          "опція 6"
+          {
+            "type": "checkbox",
+            "value": "опція 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 3"
+          }
         ]
       },
       "RU": {
         "title": "Квартиры",
         "option": [
-          "опция 1",
-          "опция 2",
-          "опция 3",
-          "опция 4",
-          "опция 5",
-          "опция 6"
+          {
+            "type": "checkbox",
+            "value": "опция 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 3"
+          }
         ]
       }
     }
@@ -246,45 +367,69 @@
       "EN": {
         "title": "Plots",
         "option": [
-          "option 1",
-          "option 2",
-          "option 3",
-          "option 4",
-          "option 5",
-          "option 6"
+          {
+            "type": "checkbox",
+            "value": "option 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "option 3"
+          }
         ]
       },
       "PL": {
         "title": "Działki",
         "option": [
-          "opcja 1",
-          "opcja 2",
-          "opcja 3",
-          "opcja 4",
-          "opcja 5",
-          "opcja 6"
+          {
+            "type": "checkbox",
+            "value": "opcja 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "opcja 3"
+          }
         ]
       },
       "UK": {
         "title": "Ділянки",
         "option": [
-          "опція 1",
-          "опція 2",
-          "опція 3",
-          "опція 4",
-          "опція 5",
-          "опція 6"
+          {
+            "type": "checkbox",
+            "value": "опція 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опція 3"
+          }
         ]
       },
       "RU": {
         "title": "Участки",
         "option": [
-          "опция 1",
-          "опция 2",
-          "опция 3",
-          "опция 4",
-          "опция 5",
-          "опция 6"
+          {
+            "type": "checkbox",
+            "value": "опция 1"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 2"
+          },
+          {
+            "type": "checkbox",
+            "value": "опция 3"
+          }
         ]
       }
     }

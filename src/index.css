@@ -27,4 +27,7 @@
   .linePageTitle {
     @apply after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:w-full after:h-[2px] after:bg-titleLine dark:after:bg-yellow-500;
   }
+  .loader svg {
+    @apply fill-sky-500 dark:fill-yellow-500;
+  }
 }

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { BsWindows, BsXLg } from 'react-icons/bs';
+import { BsList, BsXLg } from 'react-icons/bs';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -44,7 +44,7 @@ export default function NavHeader() {
       </ul>
       <div className="flex md:flex-row-reverse items-center md:gap-8 md:ml-10 z-50">
         <button className="md:hidden block ml-8 text-2xl font-normal text-colorMobileMenuIcon dark:text-white duration-200 " onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <BsXLg /> : <BsWindows />}
+          {isOpen ? <BsXLg className="h-6 w-auto" /> : <BsList className="h-8 w-auto" />}
         </button>
       </div>
     </nav>
