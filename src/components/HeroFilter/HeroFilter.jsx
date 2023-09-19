@@ -16,9 +16,15 @@ export default function HeroFilter() {
 
   // Изменили на selectedRadio
   const [selectedRadio, setSelectedRadio] = useState(null);
-
+  const [currentCheckboxes, setCurrentCheckboxes] = useState([]);
+  const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
+  const toggleCheckbox = value => {
+    setSelectedCheckboxes(prevState => (prevState.includes(value) ? prevState.filter(item => item !== value) : [...prevState, value]));
+  };
   const toggleRadio = radioName => {
     setSelectedRadio(radioName);
+    const currentCategory = checkboxData.find(item => item.title === radioName);
+    setCurrentCheckboxes(currentCategory ? currentCategory.checkboxes : []);
   };
 
   const countriesOptions = [
@@ -31,6 +37,7 @@ export default function HeroFilter() {
     return {
       ...languageSpecificData,
       id: item.category.id,
+      checkboxes: languageSpecificData.option, // добавим сюда опции для чекбоксов
     };
   });
 
@@ -155,7 +162,8 @@ export default function HeroFilter() {
                 <button className="w-full h-full py-1 px-4 bg-sky-600 dark:bg-yellow-500 text-white shadow-md duration-200 hover:scale-95">{t('hero_filter.btn_search')}</button>
               </div>
             </div>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mb-10">
               {checkboxData.map(item => (
                 <li
                   key={item.id}
@@ -166,6 +174,21 @@ export default function HeroFilter() {
                 >
                   {item.title}
                   <input type="radio" name="categoryRadio" className="hidden" checked={selectedRadio === item.title} onChange={() => {}} />
+                </li>
+              ))}
+            </ul>
+
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4">
+              {currentCheckboxes.map((checkbox, index) => (
+                <li
+                  key={index}
+                  className={`text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500 dark:hover:shadow-yellow-500 ${
+                    selectedCheckboxes.includes(checkbox) ? 'shadow-sky-500' : ''
+                  } dark:${selectedCheckboxes.includes(checkbox) ? 'shadow-yellow-500' : ''}`}
+                  onClick={() => toggleCheckbox(checkbox)}
+                >
+                  {checkbox}
+                  <input type="checkbox" value={checkbox} className="hidden" checked={selectedCheckboxes.includes(checkbox)} onChange={() => {}} />
                 </li>
               ))}
             </ul>

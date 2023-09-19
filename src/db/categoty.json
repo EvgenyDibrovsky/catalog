@@ -5,16 +5,48 @@
       "bg": "/images/bg-category/developer.jpg",
       "link_page": "/category/developers",
       "EN": {
-        "title": "Developers"
+        "title": "Developers",
+        "option": [
+          "option 1",
+          "option 2",
+          "option 3",
+          "option 4",
+          "option 5",
+          "option 6"
+        ]
       },
       "PL": {
-        "title": "Deweloperzy"
+        "title": "Deweloperzy",
+        "option": [
+          "opcja 1",
+          "opcja 2",
+          "opcja 3",
+          "opcja 4",
+          "opcja 5",
+          "opcja 6"
+        ]
       },
       "UK": {
-        "title": "Забудовники"
+        "title": "Забудовники",
+        "option": [
+          "опція 1",
+          "опція 2",
+          "опція 3",
+          "опція 4",
+          "опція 5",
+          "опція 6"
+        ]
       },
       "RU": {
-        "title": "Застройщики"
+        "title": "Застройщики",
+        "option": [
+          "опция 1",
+          "опция 2",
+          "опция 3",
+          "опция 4",
+          "опция 5",
+          "опция 6"
+        ]
       }
     }
   },
@@ -24,16 +56,32 @@
       "bg": "/images/bg-category/intermediaries.jpg",
       "link_page": "/category/Intermediaries",
       "EN": {
-        "title": "Intermediaries"
+        "title": "Intermediaries",
+        "option": [
+          "Real estate agency",
+          "Agents"
+        ]
       },
       "PL": {
-        "title": "Pośrednicy"
+        "title": "Pośrednicy",
+        "option": [
+          "Agencji Nieruchomości",
+          "Agenci"
+        ]
       },
       "UK": {
-        "title": "Посередники"
+        "title": "Посередники",
+        "option": [
+          "Агентства нерухомості",
+          "Агенти"
+        ]
       },
       "RU": {
-        "title": "Посредники"
+        "title": "Посредники",
+        "option": [
+          "Агентства недвижимости",
+          "Агенты"
+        ]
       }
     }
   },
@@ -43,16 +91,48 @@
       "bg": "/images/bg-category/investments.jpg",
       "link_page": "/category/investments",
       "EN": {
-        "title": "Investments"
+        "title": "Investments",
+        "option": [
+          "option 1",
+          "option 2",
+          "option 3",
+          "option 4",
+          "option 5",
+          "option 6"
+        ]
       },
       "PL": {
-        "title": "Inwestycje"
+        "title": "Inwestycje",
+        "option": [
+          "opcja 1",
+          "opcja 2",
+          "opcja 3",
+          "opcja 4",
+          "opcja 5",
+          "opcja 6"
+        ]
       },
       "UK": {
-        "title": "Інвестиції"
+        "title": "Інвестиції",
+        "option": [
+          "опція 1",
+          "опція 2",
+          "опція 3",
+          "опція 4",
+          "опція 5",
+          "опція 6"
+        ]
       },
       "RU": {
-        "title": "Инвестиции"
+        "title": "Инвестиции",
+        "option": [
+          "опция 1",
+          "опция 2",
+          "опция 3",
+          "опция 4",
+          "опция 5",
+          "опция 6"
+        ]
       }
     }
   },
@@ -62,16 +142,48 @@
       "bg": "/images/bg-category/investments.jpg",
       "link_page": "/category/houses",
       "EN": {
-        "title": "Houses"
+        "title": "Houses",
+        "option": [
+          "option 1",
+          "option 2",
+          "option 3",
+          "option 4",
+          "option 5",
+          "option 6"
+        ]
       },
       "PL": {
-        "title": "Domy"
+        "title": "Domy",
+        "option": [
+          "opcja 1",
+          "opcja 2",
+          "opcja 3",
+          "opcja 4",
+          "opcja 5",
+          "opcja 6"
+        ]
       },
       "UK": {
-        "title": "Будинки"
+        "title": "Будинки",
+        "option": [
+          "опція 1",
+          "опція 2",
+          "опція 3",
+          "опція 4",
+          "опція 5",
+          "опція 6"
+        ]
       },
       "RU": {
-        "title": "Дома"
+        "title": "Дома",
+        "option": [
+          "опция 1",
+          "опция 2",
+          "опция 3",
+          "опция 4",
+          "опция 5",
+          "опция 6"
+        ]
       }
     }
   },
@@ -81,16 +193,48 @@
       "bg": "/images/bg-category/investments.jpg",
       "link_page": "/category/apartments",
       "EN": {
-        "title": "Apartments"
+        "title": "Apartments",
+        "option": [
+          "option 1",
+          "option 2",
+          "option 3",
+          "option 4",
+          "option 5",
+          "option 6"
+        ]
       },
       "PL": {
-        "title": "Mieszkania"
+        "title": "Mieszkania",
+        "option": [
+          "opcja 1",
+          "opcja 2",
+          "opcja 3",
+          "opcja 4",
+          "opcja 5",
+          "opcja 6"
+        ]
       },
       "UK": {
-        "title": "Квартири"
+        "title": "Квартири",
+        "option": [
+          "опція 1",
+          "опція 2",
+          "опція 3",
+          "опція 4",
+          "опція 5",
+          "опція 6"
+        ]
       },
       "RU": {
-        "title": "Квартиры"
+        "title": "Квартиры",
+        "option": [
+          "опция 1",
+          "опция 2",
+          "опция 3",
+          "опция 4",
+          "опция 5",
+          "опция 6"
+        ]
       }
     }
   },
@@ -100,16 +244,48 @@
       "bg": "/images/bg-category/investments.jpg",
       "link_page": "/category/plots",
       "EN": {
-        "title": "Plots"
+        "title": "Plots",
+        "option": [
+          "option 1",
+          "option 2",
+          "option 3",
+          "option 4",
+          "option 5",
+          "option 6"
+        ]
       },
       "PL": {
-        "title": "Działki"
+        "title": "Działki",
+        "option": [
+          "opcja 1",
+          "opcja 2",
+          "opcja 3",
+          "opcja 4",
+          "opcja 5",
+          "opcja 6"
+        ]
       },
       "UK": {
-        "title": "Ділянки"
+        "title": "Ділянки",
+        "option": [
+          "опція 1",
+          "опція 2",
+          "опція 3",
+          "опція 4",
+          "опція 5",
+          "опція 6"
+        ]
       },
       "RU": {
-        "title": "Участки"
+        "title": "Участки",
+        "option": [
+          "опция 1",
+          "опция 2",
+          "опция 3",
+          "опция 4",
+          "опция 5",
+          "опция 6"
+        ]
       }
     }
   }
