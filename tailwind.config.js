@@ -71,6 +71,7 @@ module.exports = {
         checkboxColor: '#36a6de',
         titleLine: '#36a6de',
       },
+
       backgroundImage: {
         'hero-filter': "url('images/bg/bg-filter.jpg')",
       },

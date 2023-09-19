@@ -30,4 +30,7 @@
   .loader svg {
     @apply fill-sky-500 dark:fill-yellow-500;
   }
+  .filter-input-hover input:hover::placeholder {
+    @apply duration-200 hover:text-sky-500 dark:hover:text-yellow-500;
+  }
 }

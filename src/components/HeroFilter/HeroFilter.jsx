@@ -3,7 +3,7 @@ import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
 import dbCategory from '../../db/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
-import { BsSearch } from "react-icons/bs";
+import { BsSearch } from 'react-icons/bs';
 
 const selectStyles = {
   control: base => ({
@@ -112,10 +112,8 @@ export default function HeroFilter() {
                   ...theme,
                   borderRadius: 0,
                   border: 0,
-
                   colors: {
                     ...theme.colors,
-
                     primary: '#0982c7',
                   },
                 })}
@@ -131,10 +129,8 @@ export default function HeroFilter() {
                 theme={theme => ({
                   ...theme,
                   borderRadius: 0,
-
                   colors: {
                     ...theme.colors,
-
                     primary: '#0982c7',
                   },
                 })}
@@ -149,17 +145,18 @@ export default function HeroFilter() {
                 theme={theme => ({
                   ...theme,
                   borderRadius: 0,
-
                   colors: {
                     ...theme.colors,
-
                     primary: '#0982c7',
                   },
                 })}
                 styles={selectStyles}
               />
               <div>
-                <button className="w-full h-full flex items-center justify-center gap-4 py-1 px-4 bg-sky-600 dark:bg-yellow-500 text-white shadow-md duration-200 group"><BsSearch className="duration-200 group-hover:scale-110"/>{t('hero_filter.btn_search')}</button>
+                <button className="w-full h-full flex items-center justify-center gap-4 py-1 px-4 bg-sky-600 dark:bg-yellow-500 text-white shadow-md duration-200 group">
+                  <BsSearch className="duration-200 group-hover:scale-110" />
+                  {t('hero_filter.btn_search')}
+                </button>
               </div>
             </div>
 
@@ -192,7 +189,7 @@ export default function HeroFilter() {
                     <input className="sr-only " type="checkbox" value={option.value} checked={selectedCheckboxes.includes(option.value)} onChange={() => toggleCheckbox(option.value)} />
                   </li>
                 ) : (
-                  <li key={index} className="text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500">
+                  <li key={index} className="filter-input-hover text-black bg-white h-12 flex items-center justify-center cursor-pointer shadow-lg hover:shadow-sky-500  dark:hover:shadow-yellow-500 ">
                     <label className="h-full w-full px-2 py-1">
                       <input
                         type="text"
