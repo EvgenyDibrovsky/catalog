@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import LoginAdmin from '../../components/Admin/LoginAdmin';
+
 export default function AuthAdminPage() {
   const { t } = useTranslation();
   return (

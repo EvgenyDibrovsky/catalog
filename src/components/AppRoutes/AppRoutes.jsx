@@ -17,6 +17,9 @@ import ApartmentsPage from '../../pages/category/ApartmentsPage';
 import PlotsPage from '../../pages/category/PlotsPage';
 import Admin from '../../pages/Admin/AuthAdminPage';
 import MainAdmin from '../../pages/Admin/MainAdminPage';
+import HomeAdminPage from '../../pages/Admin/HomeAdminPage';
+import SettingsPage from '../../pages/Admin/SettingsPage';
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -44,55 +47,12 @@ export default function AppRoutes() {
           </Section>
         }
       >
-        <Route
-          path="developers"
-          element={
-            <Section>
-              <Developers />
-            </Section>
-          }
-        />
-
-        <Route
-          path="intermediaries"
-          element={
-            <Section>
-              <IntermediariesPage />
-            </Section>
-          }
-        />
-        <Route
-          path="investments"
-          element={
-            <Section>
-              <InvestmentsPage />
-            </Section>
-          }
-        />
-        <Route
-          path="houses"
-          element={
-            <Section>
-              <HousesPage />
-            </Section>
-          }
-        />
-        <Route
-          path="apartments"
-          element={
-            <Section>
-              <ApartmentsPage />
-            </Section>
-          }
-        />
-        <Route
-          path="plots"
-          element={
-            <Section>
-              <PlotsPage />
-            </Section>
-          }
-        />
+        <Route path="developers" element={<Developers />} />
+        <Route path="intermediaries" element={<IntermediariesPage />} />
+        <Route path="investments" element={<InvestmentsPage />} />
+        <Route path="houses" element={<HousesPage />} />
+        <Route path="apartments" element={<ApartmentsPage />} />
+        <Route path="plots" element={<PlotsPage />} />
       </Route>
 
       <Route
@@ -140,6 +100,19 @@ export default function AppRoutes() {
         element={
           <Section noPadding>
             <MainAdmin />
+          </Section>
+        }
+      >
+        <Route index element={<HomeAdminPage />} />
+
+        <Route path="settings" element={<SettingsPage />} />
+      </Route>
+
+      <Route
+        path="*"
+        element={
+          <Section>
+            <PageNotFound />
           </Section>
         }
       />
