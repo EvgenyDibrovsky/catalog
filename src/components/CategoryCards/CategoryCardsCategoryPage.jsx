@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import dbCategory from '../../db/categoty.json';
+import dbCategory from '../../db/catalog/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
 import { BsChevronCompactLeft } from 'react-icons/bs';
 export default function CategoryCardsHonePage() {
@@ -30,7 +30,7 @@ export default function CategoryCardsHonePage() {
             <li key={item.id} className="shadow-md">
               <NavLink
                 to={item.link_page}
-                className="flex justify-center items-center h-12 py-2 px-4 shadow-md shadow-gray-400 dark:shadow-yellow-500 duration-200 hover:shadow-sky-500 [&.active]:shadow-sky-500  dark:[&.active]:shadow-yellow-500 "
+                className="flex justify-center items-center h-12 py-2 px-4 shadow-md shadow-gray-400 dark:shadow-gray-400 duration-200 hover:shadow-sky-500 [&.active]:shadow-sky-500  dark:[&.active]:shadow-yellow-500 "
               >
                 <h3 className="font-semibold">{item.title}</h3>
               </NavLink>

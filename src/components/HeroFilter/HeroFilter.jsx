@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import { useTranslation } from 'react-i18next';
-import dbCategory from '../../db/categoty.json';
+import dbCategory from '../../db/catalog/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
 import { BsSearch } from 'react-icons/bs';
 

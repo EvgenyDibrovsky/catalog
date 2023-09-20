@@ -2,7 +2,6 @@ import MetaTags from '../components/MetaTags/MetaTags';
 // import Titles from 'components/PageSettings/Titles';
 import { useTranslation } from 'react-i18next';
 import CardsListCompany from '../components/CardsListCompany/CardsListCompany';
-import HeroSlider from '../components/HeroSlider/HeroSlider';
 import CategoryCardsCategoryPage from 'components/CategoryCards/CategoryCardsCategoryPage';
 import { Outlet } from 'react-router-dom';
 
@@ -24,7 +23,6 @@ export default function CatalogPage() {
           <CardsListCompany />
         </div>
       </div>
-      <HeroSlider />
     </>
   );
 }

@@ -9,7 +9,7 @@ import HomePage from '../../pages/HomePage';
 import RegulationsPage from '../../pages/RegulationsPage';
 import PageNotFound from '../../pages/PageNotFound';
 import Offer from '../../pages/OfferPage';
-import Developers from '../../pages/category/DevelopersPage';
+import Developers from '../../pages/category/Developers/DevelopersPage';
 import IntermediariesPage from '../../pages/category/IntermediariesPage';
 import InvestmentsPage from '../../pages/category/InvestmentsPage';
 import HousesPage from '../../pages/category/HousesPage';
@@ -19,6 +19,7 @@ import Admin from '../../pages/Admin/AuthAdminPage';
 import MainAdmin from '../../pages/Admin/MainAdminPage';
 import HomeAdminPage from '../../pages/Admin/HomeAdminPage';
 import SettingsPage from '../../pages/Admin/SettingsPage';
+import TestPageItem from '../../pages/category/Developers/DevelopersItemPage';
 
 export default function AppRoutes() {
   return (
@@ -54,7 +55,6 @@ export default function AppRoutes() {
         <Route path="apartments" element={<ApartmentsPage />} />
         <Route path="plots" element={<PlotsPage />} />
       </Route>
-
       <Route
         path="/offer"
         element={
@@ -107,6 +107,14 @@ export default function AppRoutes() {
 
         <Route path="settings" element={<SettingsPage />} />
       </Route>
+      <Route
+        path="/testpage"
+        element={
+          <Section>
+            <TestPageItem />
+          </Section>
+        }
+      />
 
       <Route
         path="*"

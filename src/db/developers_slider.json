@@ -1,8 +1,8 @@
 [
   {
-    "hero_slider": {
+    "developers_slider": {
       "id": 3,
-      "banner": "/images/hero_slider/slide-3.jpg",
+      "banner": "/images/developers_slider/slide-3.jpg",
       "logo": "",
       "offer": "/oferta",
       "link_site": "https://google.com",
@@ -25,10 +25,10 @@
     }
   },
   {
-    "hero_slider": {
+    "developers_slider": {
       "id": 2,
-      "banner": "/images/hero_slider/budimex/slide-2.jpg",
-      "logo": "/images/hero_slider/budimex/logo-budimex.jpg",
+      "banner": "/images/developers_slider/budimex/slide-2.jpg",
+      "logo": "/images/developers_slider/budimex/logo-budimex.jpg",
       "offer": "/oferta",
       "link_site": "https://www.budimex.pl/",
       "EN": {
@@ -50,9 +50,9 @@
     }
   },
   {
-    "hero_slider": {
+    "developers_slider": {
       "id": 1,
-      "banner": "/images/hero_slider/slide-1.jpg",
+      "banner": "/images/developers_slider/slide-1.jpg",
       "logo": "",
       "offer": "/oferta",
       "link_site": "https://google.com",

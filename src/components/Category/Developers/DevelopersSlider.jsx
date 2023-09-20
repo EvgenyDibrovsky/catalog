@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import HeroSliderItem from './HeroSliderItem';
-import dbHeroSlider from '../../db/hero_slider.json';
-import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
+import DevelopersSliderItem from './DevelopersSliderItem';
+import dbDevelopersSlider from '../../../db/developers_slider.json';
+import useCurrentLanguage from '../../../Hooks/useCurrentLanguage';
 
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import Swiper from 'swiper';
@@ -11,24 +11,24 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 // import 'swiper/css/pagination';
 
-export default function HeroSlider() {
+export default function DevelopersSlider() {
   const currentLanguage = useCurrentLanguage();
 
-  const data = dbHeroSlider.map(item => {
-    const languageSpecificData = item.hero_slider[currentLanguage];
+  const data = dbDevelopersSlider.map(item => {
+    const languageSpecificData = item.developers_slider[currentLanguage];
 
     return {
       ...languageSpecificData,
-      id: item.hero_slider.id,
-      banner: item.hero_slider.banner,
-      logo: item.hero_slider.logo,
-      offer: item.hero_slider.offer,
-      link_site: item.hero_slider.link_site,
+      id: item.developers_slider.id,
+      banner: item.developers_slider.banner,
+      logo: item.developers_slider.logo,
+      offer: item.developers_slider.offer,
+      link_site: item.developers_slider.link_site,
     };
   });
 
   useEffect(() => {
-    new Swiper('.heroSlider', {
+    new Swiper('.developersSlider', {
       modules: [Navigation, Autoplay],
       navigation: {
         nextEl: '.swiper-button-next-ph',
@@ -42,10 +42,10 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="swiper heroSlider w-full h-full">
+    <div className="swiper developersSlider w-full h-full">
       <div className="swiper-wrapper">
         {data.map(item => (
-          <HeroSliderItem key={item.id} item={item} />
+          <DevelopersSliderItem key={item.id} item={item} />
         ))}
       </div>
       <div className="z-20 absolute bottom-0 right-0 lg:flex items-center justify-center bg-white">

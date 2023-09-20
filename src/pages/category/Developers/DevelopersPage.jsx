@@ -1,7 +1,7 @@
-import MetaTags from '../../components/MetaTags/MetaTags';
+import MetaTags from '../../../components/MetaTags/MetaTags';
 import { useTranslation } from 'react-i18next';
 import Titles from 'components/PageSettings/Titles';
-import underConstruction from '../../images/support/under-construction.png';
+import underConstruction from '../../../images/support/under-construction.png';
 
 export default function DevelopersPage() {
   const { t } = useTranslation();
