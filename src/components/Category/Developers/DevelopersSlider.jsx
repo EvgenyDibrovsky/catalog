@@ -48,12 +48,12 @@ export default function DevelopersSlider() {
           <DevelopersSliderItem key={item.id} item={item} />
         ))}
       </div>
-      <div className="z-20 absolute bottom-0 right-0 lg:flex items-center justify-center bg-white">
+      <div className="z-20 absolute bottom-0 right-0 lg:flex items-center justify-center bg-white dark:bg-black">
         <button type="button" className="swiper-button-prev-ph p-4 group">
-          <BsChevronLeft className="w-6 h-6 duration-200 transform translate-x-0 group-hover:-translate-x-1" />
+          <BsChevronLeft className="w-6 h-6 fill-black dark:fill-white duration-200 transform translate-x-0 group-hover:-translate-x-1" />
         </button>
         <button type="button" className="swiper-button-next-ph p-4 group">
-          <BsChevronRight className="w-6 h-6 fill-black duration-200 transform translate-x-0 group-hover:translate-x-1" />
+          <BsChevronRight className="w-6 h-6 fill-black dark:fill-white duration-200 transform translate-x-0 group-hover:translate-x-1" />
         </button>
       </div>
     </div>

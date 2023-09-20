@@ -33,4 +33,8 @@
   .filter-input-hover input:hover::placeholder {
     @apply duration-200 hover:text-sky-500 dark:hover:text-yellow-500;
   }
+  .swiper-button-prev-ph.swiper-button-disabled svg,
+  .swiper-button-next-ph.swiper-button-disabled svg {
+    @apply opacity-30;
+  }
 }
