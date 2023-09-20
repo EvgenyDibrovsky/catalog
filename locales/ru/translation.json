@@ -187,5 +187,17 @@
     "checkbox_4": "Дома",
     "checkbox_5": "Квартиры",
     "checkbox_6": "Участки"
+  },
+  "admin": {
+    "page": {
+      "title": "Привет, админ"
+    },
+    "forms": {
+      "authorization": {
+        "password_enter": "Введите пароль",
+        "btn_auth": "Войти"
+
+      }
+    }
   }
 }
