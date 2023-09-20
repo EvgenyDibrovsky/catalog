@@ -187,5 +187,16 @@
     "checkbox_4": "Domy",
     "checkbox_5": "Mieszkania",
     "checkbox_6": "Działki"
+  },
+  "admin": {
+    "page": {
+      "title": "Cześć, adminie"
+    },
+    "forms": {
+      "authorization": {
+        "password_enter": "Wprowadź hasło",
+        "btn_auth": "Zaloguj się"
+      }
+    }
   }
 }

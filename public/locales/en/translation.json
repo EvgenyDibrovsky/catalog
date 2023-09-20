@@ -187,5 +187,16 @@
     "checkbox_4": "Houses",
     "checkbox_5": "Apartments",
     "checkbox_6": "Plots"
+  },
+ "admin": {
+    "page": {
+      "title": "Hello, admin"
+    },
+    "forms": {
+      "authorization": {
+        "password_enter": "Enter password",
+        "btn_auth": "Login"
+      }
+    }
   }
 }

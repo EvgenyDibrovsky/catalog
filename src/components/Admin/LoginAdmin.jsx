@@ -33,14 +33,14 @@ class AdminLoginForm extends React.Component {
     return (
       <>
         <div className="flex justify-center mb-10">
-          <BsFillShieldLockFill className="w-10 h-10 text-sky-500 dark:text-yellow-500" />
+          <BsFillShieldLockFill className="w-12 h-12 text-sky-500 dark:text-yellow-500" />
         </div>
 
         <form onSubmit={this.handleSubmit} className="w-8/12">
           <label className="text-black dark:text-white">
             <input
               type="password"
-              placeholder={t('forms.authorization.password')}
+              placeholder={t('admin.forms.authorization.password_enter')}
               name="password"
               value={password}
               onChange={this.handleChange}
@@ -50,7 +50,7 @@ class AdminLoginForm extends React.Component {
           </label>
 
           <button type="submit" className="btn-sign-up-form">
-            {t('forms.authorization.btn_authorization')}
+            {t('admin.forms.authorization.btn_auth')}
           </button>
         </form>
       </>

@@ -6,11 +6,13 @@ export default function HomePage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen">
+    <div>
       <MetaTags metaTitle={t('pages.home.meta_title')} metaDescription={t('pages.home.meta_description')} />
       <HeroFilter />
       <div className="container mt-10">
-        <CategoryCardsHonePage />
+        <div className="my-10">
+          <CategoryCardsHonePage />
+        </div>
       </div>
     </div>
   );

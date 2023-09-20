@@ -16,6 +16,7 @@ import HousesPage from '../../pages/category/HousesPage';
 import ApartmentsPage from '../../pages/category/ApartmentsPage';
 import PlotsPage from '../../pages/category/PlotsPage';
 import Admin from '../../pages/Admin/AuthAdminPage';
+import MainAdmin from '../../pages/Admin/MainAdminPage';
 export default function AppRoutes() {
   return (
     <Routes>
@@ -131,6 +132,14 @@ export default function AppRoutes() {
         element={
           <Section noPadding>
             <Admin />
+          </Section>
+        }
+      />
+      <Route
+        path="/admin/main"
+        element={
+          <Section noPadding>
+            <MainAdmin />
           </Section>
         }
       />
