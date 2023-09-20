@@ -62,7 +62,7 @@
     "category": {
       "id": 2,
       "bg": "/images/bg-category/intermediaries.jpg",
-      "link_page": "intermediaries",
+      "link_page": "Intermediaries",
       "EN": {
         "title": "Intermediaries",
         "option": [
@@ -195,7 +195,7 @@
   {
     "category": {
       "id": 4,
-      "bg": "/images/bg-category/investments.jpg",
+      "bg": "/images/bg-category/house.jpg",
       "link_page": "houses",
       "EN": {
         "title": "Houses",
@@ -287,7 +287,7 @@
   {
     "category": {
       "id": 5,
-      "bg": "/images/bg-category/investments.jpg",
+      "bg": "/images/bg-category/apartments.jpg",
       "link_page": "apartments",
       "EN": {
         "title": "Apartments",
@@ -362,7 +362,7 @@
   {
     "category": {
       "id": 6,
-      "bg": "/images/bg-category/investments.jpg",
+      "bg": "/images/bg-category/plots.jpg",
       "link_page": "plots",
       "EN": {
         "title": "Plots",

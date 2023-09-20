@@ -2,6 +2,8 @@ import MetaTags from '../components/MetaTags/MetaTags';
 import { useTranslation } from 'react-i18next';
 import HeroFilter from 'components/HeroFilter/HeroFilter';
 import CategoryCardsHonePage from 'components/CategoryCards/CategoryCardsHonePage';
+import Adv from '../components/Adv/Adv';
+
 export default function HomePage() {
   const { t } = useTranslation();
 
@@ -12,6 +14,7 @@ export default function HomePage() {
       <div className="container mt-10">
         <div className="my-10">
           <CategoryCardsHonePage />
+          <Adv />
         </div>
       </div>
     </div>
