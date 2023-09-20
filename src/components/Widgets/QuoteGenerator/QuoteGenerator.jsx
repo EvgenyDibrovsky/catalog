@@ -19,16 +19,16 @@ function QuoteGenerator() {
   };
 
   return (
-    <div>
-      <button onClick={fetchQuote} disabled={loading} className="mx-auto mb-2 underline text-sky-500 duration-200 hover:text-sky-700 dark:text-yellow-500 dark:hover:text-yellow-700">
+    <div className="flex flex-col justify-center">
+      <button onClick={fetchQuote} disabled={loading} className="mb-2 underline text-sky-500 duration-200 hover:text-sky-700 dark:text-yellow-500 dark:hover:text-yellow-700">
         Получить цитату
       </button>
 
       {loading ? (
-        <p className="text-black dark:text-white">{quote}</p>
+        <p className="text-black dark:text-white">Loading...</p>
       ) : (
         <>
-          <p>{quote}</p>
+          <p className="text-black dark:text-white mb-2">{quote}</p>
           <p className="text-gray-400 text-right">
             <i>{author}</i>
           </p>
