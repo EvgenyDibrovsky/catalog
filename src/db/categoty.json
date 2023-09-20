@@ -3,7 +3,7 @@
     "category": {
       "id": 1,
       "bg": "/images/bg-category/developer.jpg",
-      "link_page": "/category/developers",
+      "link_page": "developers",
       "EN": {
         "title": "Developers",
         "option": [
@@ -62,7 +62,7 @@
     "category": {
       "id": 2,
       "bg": "/images/bg-category/intermediaries.jpg",
-      "link_page": "/category/Intermediaries",
+      "link_page": "Intermediaries",
       "EN": {
         "title": "Intermediaries",
         "option": [
@@ -121,7 +121,7 @@
     "category": {
       "id": 3,
       "bg": "/images/bg-category/investments.jpg",
-      "link_page": "/category/investments",
+      "link_page": "investments",
       "EN": {
         "title": "Investments",
         "option": [
@@ -196,7 +196,7 @@
     "category": {
       "id": 4,
       "bg": "/images/bg-category/investments.jpg",
-      "link_page": "/category/houses",
+      "link_page": "houses",
       "EN": {
         "title": "Houses",
         "option": [
@@ -288,7 +288,7 @@
     "category": {
       "id": 5,
       "bg": "/images/bg-category/investments.jpg",
-      "link_page": "/category/apartments",
+      "link_page": "apartments",
       "EN": {
         "title": "Apartments",
         "option": [
@@ -363,7 +363,7 @@
     "category": {
       "id": 6,
       "bg": "/images/bg-category/investments.jpg",
-      "link_page": "/category/plots",
+      "link_page": "plots",
       "EN": {
         "title": "Plots",
         "option": [

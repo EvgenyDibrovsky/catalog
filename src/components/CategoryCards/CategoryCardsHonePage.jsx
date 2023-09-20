@@ -19,7 +19,7 @@ export default function CategoryCardsHonePage() {
   return (
     <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
       {data.map(item => (
-        <Link to={item.link_page} key={item.id}>
+        <Link to={`/catalog/${item.link_page}`} key={item.id}>
           <li
             className="p-0 h-40 bg-hero-filter bg-cover bg-center bg-no-repeat shadow-md shadow-gray-400 dark:shadow-yellow-500 duration-200 hover:p-6"
             style={{

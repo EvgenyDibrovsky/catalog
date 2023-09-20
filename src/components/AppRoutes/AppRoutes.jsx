@@ -42,55 +42,58 @@ export default function AppRoutes() {
             <Catalog />
           </Section>
         }
-      />
-      <Route
-        path="/category/developers"
-        element={
-          <Section>
-            <Developers />
-          </Section>
-        }
-      />
-      <Route
-        path="/category/intermediaries"
-        element={
-          <Section>
-            <IntermediariesPage />
-          </Section>
-        }
-      />
-      <Route
-        path="/category/investments"
-        element={
-          <Section>
-            <InvestmentsPage />
-          </Section>
-        }
-      />
-      <Route
-        path="/category/houses"
-        element={
-          <Section>
-            <HousesPage />
-          </Section>
-        }
-      />
-      <Route
-        path="/category/apartments"
-        element={
-          <Section>
-            <ApartmentsPage />
-          </Section>
-        }
-      />
-      <Route
-        path="/category/plots"
-        element={
-          <Section>
-            <PlotsPage />
-          </Section>
-        }
-      />
+      >
+        <Route
+          path="developers"
+          element={
+            <Section>
+              <Developers />
+            </Section>
+          }
+        />
+
+        <Route
+          path="intermediaries"
+          element={
+            <Section>
+              <IntermediariesPage />
+            </Section>
+          }
+        />
+        <Route
+          path="investments"
+          element={
+            <Section>
+              <InvestmentsPage />
+            </Section>
+          }
+        />
+        <Route
+          path="houses"
+          element={
+            <Section>
+              <HousesPage />
+            </Section>
+          }
+        />
+        <Route
+          path="apartments"
+          element={
+            <Section>
+              <ApartmentsPage />
+            </Section>
+          }
+        />
+        <Route
+          path="plots"
+          element={
+            <Section>
+              <PlotsPage />
+            </Section>
+          }
+        />
+      </Route>
+
       <Route
         path="/offer"
         element={

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import CardsListCompany from '../components/CardsListCompany/CardsListCompany';
 import HeroSlider from '../components/HeroSlider/HeroSlider';
 import CategoryCardsCategoryPage from 'components/CategoryCards/CategoryCardsCategoryPage';
+import { Outlet } from 'react-router-dom';
 
 export default function CatalogPage() {
   const { t } = useTranslation();
@@ -11,18 +12,19 @@ export default function CatalogPage() {
   return (
     <>
       <MetaTags metaTitle={t('pages.catalog.meta_title')} metaDescription={t('pages.catalog.meta_description')} />
-      <HeroSlider />
-
-      <div className="container">
+      <div className="container pt-10">
         {/* <Titles title={t('pages.catalog.title')} subTitle={t('pages.catalog.sub_title')} /> */}
-        <div className="my-10">
+        <div className="mb-10">
           <CategoryCardsCategoryPage />
         </div>
-
-        <div className="mb-10">
+        <div className="my-10">
+          <Outlet />
+        </div>
+        <div className="my-10">
           <CardsListCompany />
         </div>
       </div>
+      <HeroSlider />
     </>
   );
 }
