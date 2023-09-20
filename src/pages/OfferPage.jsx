@@ -7,15 +7,9 @@ export default function OfferPage() {
 
   return (
     <div className="min-h-screen">
-      <MetaTags
-        metaTitle={t('pages.offer.meta_title')}
-        metaDescription={t('pages.offer.meta_description')}
-      />
+      <MetaTags metaTitle={t('pages.offer.meta_title')} metaDescription={t('pages.offer.meta_description')} />
       <div className="container mt-10">
-        <Titles
-          title={t('pages.offer.title')}
-          subTitle={t('pages.offer.sub_title')}
-        />
+        <Titles title={t('pages.offer.title')} subTitle={t('pages.offer.sub_title')} />
       </div>
     </div>
   );
