@@ -1,4 +1,4 @@
-[
+
     {
         "developer_page_item": {
             "id": 1,
@@ -20,6 +20,10 @@
                 "chat": true
             },
             "EN": {
+                "content": {
+                    "title": "Заоголовок контента",
+                    "description": "Описание контента"
+                },
                 "filter": {
                     "country": "Польша",
                     "region": "Малополский",
@@ -45,10 +49,6 @@
                         "banner": "/images/developers_slider/budimex/slide-3.jpg"
                     }
                 ],
-                "content": {
-                    "title": "Заоголовок контента",
-                    "description": "Описание контента"
-                },
                 "projects_page": {
                     "project_item": [
                         {
@@ -79,6 +79,10 @@
                 }
             },
             "PL": {
+                "content": {
+                    "title": "Заоголовок контента",
+                    "description": "Описание контента"
+                },
                 "filter": {
                     "country": "Польша",
                     "region": "Малополский",
@@ -104,10 +108,6 @@
                         "banner": "/images/developers_slider/budimex/slide-3.jpg"
                     }
                 ],
-                "content": {
-                    "title": "Заоголовок контента",
-                    "description": "Описание контента"
-                },
                 "projects_page": {
                     "project_item": [
                         {
@@ -138,6 +138,10 @@
                 }
             },
             "UK": {
+                "content": {
+                    "title": "Заголовок контенту",
+                    "description": "Опис контенту"
+                },
                 "filter": {
                     "country": "Польща",
                     "region": "Малопольський",
@@ -163,10 +167,6 @@
                         "banner": "/images/developers_slider/budimex/slide-3.jpg"
                     }
                 ],
-                "content": {
-                    "title": "Заголовок контенту",
-                    "description": "Опис контенту"
-                },
                 "projects_page": {
                     "project_item": [
                         {
@@ -197,6 +197,10 @@
                 }
             },
             "RU": {
+                "content": {
+                    "title": "Заоголовок контента",
+                    "description": "Описание контента"
+                },
                 "filter": {
                     "country": "Польша",
                     "region": "Малополский",
@@ -222,10 +226,6 @@
                         "banner": "/images/developers_slider/budimex/slide-3.jpg"
                     }
                 ],
-                "content": {
-                    "title": "Заоголовок контента",
-                    "description": "Описание контента"
-                },
                 "projects_page": {
                     "project_item": [
                         {
@@ -257,4 +257,3 @@
             }
         }
     }
-]
