@@ -1,42 +1,20 @@
 // DeveloperGeneralItem.js
-import React, { useEffect, useState } from 'react';
-import useCurrentLanguage from '../../../Hooks/useCurrentLanguage';
 
-export default function DeveloperGeneralItem({ developerId }) {
-  const currentLanguage = useCurrentLanguage();
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    import(`../../../db/catalog/bd-developers/${developerId}.json`)
-      .then(module => {
-        console.log('Загруженные данные:', module.default);
-        const item = module.default[0];
-        const languageSpecificData = item.developer_page_item[currentLanguage];
-        console.log('Данные для текущего языка:', languageSpecificData);
-
-        const result = {
-          ...languageSpecificData,
-          id: item.developer_page_item.id,
-          nameCompany: item.developer_page_item.name_company,
-          nipCompany: item.developer_page_item.nip,
-          logoCompany: item.developer_page_item.logo,
-        };
-        console.log(result);
-        setData(result);
-      })
-      .catch(error => {
-        console.error('Ошибка загрузки данных:', error);
-      });
-  }, [developerId, currentLanguage]);
-
-  if (!data) return null; // или <LoadingComponent /> если у вас есть компонент загрузки
-
+export default function DeveloperGeneralItem() {
   return (
     <>
       <div className="my-20">
-        <h1 className="text-red-500 text-[2rem]">{data['nameCompany']}</h1>
-        <h1 className="text-red-500 text-[2rem]">{data['nipCompany']}</h1>
+        <h1 className="text-black text-[1.5rem] font-bold">Название компании</h1>
+        <p className="text-black">
+          Описание компании: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, rem minus earum aspernatur eius dolor! Dolorem a laudantium optio, dolor animi velit cumque nam quis
+          quidem, sequi totam eaque! Amet!
+        </p>
       </div>
+      <ul className="w-6/12 grid grid-cols-3 gap-4">
+        <li className="cursor-pointer border-b border-sky-500 dark:border-yellow-500 py-2 text-center duration-200 hover:bg-sky-500 dark:hover:bg-yellow-500">Проекты</li>
+        <li className="cursor-pointer border-b border-sky-500 dark:border-yellow-500 py-2 text-center duration-200 hover:bg-sky-500 dark:hover:bg-yellow-500">Галерея</li>
+        <li className="cursor-pointer border-b border-sky-500 dark:border-yellow-500 py-2 text-center duration-200 hover:bg-sky-500 dark:hover:bg-yellow-500">Отзывы</li>
+      </ul>
     </>
   );
 }

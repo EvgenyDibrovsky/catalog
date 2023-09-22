@@ -56,7 +56,15 @@ export default function AppRoutes() {
         <Route path="apartments" element={<ApartmentsPage />} />
         <Route path="plots" element={<PlotsPage />} />
       </Route>
-      <Route path="/developers/:developerId" element={<DevelopersItemPage />} />
+
+      <Route
+        path="/item"
+        element={
+          <Section noPadding>
+            <DevelopersItemPage />
+          </Section>
+        }
+      />
 
       <Route
         path="/offer"
@@ -110,7 +118,6 @@ export default function AppRoutes() {
 
         <Route path="settings" element={<SettingsPage />} />
       </Route>
-
       <Route
         path="*"
         element={
