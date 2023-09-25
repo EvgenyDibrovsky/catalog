@@ -77,7 +77,7 @@ function ContactForm() {
               placeholder={t('forms.contact_form.enter_message')}
               onChange={handleChange}
               required
-              className="w-full h-32  bg-white dark:bg-black border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2 mb-5"
+              className="w-full h-32  bg-white dark:bg-black border border-borderLabelForm dark:border-white p-2 rounded-md focus:outline-none mt-2 mb-5"
             />
           </label>
 
