@@ -4,7 +4,7 @@ import SubTitle from 'components/PageSettings/SubTitle';
 export default function Titles({ title, subTitle }) {
   return (
     <>
-      <div className="flex flex-col gap-2 lg:gap-0 lg:flex-row justify-between items-baseline mb-10">
+      <div className="flex justify-between items-baseline relative mb-10 border-b-2 border-titleLine dark:border-yellow-500">
         <PageTitle title={title} />
         <SubTitle subTitle={subTitle} />
       </div>
