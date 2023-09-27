@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import dbCategory from '../../db/catalog/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
-import { BsChevronCompactLeft } from 'react-icons/bs';
 export default function CategoryCardsHonePage() {
   const currentLanguage = useCurrentLanguage();
 
@@ -19,12 +18,6 @@ export default function CategoryCardsHonePage() {
   return (
     <>
       <div className="flex items-center justify-between gap-4">
-        <div className="group">
-          <NavLink to="/catalog">
-            <BsChevronCompactLeft className="h-10 w-10 text-sky-500 dark:text-yellow-500 cursor-pointer relative duration-200 group-hover:-translate-x-1" />
-          </NavLink>
-        </div>
-
         <ul className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 ">
           {data.map(item => (
             <li key={item.id} className="shadow-md">

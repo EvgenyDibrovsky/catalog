@@ -25,8 +25,8 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="w-10/12 mx-auto my-10">
-      <div className=" flex gap-6">
-        <div className="w-6/12">
+      <div className=" flex flex-col lg:flex-row gap-6">
+        <div className="w-full sm:w-8/12 lg:w-6/12 mx-auto">
           <label className="text-black dark:text-white">
             {t('forms.contact_form.name')}
 
@@ -67,7 +67,7 @@ function ContactForm() {
             />
           </label>
         </div>
-        <div className="w-6/12">
+        <div className="w-full sm:w-8/12 lg:w-6/12 mx-auto">
           <label className="text-black dark:text-white">
             {t('forms.contact_form.message')}
 

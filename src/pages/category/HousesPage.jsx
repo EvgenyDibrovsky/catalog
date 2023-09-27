@@ -8,13 +8,13 @@ export default function HousesPage() {
 
   return (
     <>
-      <MetaTags metaTitle={t('page-category.houses.meta_title')} metaDescription={t('page-category.houses.meta_description')} />
+      <MetaTags metaTitle={t('pages_category.houses.meta_title')} metaDescription={t('pages_category.houses.meta_description')} />
       <div className="min-h-screen">
         <div className="container">
           <img src={underConstruction} alt="underConstruction" className="w-6/12 mx-auto" />
 
           <div className="my-10"></div>
-          <Titles title={t('page-category.houses.title')} subTitle={t('page-category.houses.sub_title')} />
+          <Titles title={t('pages_category.houses.title')} subTitle={t('pages_category.houses.sub_title')} />
         </div>
       </div>
     </>

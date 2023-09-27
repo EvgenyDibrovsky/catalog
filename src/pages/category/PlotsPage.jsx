@@ -8,13 +8,13 @@ export default function PlotsPage() {
 
   return (
     <>
-      <MetaTags metaTitle={t('page-category.plots.meta_title')} metaDescription={t('page-category.plots.meta_description')} />
+      <MetaTags metaTitle={t('pages_category.plots.meta_title')} metaDescription={t('pages_category.plots.meta_description')} />
       <div className="min-h-screen">
         <div className="container">
           <img src={underConstruction} alt="underConstruction" className="w-6/12 mx-auto" />
 
           <div className="my-10"></div>
-          <Titles title={t('page-category.plots.title')} subTitle={t('page-category.plots.sub_title')} />
+          <Titles title={t('pages_category.plots.title')} subTitle={t('pages_category.plots.sub_title')} />
         </div>
       </div>
     </>

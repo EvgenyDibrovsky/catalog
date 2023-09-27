@@ -8,13 +8,13 @@ export default function IntermediariesPage() {
 
   return (
     <>
-      <MetaTags metaTitle={t('page-category.intermediaries.meta_title')} metaDescription={t('page-category.intermediaries.meta_description')} />
+      <MetaTags metaTitle={t('pages_category.intermediaries.meta_title')} metaDescription={t('pages_category.intermediaries.meta_description')} />
       <div className="min-h-screen">
         <div className="container">
           <img src={underConstruction} alt="underConstruction" className="w-6/12 mx-auto" />
 
           <div className="my-10"></div>
-          <Titles title={t('page-category.intermediaries.title')} subTitle={t('page-category.intermediaries.sub_title')} />
+          <Titles title={t('pages_category.intermediaries.title')} subTitle={t('pages_category.intermediaries.sub_title')} />
         </div>
       </div>
     </>

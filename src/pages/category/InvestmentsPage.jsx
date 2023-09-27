@@ -8,13 +8,13 @@ export default function InvestmentsPage() {
 
   return (
     <>
-      <MetaTags metaTitle={t('page-category.investments.meta_title')} metaDescription={t('page-category.investments.meta_description')} />
+      <MetaTags metaTitle={t('pages_category.investments.meta_title')} metaDescription={t('pages_category.investments.meta_description')} />
       <div className="min-h-screen">
         <div className="container">
           <img src={underConstruction} alt="underConstruction" className="w-6/12 mx-auto" />
 
           <div className="my-10"></div>
-          <Titles title={t('page-category.investments.title')} subTitle={t('page-category.investments.sub_title')} />
+          <Titles title={t('pages_category.investments.title')} subTitle={t('pages_category.investments.sub_title')} />
         </div>
       </div>
     </>

@@ -8,12 +8,12 @@ export default function ApartmentsPage() {
 
   return (
     <>
-      <MetaTags metaTitle={t('page-category.apartments.meta_title')} metaDescription={t('page-category.apartments.meta_description')} />
+      <MetaTags metaTitle={t('pages_category.apartments.meta_title')} metaDescription={t('pages_category.apartments.meta_description')} />
       <div className="min-h-screen">
         <div className="container">
           <img src={underConstruction} alt="underConstruction" className="w-6/12 mx-auto" />
           <div className="my-10"></div>
-          <Titles title={t('page-category.apartments.title')} subTitle={t('page-category.apartments.sub_title')} />
+          <Titles title={t('pages_category.apartments.title')} subTitle={t('pages_category.apartments.sub_title')} />
         </div>
       </div>
     </>

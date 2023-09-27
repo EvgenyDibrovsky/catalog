@@ -8,13 +8,13 @@ export default function DevelopersPage() {
 
   return (
     <>
-      <MetaTags metaTitle={t('page-category.developers.meta_title')} metaDescription={t('page-category.developers.meta_description')} />
+      <MetaTags metaTitle={t('pages_category.developers.meta_title')} metaDescription={t('pages_category.developers.meta_description')} />
       <div className="min-h-screen">
         <div className="container">
           <img src={underConstruction} alt="underConstruction" className="w-6/12 mx-auto" />
 
           <div className="my-10"></div>
-          <Titles title={t('page-category.developers.title')} subTitle={t('page-category.developers.sub_title')} />
+          <Titles title={t('pages_category.developers.title')} subTitle={t('pages_category.developers.sub_title')} />
         </div>
       </div>
     </>

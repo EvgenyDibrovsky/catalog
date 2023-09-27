@@ -62,7 +62,7 @@
     "category": {
       "id": 2,
       "bg": "/images/bg-category/intermediaries.jpg",
-      "link_page": "Intermediaries",
+      "link_page": "intermediaries",
       "EN": {
         "title": "Intermediaries",
         "option": [
