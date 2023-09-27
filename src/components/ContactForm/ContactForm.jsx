@@ -26,7 +26,7 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="w-10/12 mx-auto my-10">
       <div className=" flex flex-col lg:flex-row gap-6">
-        <div className="w-full sm:w-8/12 lg:w-6/12 mx-auto">
+        <div className="w-full sm:w-8/12 lg:w-6/12 mx-auto flex flex-col justify-between">
           <label className="text-black dark:text-white">
             {t('forms.contact_form.name')}
 
@@ -63,11 +63,11 @@ function ContactForm() {
               value={formState.subject}
               onChange={handleChange}
               required
-              className="w-full h-12 bg-white dark:bg-black border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2 mb-5"
+              className="w-full h-12 bg-white dark:bg-black border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2"
             />
           </label>
         </div>
-        <div className="w-full sm:w-8/12 lg:w-6/12 mx-auto">
+        <div className="w-full sm:w-8/12 lg:w-6/12 mx-auto flex flex-col justify-between">
           <label className="text-black dark:text-white">
             {t('forms.contact_form.message')}
 
