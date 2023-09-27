@@ -11,7 +11,7 @@ const Breadcrumb = () => {
 
   return (
     <nav aria-label="breadcrumb">
-      <ul className="breadcrumb flex gap-2 mb-5">
+      <ul className="breadcrumb flex flex-col md:flex-row md:gap-2 mb-5 ">
         {pathnames.length > 0 ? (
           <li className="breadcrumb-item flex items-center gap-2">
             <BsFillHouseFill className="w-4 h-4 text-sky-500 dark:text-yellow-500" />
