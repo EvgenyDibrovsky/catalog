@@ -1,0 +1,259 @@
+
+    {
+        "developer_page_item": {
+            "id": 1,
+            "name_company": "WBM Group sp.zo.o.",
+            "nip": "2671623940",
+            "logo": "/images/developers_slider/budimex/logo-budimex.jpg",
+            "contacts": {
+                "address": "Rondo Mogilskie 1 / 522",
+                "nr_tel_1": "+48537450501",
+                "nr_tel_2": "+480501992909",
+                "email_1": "email@gmail.com",
+                "email_2": "email-2@gmail.com"
+            },
+            "option": {
+                "slider": true,
+                "projects_page": true,
+                "gallery_page": true,
+                "reviews_page": true,
+                "chat": true
+            },
+            "EN": {
+                "content": {
+                    "title": "Заоголовок контента",
+                    "description": "Описание контента"
+                },
+                "filter": {
+                    "country": "Польша",
+                    "region": "Малополский",
+                    "city": "Краков"
+                },
+                "slider": [
+                    {
+                        "id": 1,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-1.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-2.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-3.jpg"
+                    }
+                ],
+                "projects_page": {
+                    "project_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        }
+                    ]
+                },
+                "gallery_page": {
+                    "gallery_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        }
+                    ]
+                }
+            },
+            "PL": {
+                "content": {
+                    "title": "Заоголовок контента",
+                    "description": "Описание контента"
+                },
+                "filter": {
+                    "country": "Польша",
+                    "region": "Малополский",
+                    "city": "Краков"
+                },
+                "slider": [
+                    {
+                        "id": 1,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-1.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-2.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-3.jpg"
+                    }
+                ],
+                "projects_page": {
+                    "project_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        }
+                    ]
+                },
+                "gallery_page": {
+                    "gallery_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        }
+                    ]
+                }
+            },
+            "UK": {
+                "content": {
+                    "title": "Заголовок контенту",
+                    "description": "Опис контенту"
+                },
+                "filter": {
+                    "country": "Польща",
+                    "region": "Малопольський",
+                    "city": "Краків"
+                },
+                "slider": [
+                    {
+                        "id": 1,
+                        "title": "Заголовок слайдера",
+                        "description": "Опис слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-1.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Заголовок слайдера",
+                        "description": "Опис слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-2.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Заголовок слайдера",
+                        "description": "Опис слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-3.jpg"
+                    }
+                ],
+                "projects_page": {
+                    "project_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Назва проекту",
+                            "description_project": "Опис проекту"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Назва проекту",
+                            "description_project": "Опис проекту"
+                        }
+                    ]
+                },
+                "gallery_page": {
+                    "gallery_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Назва проекту",
+                            "description_project": "Опис проекту"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Назва проекту",
+                            "description_project": "Опис проекту"
+                        }
+                    ]
+                }
+            },
+            "RU": {
+                "content": {
+                    "title": "Заоголовок контента",
+                    "description": "Описание контента"
+                },
+                "filter": {
+                    "country": "Польша",
+                    "region": "Малополский",
+                    "city": "Краков"
+                },
+                "slider": [
+                    {
+                        "id": 1,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-1.jpg"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-2.jpg"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Заголовока слайдера",
+                        "description": "Описание слайдера",
+                        "banner": "/images/developers_slider/budimex/slide-3.jpg"
+                    }
+                ],
+                "projects_page": {
+                    "project_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        }
+                    ]
+                },
+                "gallery_page": {
+                    "gallery_item": [
+                        {
+                            "id": 1,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        },
+                        {
+                            "id": 2,
+                            "name_project": "Название проекта",
+                            "description_project": "Описание проекта"
+                        }
+                    ]
+                }
+            }
+        }
+    }
