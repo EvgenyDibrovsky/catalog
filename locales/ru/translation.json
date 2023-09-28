@@ -99,7 +99,8 @@
       "enter_message_subject": "Введите тему сообщения",
       "message": "Сообщение",
       "enter_message": "Введите сообщение",
-      "send": "Отправить сообщение"
+      "send": "Отправить сообщение",
+      "accept-form": "Согласен(a) с условиями, изложенными в регламенте."
     },
     "select_forms": {
       "authorization": "Авторизация",
@@ -196,7 +197,6 @@
       "authorization": {
         "password_enter": "Введите пароль",
         "btn_auth": "Войти"
-
       }
     }
   }

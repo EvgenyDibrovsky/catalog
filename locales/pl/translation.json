@@ -99,7 +99,8 @@
       "enter_message_subject": "Wprowadź temat wiadomości",
       "message": "Wiadomość",
       "enter_message": "Wprowadź wiadomość",
-      "send": "Wyślij wiadomość"
+      "send": "Wyślij wiadomość",
+      "accept-form": "Zgadzam się z warunkami określonymi w regulaminie."
     },
     "select_forms": {
       "authorization": "Autoryzacja",

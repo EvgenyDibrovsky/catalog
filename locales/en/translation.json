@@ -99,7 +99,8 @@
       "enter_message_subject": "Enter Message Subject",
       "message": "Message",
       "enter_message": "Enter Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "accept-form": "I agree with the terms set forth in the regulations."
     },
     "select_forms": {
       "authorization": "Authorization",
