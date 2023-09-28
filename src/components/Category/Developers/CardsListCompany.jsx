@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import CardsListCompanyItem from './CardsListCompanyItem';
 import { useTranslation } from 'react-i18next';
-import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
+import useCurrentLanguage from '../../../Hooks/useCurrentLanguage';
 
 export default function CardsListCompany() {
   const [data, setData] = useState([]);
@@ -11,9 +11,9 @@ export default function CardsListCompany() {
   useEffect(() => {
     // Создаем массив промисов для динамического импорта файлов JSON
     const importPromises = [
-      import('../../db/catalog/bd-developers/developer_1.json'),
-      import('../../db/catalog/bd-developers/developer_2.json'),
-      import('../../db/catalog/bd-developers/developer_3.json'),
+      import('../../../db/catalog/bd-developers/developer_1.json'),
+      import('../../../db/catalog/bd-developers/developer_2.json'),
+      import('../../../db/catalog/bd-developers/developer_3.json'),
       // добавьте больше импортов по мере необходимости
     ];
 

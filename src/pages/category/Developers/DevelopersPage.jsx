@@ -1,7 +1,7 @@
 import MetaTags from '../../../components/MetaTags/MetaTags';
 import { useTranslation } from 'react-i18next';
 import PageTitleCategory from 'components/PageSettings/PageTitleCategory';
-import CardsListCompany from '../../../components/CardsListCompany/CardsListCompany';
+import CardsListCompany from '../../../components/Category/Developers/CardsListCompany';
 
 export default function DevelopersPage() {
   const { t } = useTranslation();
