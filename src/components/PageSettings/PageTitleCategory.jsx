@@ -1,3 +1,3 @@
-export default function PageTitle({ titleCategory }) {
-  return <h2 className="flex justify-center text-[1.5rem] font-bold">{titleCategory}</h2>;
+export default function PageTitle({ title }) {
+  return <h2 className="text-[1.2rem] text-black dark:text-white font-bold ">{title}</h2>;
 }

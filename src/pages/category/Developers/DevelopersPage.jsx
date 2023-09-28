@@ -9,10 +9,9 @@ export default function DevelopersPage() {
   return (
     <>
       <MetaTags metaTitle={t('pages_category.developers.meta_title')} metaDescription={t('pages_category.developers.meta_description')} />
-
       <div>
-        <div>
-          <PageTitleCategory title={t('pages_category.developers.title')} subTitle={t('pages_category.developers.sub_title')} />
+        <div className="flex justify-center mb-4 pb-2 border-b border-sky-500 dark:border-yellow-500">
+          <PageTitleCategory title={t('pages_category.developers.title')} />
         </div>
         <div>
           <CardsListCompany />
