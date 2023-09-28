@@ -40,6 +40,7 @@ export default function AppRoutes() {
           </Section>
         }
       />
+
       <Route
         path="/catalog"
         element={
@@ -48,14 +49,13 @@ export default function AppRoutes() {
           </Section>
         }
       >
-        <Route path="developers" element={<Developers />}>
-          <Route path=":companyId" element={<DevelopersItemPage />} />
-        </Route>
+        <Route path="developers" element={<Developers />} />
         <Route path="intermediaries" element={<IntermediariesPage />} />
         <Route path="investments" element={<InvestmentsPage />} />
         <Route path="houses" element={<HousesPage />} />
         <Route path="apartments" element={<ApartmentsPage />} />
         <Route path="plots" element={<PlotsPage />} />
+        <Route path="item" element={<DevelopersItemPage />} />
       </Route>
 
       <Route

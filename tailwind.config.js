@@ -48,7 +48,9 @@ module.exports = {
         bgHeader: '#e3e3e3',
         darkBgHeader: '#1f1f1f',
         bgDark: ' #0000006b',
-
+        // Cards
+        bgCards: '#ffffff',
+        darkBgCads: '#1f1f1f',
         // Page
         bgSection: '#FAFAFA',
         bgContainer: '#F3F3F3',

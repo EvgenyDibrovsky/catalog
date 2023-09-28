@@ -1,20 +1,18 @@
-export default function CardsListCompanyItem({ image, title, text, link }) {
+import React from 'react';
+
+export default function CardsListCompanyItem({ logo, name_company, description, link }) {
   return (
-    <li className="flex shadow-md dark:shadow-white rounded-md overflow-hidden duration-200 hover:shadow-sky-400 dark:hover:shadow-yellow-500 group">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <div className="p-4">
-          <div className="flex item-center justify-between gap-2 mb-4">
-            <img
-              src={process.env.PUBLIC_URL + image}
-              alt={title}
-              className="w-auto h-12 duration-200 group-hover:scale-110"
-            />
-            <h3 className="flex items-center font-bold">{title}</h3>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className=" text-black  dark:text-white  ">{text}</p>
-          </div>
+    <li className="relative flex items-center justify-between  group  h-40 w-auto p-2 shadow-md transition-all duration-500 dark:shadow-white rounded-md overflow-hidden">
+      <a href={link} className="w-full h-full ">
+        <div className="relative z-10">
+          <h3 className="text-black dark:text-white font-bold mb-2">{name_company}</h3>
+          <p className="text-black dark:text-white"> {description}</p>
         </div>
+        <img
+          src={process.env.PUBLIC_URL + logo}
+          alt={name_company}
+          className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-0 w-40 h-auto opacity-20 duration-200 group-hover:scale-90"
+        />
       </a>
     </li>
   );
