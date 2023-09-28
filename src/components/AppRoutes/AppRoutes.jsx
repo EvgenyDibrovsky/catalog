@@ -50,12 +50,13 @@ export default function AppRoutes() {
         }
       >
         <Route path="developers" element={<Developers />} />
+        <Route path="developers/:developerId" element={<DevelopersItemPage />} />
+
         <Route path="intermediaries" element={<IntermediariesPage />} />
         <Route path="investments" element={<InvestmentsPage />} />
         <Route path="houses" element={<HousesPage />} />
         <Route path="apartments" element={<ApartmentsPage />} />
         <Route path="plots" element={<PlotsPage />} />
-        <Route path="item" element={<DevelopersItemPage />} />
       </Route>
 
       <Route

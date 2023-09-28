@@ -14,19 +14,18 @@ export default function CardsListCompany() {
       import('../../../db/catalog/bd-developers/developer_1.json'),
       import('../../../db/catalog/bd-developers/developer_2.json'),
       import('../../../db/catalog/bd-developers/developer_3.json'),
+      import('../../../db/catalog/bd-developers/developer_4.json'),
       // добавьте больше импортов по мере необходимости
     ];
 
     // Загружаем все файлы и устанавливаем данные
     Promise.all(importPromises).then(developers => {
-      const newData = developers.map(({ default: developer }) => {
+      const newData = developers.map(({ default: developer }, index) => {
         const languageSpecificData = developer.developer_page_item[currentLanguage];
         const commonData = developer.developer_page_item;
-
-        // Проверяем, существует ли languageSpecificData и languageSpecificData.company
         const description = languageSpecificData && languageSpecificData.company ? languageSpecificData.company.description : '';
-
         return {
+          id: index + 1, // или другой способ получения id
           description,
           logo: commonData.logo,
           name_company: commonData.name_company,
@@ -43,8 +42,8 @@ export default function CardsListCompany() {
 
   return (
     <ul className="grid grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 gap-6">
-      {data.map(({ logo, name_company, description, link_site }, index) => (
-        <CardsListCompanyItem key={index} logo={logo} name_company={name_company} description={description} link={link_site} />
+      {data.map(({ id, logo, name_company, description }, index) => (
+        <CardsListCompanyItem key={index} id={id} logo={logo} name_company={name_company} description={description} />
       ))}
     </ul>
   );
