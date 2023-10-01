@@ -1,11 +1,25 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { BsFillHouseFill, BsChevronRight } from 'react-icons/bs';
 
 const Breadcrumb = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
+  const { developerId } = useParams();
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    if (developerId) {
+      import(`../../db/catalog/bd-developers/developer_${developerId}.json`)
+        .then(({ default: developer }) => {
+          setData(developer.developer_page_item);
+        })
+        .catch(error => {
+          console.error('Failed to load developer data', error);
+        });
+    }
+  }, [developerId]);
 
   const pathnames = location.pathname.split('/').filter(x => x);
 
@@ -27,10 +41,17 @@ const Breadcrumb = () => {
           const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
           const isLast = index === pathnames.length - 1;
 
-          // Создаем массив с возможными префиксами
-          const possiblePrefixes = ['pages', 'pages_category', 'pages_category_item'];
+          // Если последний элемент пути является developerId, используйте имя компании
+          if (isLast && name === developerId && data) {
+            return (
+              <li key={name} className="breadcrumb-item active flex items-center gap-2" aria-current="page">
+                <BsChevronRight className="w-3 h-3  text-slate-400 dark:text-yellow-200" />
+                {data.name_company}
+              </li>
+            );
+          }
 
-          // Находим первый существующий ключ в порядке приоритета
+          const possiblePrefixes = ['pages', 'pages_category', 'pages_category_item', 'name_company'];
           const prefix = possiblePrefixes.find(prefix => i18n.exists(`${prefix}.${name}.title`)) || 'pages';
           const translationKey = `${prefix}.${name}.title`;
 

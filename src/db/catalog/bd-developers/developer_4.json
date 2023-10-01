@@ -1,0 +1,271 @@
+{
+    "developer_page_item": {
+        "id": 4,
+        "name_company": "Budimex sp.zo.o.",
+        "nip": "2671623940",
+        "logo": "/images/catalog/developers/2/wbm-logo.png",
+        "link_site": "google.com",
+        "contacts": {
+            "address": "Rondo Mogilskie 1 / 522",
+            "nr_tel_1": "+48537450501",
+            "nr_tel_2": "+480501992909",
+            "email_1": "email@gmail.com",
+            "email_2": "email-2@gmail.com"
+        },
+        "option": {
+            "slider": true,
+            "projects_page": true,
+            "gallery_page": true,
+            "reviews_page": true,
+            "chat": true
+        },
+       "EN": {
+    "company": {
+        "description": "Description"
+    },
+    "content": {
+        "title": "Content Title",
+        "description": "Content Description"
+    },
+    "filter": {
+        "country": "Poland",
+        "region": "Lesser Poland",
+        "city": "Krakow"
+    },
+    "slider": [
+        {
+            "id": 1,
+            "title": "Slider Title",
+            "description": "Slider Description",
+            "banner": "/images/catalog/developers/2/slider/slide-1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Slider Title",
+            "description": "Slider Description",
+            "banner": "/images/catalog/developers/2/slider/slide-2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Slider Title",
+            "description": "Slider Description",
+            "banner": "/images/catalog/developers/2/slider/slide-3.jpg"
+        }
+    ],
+    "projects_page": {
+        "project_item": [
+            {
+                "id": 1,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            },
+            {
+                "id": 2,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            }
+        ]
+    },
+    "gallery_page": {
+        "gallery_item": [
+            {
+                "id": 1,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            },
+            {
+                "id": 2,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            }
+        ]
+    }
+},
+      "PL": {
+    "company": {
+        "description": "Opis firmy"
+    },
+    "content": {
+        "title": "Nagłówek treści",
+        "description": "Opis treści"
+    },
+    "filter": {
+        "country": "Polska",
+        "region": "Małopolskie",
+        "city": "Kraków"
+    },
+    "slider": [
+        {
+            "id": 1,
+            "title": "Nagłówek suwaka",
+            "description": "Opis suwaka",
+            "banner": "/images/catalog/developers/2/slider/slide-1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Nagłówek suwaka",
+            "description": "Opis suwaka",
+            "banner": "/images/catalog/developers/2/slider/slide-2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Nagłówek suwaka",
+            "description": "Opis suwaka",
+            "banner": "/images/catalog/developers/2/slider/slide-3.jpg"
+        }
+    ],
+    "projects_page": {
+        "project_item": [
+            {
+                "id": 1,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            },
+            {
+                "id": 2,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            }
+        ]
+    },
+    "gallery_page": {
+        "gallery_item": [
+            {
+                "id": 1,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            },
+            {
+                "id": 2,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            }
+        ]
+    }
+},
+        "UK": {
+            "company": {
+                "description": "Опис компанії"
+            },
+            "content": {
+                "title": "Заголовок контенту",
+                "description": "Опис контенту"
+            },
+            "filter": {
+                "country": "Польща",
+                "region": "Малопольський",
+                "city": "Краків"
+            },
+            "slider": [
+                {
+                    "id": 1,
+                    "title": "Заголовок слайдера",
+                    "description": "Опис слайдера",
+                    "banner": "/images/catalog/developers/2/slider/slide-1.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Заголовок слайдера",
+                    "description": "Опис слайдера",
+                    "banner": "/images/catalog/developers/2/slider/slide-2.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Заголовок слайдера",
+                    "description": "Опис слайдера",
+                    "banner": "/images/catalog/developers/2/slider/slide-3.jpg"
+                }
+            ],
+            "projects_page": {
+                "project_item": [
+                    {
+                        "id": 1,
+                        "name_project": "Назва проекту",
+                        "description_project": "Опис проекту"
+                    },
+                    {
+                        "id": 2,
+                        "name_project": "Назва проекту",
+                        "description_project": "Опис проекту"
+                    }
+                ]
+            },
+            "gallery_page": {
+                "gallery_item": [
+                    {
+                        "id": 1,
+                        "name_project": "Назва проекту",
+                        "description_project": "Опис проекту"
+                    },
+                    {
+                        "id": 2,
+                        "name_project": "Назва проекту",
+                        "description_project": "Опис проекту"
+                    }
+                ]
+            }
+        },
+        "RU": {
+            "company": {
+                "description": "Описание компании Описание компании Описание компании Описание компании Описание компании Описание компании Описание  Описание компании Описание компании Описание компании Описание компании Описание Описание компании Описание компании Описание компании Описание компании Описание Описание компании Описание компании Описание компании Описание компании Описание "
+            },
+            "content": {
+                "title": "Заоголовок контента",
+                "description": "Описание контента"
+            },
+            "filter": {
+                "country": "Польша",
+                "region": "Малополский",
+                "city": "Краков"
+            },
+            "slider": [
+                {
+                    "id": 1,
+                    "title": "Заголовок слайдера",
+                    "description": "Описание слайдера",
+                    "banner": "/images/catalog/developers/2/slider/slide-1.jpg"
+                },
+                {
+                    "id": 2,
+                    "title": "Заголовок слайдера",
+                    "description": "Описание слайдера",
+                    "banner": "/images/catalog/developers/2/slider/slide-2.jpg"
+                },
+                {
+                    "id": 3,
+                    "title": "Заголовок слайдера",
+                    "description": "Описание слайдера",
+                    "banner": "/images/catalog/developers/2/slider/slide-3.jpg"
+                }
+            ],
+            "projects_page": {
+                "project_item": [
+                    {
+                        "id": 1,
+                        "name_project": "Название проекта",
+                        "description_project": "Описание проекта"
+                    },
+                    {
+                        "id": 2,
+                        "name_project": "Название проекта",
+                        "description_project": "Описание проекта"
+                    }
+                ]
+            },
+            "gallery_page": {
+                "gallery_item": [
+                    {
+                        "id": 1,
+                        "name_project": "Название проекта",
+                        "description_project": "Описание проекта"
+                    },
+                    {
+                        "id": 2,
+                        "name_project": "Название проекта",
+                        "description_project": "Описание проекта"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@ export default function DevelopersSliderItem({ item, logo }) {
             </div>
           </div>
           <div className=" w-full h-full lg:w-6/12 absolute right-0 top-0 bottom-0 overflow-hidden">
-            {logo && <img src={process.env.PUBLIC_URL + logo} alt={item['title']} className="absolute w-28 h-auto top-5  left-0 z-10 shadow-xl" />}
+            {logo && <img src={process.env.PUBLIC_URL + logo} alt={item['title']} className="absolute w-28 h-auto top-5 left-0 z-10 shadow-md " />}
             <img src={process.env.PUBLIC_URL + item.banner} alt={item['title']} className="h-full w-full object-cover" />
           </div>
         </div>
