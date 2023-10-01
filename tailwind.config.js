@@ -54,6 +54,8 @@ module.exports = {
         // Page
         bgSection: '#FAFAFA',
         bgContainer: '#F3F3F3',
+        //Content
+        darkBgContent: '#1f1f1f',
 
         bgCardsItem: '#ffffff',
         textPrimary: '#000',
