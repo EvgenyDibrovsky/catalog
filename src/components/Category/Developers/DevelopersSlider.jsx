@@ -1,33 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import DevelopersSliderItem from './DevelopersSliderItem';
-import dbDevelopersSlider from '../../../db/developers_slider.json';
+import { useParams } from 'react-router-dom';
 import useCurrentLanguage from '../../../Hooks/useCurrentLanguage';
 
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import Swiper from 'swiper';
 import { Navigation, Autoplay } from 'swiper/modules';
-import 'swiper/swiper-bundle.css'; // Import Swiper styles
+import 'swiper/swiper-bundle.css'; 
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
 
 export default function DevelopersSlider() {
+  const { developerId } = useParams();
   const currentLanguage = useCurrentLanguage();
-
-  const data = dbDevelopersSlider.map(item => {
-    const languageSpecificData = item.developers_slider[currentLanguage];
-
-    return {
-      ...languageSpecificData,
-      id: item.developers_slider.id,
-      banner: item.developers_slider.banner,
-      logo: item.developers_slider.logo,
-      offer: item.developers_slider.offer,
-      link_site: item.developers_slider.link_site,
-    };
-  });
+  const [data, setData] = useState({ slider: [], logo: null });
 
   useEffect(() => {
+    import(`../../../db/catalog/bd-developers/developer_${developerId}.json`)
+      .then(({ default: developer }) => {
+        const sliderData = developer.developer_page_item[currentLanguage]?.slider || [];
+        const logo = developer.developer_page_item.logo;
+        setData({ slider: sliderData, logo });
+      })
+      .catch(error => {
+        console.error('Failed to load developer data', error);
+      });
+
     new Swiper('.developersSlider', {
       modules: [Navigation, Autoplay],
       navigation: {
@@ -39,13 +37,13 @@ export default function DevelopersSlider() {
         disableOnInteraction: true,
       },
     });
-  }, []);
+  }, [developerId, currentLanguage]);
 
   return (
     <div className="swiper developersSlider w-full h-full">
       <div className="swiper-wrapper">
-        {data.map(item => (
-          <DevelopersSliderItem key={item.id} item={item} />
+        {data.slider.map((slide, index) => (
+          <DevelopersSliderItem key={index} item={slide} logo={data.logo} />
         ))}
       </div>
       <div className="z-20 absolute bottom-0 right-0 lg:flex items-center justify-center bg-white dark:bg-black">

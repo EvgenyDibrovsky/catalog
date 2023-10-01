@@ -3,7 +3,7 @@
         "id": 1,
         "name_company": "Budimex sp.zo.o.",
         "nip": "2671623940",
-        "logo": "/images/developers/2/wbm-logo.png",
+        "logo": "/images/catalog/developers/1/budimex-logo.jpg",
         "link_site": "google.com",
         "contacts": {
             "address": "Rondo Mogilskie 1 / 522",
@@ -19,130 +19,130 @@
             "reviews_page": true,
             "chat": true
         },
-        "EN": {
-            "company": {
-                "description": "Description"
-            },
-            "content": {
-                "title": "Заголовок контента",
-                "description": "Описание контента"
-            },
-            "filter": {
-                "country": "Польша",
-                "region": "Малополский",
-                "city": "Краков"
-            },
-            "slider": [
-                {
-                    "id": 1,
-                    "title": "Заголовока слайдера",
-                    "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-1.jpg"
-                },
-                {
-                    "id": 2,
-                    "title": "Заголовока слайдера",
-                    "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-2.jpg"
-                },
-                {
-                    "id": 3,
-                    "title": "Заголовока слайдера",
-                    "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-3.jpg"
-                }
-            ],
-            "projects_page": {
-                "project_item": [
-                    {
-                        "id": 1,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    },
-                    {
-                        "id": 2,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    }
-                ]
-            },
-            "gallery_page": {
-                "gallery_item": [
-                    {
-                        "id": 1,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    },
-                    {
-                        "id": 2,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    }
-                ]
-            }
+       "EN": {
+    "company": {
+        "description": "Description"
+    },
+    "content": {
+        "title": "Content Title",
+        "description": "Content Description"
+    },
+    "filter": {
+        "country": "Poland",
+        "region": "Lesser Poland",
+        "city": "Krakow"
+    },
+    "slider": [
+        {
+            "id": 1,
+            "title": "Slider Title",
+            "description": "Slider Description",
+            "banner": "/images/catalog/developers/1/slider/slide-1.jpg"
         },
-        "PL": {
-            "company": {
-                "description": "Opis company"
-            },
-            "content": {
-                "title": "Заоголовок контента",
-                "description": "Описание контента"
-            },
-            "filter": {
-                "country": "Польша",
-                "region": "Малополский",
-                "city": "Краков"
-            },
-            "slider": [
-                {
-                    "id": 1,
-                    "title": "Заголовока слайдера",
-                    "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-1.jpg"
-                },
-                {
-                    "id": 2,
-                    "title": "Заголовока слайдера",
-                    "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-2.jpg"
-                },
-                {
-                    "id": 3,
-                    "title": "Заголовока слайдера",
-                    "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-3.jpg"
-                }
-            ],
-            "projects_page": {
-                "project_item": [
-                    {
-                        "id": 1,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    },
-                    {
-                        "id": 2,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    }
-                ]
-            },
-            "gallery_page": {
-                "gallery_item": [
-                    {
-                        "id": 1,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    },
-                    {
-                        "id": 2,
-                        "name_project": "Название проекта",
-                        "description_project": "Описание проекта"
-                    }
-                ]
-            }
+        {
+            "id": 2,
+            "title": "Slider Title",
+            "description": "Slider Description",
+            "banner": "/images/catalog/developers/1/slider/slide-2.jpg"
         },
+        {
+            "id": 3,
+            "title": "Slider Title",
+            "description": "Slider Description",
+            "banner": "/images/catalog/developers/1/slider/slide-3.jpg"
+        }
+    ],
+    "projects_page": {
+        "project_item": [
+            {
+                "id": 1,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            },
+            {
+                "id": 2,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            }
+        ]
+    },
+    "gallery_page": {
+        "gallery_item": [
+            {
+                "id": 1,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            },
+            {
+                "id": 2,
+                "name_project": "Project Name",
+                "description_project": "Project Description"
+            }
+        ]
+    }
+},
+      "PL": {
+    "company": {
+        "description": "Opis firmy"
+    },
+    "content": {
+        "title": "Nagłówek treści",
+        "description": "Opis treści"
+    },
+    "filter": {
+        "country": "Polska",
+        "region": "Małopolskie",
+        "city": "Kraków"
+    },
+    "slider": [
+        {
+            "id": 1,
+            "title": "Nagłówek suwaka",
+            "description": "Opis suwaka",
+            "banner": "/images/catalog/developers/1/slider/slide-1.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Nagłówek suwaka",
+            "description": "Opis suwaka",
+            "banner": "/images/catalog/developers/1/slider/slide-2.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Nagłówek suwaka",
+            "description": "Opis suwaka",
+            "banner": "/images/catalog/developers/1/slider/slide-3.jpg"
+        }
+    ],
+    "projects_page": {
+        "project_item": [
+            {
+                "id": 1,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            },
+            {
+                "id": 2,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            }
+        ]
+    },
+    "gallery_page": {
+        "gallery_item": [
+            {
+                "id": 1,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            },
+            {
+                "id": 2,
+                "name_project": "Nazwa projektu",
+                "description_project": "Opis projektu"
+            }
+        ]
+    }
+},
         "UK": {
             "company": {
                 "description": "Опис компанії"
@@ -161,19 +161,19 @@
                     "id": 1,
                     "title": "Заголовок слайдера",
                     "description": "Опис слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-1.jpg"
+                    "banner": "/images/catalog/developers/1/slider/slide-1.jpg"
                 },
                 {
                     "id": 2,
                     "title": "Заголовок слайдера",
                     "description": "Опис слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-2.jpg"
+                    "banner": "/images/catalog/developers/1/slider/slide-2.jpg"
                 },
                 {
                     "id": 3,
                     "title": "Заголовок слайдера",
                     "description": "Опис слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-3.jpg"
+                    "banner": "/images/catalog/developers/1/slider/slide-3.jpg"
                 }
             ],
             "projects_page": {
@@ -221,21 +221,21 @@
             "slider": [
                 {
                     "id": 1,
-                    "title": "Заголовока слайдера",
+                    "title": "Заголовок слайдера",
                     "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-1.jpg"
+                    "banner": "/images/catalog/developers/1/slider/slide-1.jpg"
                 },
                 {
                     "id": 2,
-                    "title": "Заголовока слайдера",
+                    "title": "Заголовок слайдера",
                     "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-2.jpg"
+                    "banner": "/images/catalog/developers/1/slider/slide-2.jpg"
                 },
                 {
                     "id": 3,
-                    "title": "Заголовока слайдера",
+                    "title": "Заголовок слайдера",
                     "description": "Описание слайдера",
-                    "banner": "/images/developers_slider/budimex/slide-3.jpg"
+                    "banner": "/images/catalog/developers/1/slider/slide-3.jpg"
                 }
             ],
             "projects_page": {

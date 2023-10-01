@@ -18,10 +18,8 @@ export default function CatalogPage() {
         <div className="mb-10">
           <CategoryCardsCategoryPage />
         </div>
-        <div>
-          <Outlet />
-        </div>
       </div>
+      <Outlet />
     </>
   );
 }

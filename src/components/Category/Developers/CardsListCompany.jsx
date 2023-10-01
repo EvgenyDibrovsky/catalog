@@ -13,8 +13,6 @@ export default function CardsListCompany() {
     const importPromises = [
       import('../../../db/catalog/bd-developers/developer_1.json'),
       import('../../../db/catalog/bd-developers/developer_2.json'),
-      import('../../../db/catalog/bd-developers/developer_3.json'),
-      import('../../../db/catalog/bd-developers/developer_4.json'),
       // добавьте больше импортов по мере необходимости
     ];
 
@@ -41,10 +39,12 @@ export default function CardsListCompany() {
   }
 
   return (
-    <ul className="grid grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 gap-6">
-      {data.map(({ id, logo, name_company, description }, index) => (
-        <CardsListCompanyItem key={index} id={id} logo={logo} name_company={name_company} description={description} />
-      ))}
-    </ul>
+    <div className="container">
+      <ul className="grid grid-cols-1  lg:grid-cols-2 2xl:grid-cols-3 gap-6">
+        {data.map(({ id, logo, name_company, description }, index) => (
+          <CardsListCompanyItem key={index} id={id} logo={logo} name_company={name_company} description={description} />
+        ))}
+      </ul>
+    </div>
   );
 }

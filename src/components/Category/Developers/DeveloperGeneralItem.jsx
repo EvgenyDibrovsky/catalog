@@ -29,15 +29,15 @@ export default function DeveloperGeneralItem() {
   } = data;
 
   return (
-    <div className="flex">
-      <div className="w-9/12">
+    <div className="flex gap-4">
+      <div className="w-10/12">
         <h1 className="text-black dark:text-white font-bold text-[1.2rem]">{contentTitle}</h1>
         <p className="text-black dark:text-white">{contentDescription}</p>
       </div>
-      <div className="w-3/12">
+      <div className="w-2/12">
+        {logo && <img src={process.env.PUBLIC_URL + logo} alt={name_company} className="h-5 w-auto mb-2 sm:mb-0" />}
         <p>{name_company}</p>
         <p>{nip}</p>
-        {logo && <img src={process.env.PUBLIC_URL + logo} alt={name_company} className="h-5 w-auto mb-2 sm:mb-0" />}
         <p>{link_site}</p>
         <p>{address}</p>
         <p>{nr_tel_1}</p>
