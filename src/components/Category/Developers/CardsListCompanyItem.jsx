@@ -10,7 +10,7 @@ export default function CardsListCompanyItem({ id, logo, name_company, descripti
 
           {logo && <img src={process.env.PUBLIC_URL + logo} alt={name_company} className="h-5 w-auto mb-2 sm:mb-0" />}
         </div>
-        <p className="text-black dark:text-white">{description.length > 200 ? description.substring(0, description.lastIndexOf(' ', 200)) + '...' : description}</p>
+        <p className="text-black dark:text-white">{description.length > 250 ? description.substring(0, description.lastIndexOf(' ', 200)) + '...' : description}</p>
       </Link>
     </li>
   );
