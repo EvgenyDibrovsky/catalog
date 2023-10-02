@@ -1,14 +1,14 @@
 {
     "developer_page_item": {
         "id": 2,
-        "name_company": "Wbm Group sp.zo.o.",
+        "name_company": "Firma sp.zo.o.",
         "nip": "2671623940",
-        "logo": "/images/catalog/developers/2/wbm-logo.png",
+        "logo": "/images/catalog/developers/2/logo.jpg",
         "link_site": "google.com",
         "contacts": {
-            "address": "Rondo Mogilskie 1 / 522",
-            "nr_tel_1": "+48537450501",
-            "nr_tel_2": "+480501992909",
+            "address": "Rondo Mogilskie 4 / 322",
+            "nr_tel_1": "+48123456789",
+            "nr_tel_2": "+48123456789",
             "email_1": "email@gmail.com",
             "email_2": "email-2@gmail.com"
         },

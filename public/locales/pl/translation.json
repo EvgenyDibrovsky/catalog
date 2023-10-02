@@ -56,7 +56,14 @@
       "meta_title": "Meta tytuł",
       "meta_description": "Meta opis",
       "title": "Deweloperzy",
-      "sub_title": "Podtytuł"
+      "sub_title": "Podtytuł",
+      "page_item": {
+        "nip": "Nip",
+        "www": "Strona",
+        "address": "Adres",
+        "tel": "Tel",
+        "email": "Email"
+      }
     },
     "intermediaries": {
       "meta_title": "Meta tytuł",

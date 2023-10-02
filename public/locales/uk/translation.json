@@ -56,7 +56,14 @@
       "meta_title": "Мета заголовок",
       "meta_description": "Мета опис",
       "title": "Забудовники",
-      "sub_title": "Підзаголовок"
+      "sub_title": "Підзаголовок",
+      "page_item": {
+        "nip": "Nip",
+        "www": "Сайт",
+        "address": "Адреса",
+        "tel": "Тел",
+        "email": "Email"
+      }
     },
     "intermediaries": {
       "meta_title": "Мета заголовок",

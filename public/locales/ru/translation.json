@@ -56,7 +56,14 @@
       "meta_title": "Мета заголовок",
       "meta_description": "Мета описание",
       "title": "Застройщики",
-      "sub_title": "Подзаголовок"
+      "sub_title": "Подзаголовок",
+      "page_item": {
+        "nip": "Nip",
+        "www": "Сайт",
+        "address": "Адрес",
+        "tel": "Тел",
+        "email": "Email"
+      }
     },
     "intermediaries": {
       "meta_title": "Мета заголовок",
