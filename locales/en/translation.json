@@ -56,7 +56,14 @@
       "meta_title": "Meta Title",
       "meta_description": "Meta Description",
       "title": "Developers",
-      "sub_title": "Subtitle"
+      "sub_title": "Subtitle",
+      "page_item": {
+        "nip": "Nip",
+        "www": "Site",
+        "address": "Address",
+        "tel": "Tel",
+        "email": "Email"
+      }
     },
     "intermediaries": {
       "meta_title": "Meta Title",
