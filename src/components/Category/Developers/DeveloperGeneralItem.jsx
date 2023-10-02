@@ -22,33 +22,33 @@ export default function DeveloperGeneralItem() {
   const { name_company = 'N/A', nip = 'N/A', logo, link_site = 'N/A', contacts: { address = 'N/A', nr_tel_1 = 'N/A', nr_tel_2 = 'N/A', email_1 = 'N/A', email_2 = 'N/A' } = {} } = data;
 
   return (
-    <div className="flex gap-4">
-      <div className="w-8/12">
+    <div className="flex justify-between  gap-4">
+      <div className="w-full">
         <div className="flex items-center gap-4 mb-4">
           <NavLink
             to="about"
             className="py-2 px-4 border duration-200 border-sky-500 hover:bg-sky-500 hover:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-black text-black dark:text-white [&.active]:bg-sky-500 [&.active]:text-white dark:[&.active]:bg-yellow-500 dark:[&.active]:text-black"
           >
-            О компании
+            {t('pages_category.developers.page_item.about')}
           </NavLink>
           <NavLink
             to="projects"
             className="py-2 px-4 border duration-200 border-sky-500 hover:bg-sky-500 hover:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-black text-black dark:text-white [&.active]:bg-sky-500 [&.active]:text-white dark:[&.active]:bg-yellow-500 dark:[&.active]:text-black"
           >
-            Проекты
+            {t('pages_category.developers.page_item.projects')}
           </NavLink>
           <NavLink
             to="reviews"
             className="py-2 px-4 border duration-200 border-sky-500 hover:bg-sky-500 hover:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-black text-black dark:text-white [&.active]:bg-sky-500 [&.active]:text-white dark:[&.active]:bg-yellow-500 dark:[&.active]:text-black"
           >
-            Отзывы
+            {t('pages_category.developers.page_item.reviews')}
           </NavLink>
         </div>
         <div className=" bg-white dark:bg-darkBgContent p-5 mb-4">
           <Outlet />
         </div>
       </div>
-      <div className="w-4/12">
+      <div className="max-w-[22rem]">
         <div className="bg-white dark:bg-darkBgContent flex flex-col gap-2 p-5 mb-4">
           {logo && <img src={process.env.PUBLIC_URL + logo} alt={name_company} className="h-10 object-contain mb-2 sm:mb-2 mr-auto" />}
 
@@ -63,7 +63,9 @@ export default function DeveloperGeneralItem() {
           {link_site && (
             <div className="flex gap-2">
               <p className="text-black dark:text-white font-bold w-3/12">{t('pages_category.developers.page_item.www')}:</p>
-              <p className="text-black dark:text-white">{link_site}</p>
+              <a href={`https://${link_site}`} target="_blank" rel="noreferrer" className="text-black dark:text-white hover:text-sky-500 dark:hover:text-yellow-500 hover:underline">
+                {link_site}
+              </a>
             </div>
           )}
           {address && (
@@ -76,8 +78,16 @@ export default function DeveloperGeneralItem() {
             <div className="flex gap-2">
               <p className="text-black dark:text-white font-bold w-3/12">{t('pages_category.developers.page_item.tel')}:</p>
               <div className="flex flex-col">
-                {nr_tel_1 && <p className="text-black dark:text-white">{nr_tel_1}</p>}
-                {nr_tel_2 && <p className="text-black dark:text-white">{nr_tel_2}</p>}
+                {nr_tel_1 && (
+                  <a href={`tel:${nr_tel_1}`} className="text-black dark:text-white hover:text-sky-500 dark:hover:text-yellow-500 hover:underline">
+                    {nr_tel_1}
+                  </a>
+                )}
+                {nr_tel_2 && (
+                  <a href={`tel:${nr_tel_2}`} className="text-black dark:text-white hover:text-sky-500 dark:hover:text-yellow-500 hover:underline">
+                    {nr_tel_2}
+                  </a>
+                )}
               </div>
             </div>
           )}
@@ -86,14 +96,54 @@ export default function DeveloperGeneralItem() {
             <div className="flex gap-2">
               <p className="text-black dark:text-white font-bold w-3/12">{t('pages_category.developers.page_item.email')}:</p>
               <div className="flex flex-col">
-                {email_1 && <p className="text-black dark:text-white">{email_1}</p>}
-                {email_2 && <p className="text-black dark:text-white">{email_2}</p>}
+                {email_1 && (
+                  <a href={`mailto:${email_1}`} className="text-black dark:text-white hover:text-sky-500 dark:hover:text-yellow-500 hover:underline">
+                    {email_1}
+                  </a>
+                )}
+                {email_2 && (
+                  <a href={`mailto:${email_2}`} className="text-black dark:text-white hover:text-sky-500 dark:hover:text-yellow-500 hover:underline">
+                    {email_2}
+                  </a>
+                )}
               </div>
             </div>
           )}
         </div>
         <div className="bg-white dark:bg-darkBgContent p-5 mb-4">
-          <h3>Написать сообшение</h3>
+          <p> {t('pages_category.developers.page_item.contact_form')}</p>
+          <form action="">
+            <label className="w-full text-black dark:text-white">
+              <input
+                type="text"
+                placeholder="Имя и Фамилия"
+                required
+                className="w-full h-12 bg-white dark:bg-black border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2"
+              />
+            </label>
+
+            <label className="text-black dark:text-white">
+              <input
+                type="email"
+                placeholder="example@example.com"
+                required
+                className="w-full h-12 bg-white dark:bg-black border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2"
+              />
+            </label>
+
+            <label className="text-black dark:text-white">
+              <textarea
+                name="message"
+                placeholder="Напишите сообщение"
+                required
+                className="w-full h-32  bg-white dark:bg-black border border-borderLabelForm dark:border-white p-2 rounded-md focus:outline-none mt-2 mb-5 resize-none"
+              />
+            </label>
+
+            <button type="submit" className="btn-contact-form">
+              Отправить
+            </button>
+          </form>
         </div>
       </div>
     </div>

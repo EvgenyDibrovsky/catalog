@@ -1,7 +1,11 @@
+import underConstruction from '../../../images/support/under-construction.png';
+
 export default function DevelopersReviewsPage() {
   return (
     <>
-      <h1>DevelopersReviewsPage</h1>
+      <div className="container">
+        <img src={underConstruction} alt="underConstruction" className="w-6/12 mx-auto" />
+      </div>
     </>
   );
 }
