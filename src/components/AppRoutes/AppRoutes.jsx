@@ -20,7 +20,8 @@ import MainAdmin from '../../pages/Admin/MainAdminPage';
 import HomeAdminPage from '../../pages/Admin/HomeAdminPage';
 import SettingsPage from '../../pages/Admin/SettingsPage';
 import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage';
-
+import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage';
+import DevelopersReviewsPage from '../../pages/category/Developers/DevelopersReviewsPage';
 export default function AppRoutes() {
   return (
     <Routes>
@@ -50,8 +51,10 @@ export default function AppRoutes() {
         }
       >
         <Route path="developers" element={<Developers />} />
-        <Route path="developers/:developerId" element={<DevelopersItemPage />} />
-
+        <Route path="developers/:developerId" element={<DevelopersItemPage />}>
+          <Route path="projects" element={<DevelopersProjectsPage />} />
+          <Route path="reviews" element={<DevelopersReviewsPage />} />
+        </Route>
         <Route path="intermediaries" element={<IntermediariesPage />} />
         <Route path="investments" element={<InvestmentsPage />} />
         <Route path="houses" element={<HousesPage />} />
