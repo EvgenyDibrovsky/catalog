@@ -97,20 +97,20 @@
     "slider": [
         {
             "id": 1,
-            "title": "Nagłówek suwaka",
-            "description": "Opis suwaka",
+            "title": "Nagłówek slider",
+            "description": "Opis slider",
             "banner": "/images/catalog/developers/1/slider/slide-1.jpg"
         },
         {
             "id": 2,
-            "title": "Nagłówek suwaka",
-            "description": "Opis suwaka",
+            "title": "Nagłówek slider",
+            "description": "Opis slider",
             "banner": "/images/catalog/developers/1/slider/slide-2.jpg"
         },
         {
             "id": 3,
-            "title": "Nagłówek suwaka",
-            "description": "Opis suwaka",
+            "title": "Nagłówek slider",
+            "description": "Opis slider",
             "banner": "/images/catalog/developers/1/slider/slide-3.jpg"
         }
     ],

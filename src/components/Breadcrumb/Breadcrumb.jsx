@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { BsFillHouseFill, BsChevronRight } from 'react-icons/bs';
 
 const Breadcrumb = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const location = useLocation();
   const { developerId } = useParams();
   const [data, setData] = useState(null);
@@ -41,8 +41,9 @@ const Breadcrumb = () => {
           const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
           const isLast = index === pathnames.length - 1;
 
-          // Если последний элемент пути является developerId, используйте имя компании
-          if (isLast && name === developerId && data) {
+          let translationKey = `pages.${name}.title`;
+
+          if (name === developerId && data) {
             return (
               <li key={name} className="breadcrumb-item active flex items-center gap-2" aria-current="page">
                 <BsChevronRight className="w-3 h-3  text-slate-400 dark:text-yellow-200" />
@@ -51,9 +52,11 @@ const Breadcrumb = () => {
             );
           }
 
-          const possiblePrefixes = ['pages', 'pages_category', 'pages_category_item', 'name_company'];
-          const prefix = possiblePrefixes.find(prefix => i18n.exists(`${prefix}.${name}.title`)) || 'pages';
-          const translationKey = `${prefix}.${name}.title`;
+          if (name === 'developers') {
+            translationKey = 'pages_category.developers.title';
+          } else if (['about', 'projects', 'reviews'].includes(name) && pathnames.includes('developers')) {
+            translationKey = `pages_category.developers.page_item.${name}`;
+          }
 
           return isLast ? (
             <li key={name} className="breadcrumb-item active flex items-center gap-2" aria-current="page">
