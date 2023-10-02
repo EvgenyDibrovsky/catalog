@@ -62,7 +62,11 @@
         "www": "Site",
         "address": "Address",
         "tel": "Tel",
-        "email": "Email"
+        "email": "Email",
+        "about": "About us",
+        "projects": "Projects",
+        "reviews": "Reviews",
+        "contact_form": "Ask a question"
       }
     },
     "intermediaries": {
@@ -196,7 +200,7 @@
     "checkbox_5": "Apartments",
     "checkbox_6": "Plots"
   },
- "admin": {
+  "admin": {
     "page": {
       "title": "Hello, admin"
     },

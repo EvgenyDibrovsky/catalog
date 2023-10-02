@@ -62,7 +62,11 @@
         "www": "Strona",
         "address": "Adres",
         "tel": "Tel",
-        "email": "Email"
+        "email": "Email",
+        "about": "O nas",
+        "projects": "Projekty",
+        "reviews": "Opinie",
+        "contact_form": "Zadaj pytanie"
       }
     },
     "intermediaries": {

@@ -62,7 +62,11 @@
         "www": "Сайт",
         "address": "Адрес",
         "tel": "Тел",
-        "email": "Email"
+        "email": "Email",
+        "about": "О нас",
+        "projects": "Проекты",
+        "reviews": "Отзывы",
+        "contact_form": "Задать вопрос"
       }
     },
     "intermediaries": {
