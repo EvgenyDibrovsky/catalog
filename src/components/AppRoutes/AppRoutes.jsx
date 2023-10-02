@@ -1,5 +1,5 @@
 // AppRoutes.js
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Section from '../PageSettings/Section';
 
 import About from '../../pages/AboutPage';
@@ -22,6 +22,8 @@ import SettingsPage from '../../pages/Admin/SettingsPage';
 import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage';
 import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage';
 import DevelopersReviewsPage from '../../pages/category/Developers/DevelopersReviewsPage';
+import DevelopersAboutPage from '../../pages/category/Developers/DevelopersAboutPage';
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -51,7 +53,9 @@ export default function AppRoutes() {
         }
       >
         <Route path="developers" element={<Developers />} />
-        <Route path="developers/:developerId" element={<DevelopersItemPage />}>
+        <Route path="developers/:developerId/*" element={<DevelopersItemPage />}>
+          <Route index element={<Navigate to="about" replace />} />
+          <Route path="about" element={<DevelopersAboutPage />} />
           <Route path="projects" element={<DevelopersProjectsPage />} />
           <Route path="reviews" element={<DevelopersReviewsPage />} />
         </Route>

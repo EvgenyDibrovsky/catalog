@@ -7,7 +7,6 @@ export default function CardsListCompanyItem({ id, logo, name_company, descripti
       <Link to={`/catalog/developers/${id}`} className="w-full h-full">
         <div className="flex items-start md:items-center justify-between flex-col-reverse sm:flex-row mb-2">
           <h3 className=" text-black dark:text-white font-bold ">{name_company}</h3>
-
           {logo && <img src={process.env.PUBLIC_URL + logo} alt={name_company} className="h-5 w-auto mb-2 sm:mb-0" />}
         </div>
         <p className="text-black dark:text-white">{description.length > 250 ? description.substring(0, description.lastIndexOf(' ', 200)) + '...' : description}</p>

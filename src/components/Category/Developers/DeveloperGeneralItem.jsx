@@ -1,13 +1,11 @@
-import { useParams } from 'react-router-dom';
+import { useParams, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import useCurrentLanguage from '../../../Hooks/useCurrentLanguage';
 import { useTranslation } from 'react-i18next';
+import { Outlet } from 'react-router-dom';
 
 export default function DeveloperGeneralItem() {
   const { developerId } = useParams();
   const [data, setData] = useState(null);
-  const currentLanguage = useCurrentLanguage();
-  const [activeTab, setActiveTab] = useState('projects');
   const { t } = useTranslation();
   useEffect(() => {
     import(`../../../db/catalog/bd-developers/developer_${developerId}.json`)
@@ -21,51 +19,37 @@ export default function DeveloperGeneralItem() {
 
   if (!data) return <div>Loading...</div>;
 
-  const {
-    name_company = 'N/A',
-    nip = 'N/A',
-    logo,
-    link_site = 'N/A',
-    contacts: { address = 'N/A', nr_tel_1 = 'N/A', nr_tel_2 = 'N/A', email_1 = 'N/A', email_2 = 'N/A' } = {},
-    [currentLanguage]: { content: { title: contentTitle = 'N/A', description: contentDescription = 'N/A' } = {} } = {},
-  } = data;
+  const { name_company = 'N/A', nip = 'N/A', logo, link_site = 'N/A', contacts: { address = 'N/A', nr_tel_1 = 'N/A', nr_tel_2 = 'N/A', email_1 = 'N/A', email_2 = 'N/A' } = {} } = data;
 
   return (
     <div className="flex gap-4">
-      <div className="w-8/12 flex flex-col gap-4">
-        <div className=" bg-white dark:bg-darkBgContent p-5">
-          <h1 className="text-black dark:text-white font-bold text-[1.2rem]">{contentTitle}</h1>
-          <p className="text-black dark:text-white">{contentDescription}</p>
+      <div className="w-8/12">
+        <div className="flex items-center gap-4 mb-4">
+          <NavLink
+            to="about"
+            className="py-2 px-4 border duration-200 border-sky-500 hover:bg-sky-500 hover:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-black text-black dark:text-white [&.active]:bg-sky-500 [&.active]:text-white dark:[&.active]:bg-yellow-500 dark:[&.active]:text-black"
+          >
+            О компании
+          </NavLink>
+          <NavLink
+            to="projects"
+            className="py-2 px-4 border duration-200 border-sky-500 hover:bg-sky-500 hover:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-black text-black dark:text-white [&.active]:bg-sky-500 [&.active]:text-white dark:[&.active]:bg-yellow-500 dark:[&.active]:text-black"
+          >
+            Проекты
+          </NavLink>
+          <NavLink
+            to="reviews"
+            className="py-2 px-4 border duration-200 border-sky-500 hover:bg-sky-500 hover:text-white dark:border-yellow-500 dark:hover:bg-yellow-500 dark:hover:text-black text-black dark:text-white [&.active]:bg-sky-500 [&.active]:text-white dark:[&.active]:bg-yellow-500 dark:[&.active]:text-black"
+          >
+            Отзывы
+          </NavLink>
         </div>
-        <div>
-          <div className="flex gap-2">
-            <button
-              className={`px-4 py-2 ${activeTab === 'projects' ? 'bg-sky-500 dark:bg-yellow-500 text-white dark:text-black' : 'bg-gray-200 text-black'}`}
-              onClick={() => setActiveTab('projects')}
-            >
-              Проекты
-            </button>
-            <button className={`px-4 py-2 ${activeTab === 'reviews' ? 'bg-sky-500  dark:bg-yellow-500 text-white dark:text-black' : 'bg-gray-200 text-black'}`} onClick={() => setActiveTab('reviews')}>
-              Отзывы
-            </button>
-          </div>
-          <div className="bg-white dark:bg-darkBgContent p-5">
-            {activeTab === 'projects' && (
-              <div>
-                <p>Контент для Проекты</p>
-              </div>
-            )}
-
-            {activeTab === 'reviews' && (
-              <div>
-                <p>Контент для Отзывы</p>
-              </div>
-            )}
-          </div>
+        <div className=" bg-white dark:bg-darkBgContent p-5 mb-4">
+          <Outlet />
         </div>
       </div>
-      <div className="w-4/12 flex flex-col gap-4">
-        <div className="bg-white dark:bg-darkBgContent flex flex-col gap-2 p-5 ">
+      <div className="w-4/12">
+        <div className="bg-white dark:bg-darkBgContent flex flex-col gap-2 p-5 mb-4">
           {logo && <img src={process.env.PUBLIC_URL + logo} alt={name_company} className="h-10 object-contain mb-2 sm:mb-2 mr-auto" />}
 
           {name_company && <p className="text-black dark:text-white font-bold text-[1.1rem] mb-1">{name_company}</p>}
@@ -108,7 +92,7 @@ export default function DeveloperGeneralItem() {
             </div>
           )}
         </div>
-        <div className="bg-white dark:bg-darkBgContent p-5 ">
+        <div className="bg-white dark:bg-darkBgContent p-5 mb-4">
           <h3>Написать сообшение</h3>
         </div>
       </div>

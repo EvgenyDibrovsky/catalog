@@ -5,17 +5,17 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Loading from './Base/Loader';
 import { HelmetProvider } from 'react-helmet-async';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
+// function ScrollToTop() {
+//   const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
 
-  return null;
-}
+//   return null;
+// }
 
 export const App = () => {
   const [loading, setLoading] = useState(true);
@@ -44,7 +44,7 @@ export const App = () => {
     <HelmetProvider>
       {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Router>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <div>
           <Header theme={theme} toggleTheme={toggleTheme} />
           <AppRoutes />
