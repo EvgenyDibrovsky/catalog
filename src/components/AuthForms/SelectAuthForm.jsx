@@ -9,7 +9,7 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
         onClick={() => setSelectedForm('Login')}
         className={`h-10 flex items-center justify-center rounded-md border transition-all duration-200${
           selectedForm === 'Login'
-            ? 'border-btnAuthForm dark:border-yellow-500 bg-btnAuthForm dark:bg-yellow-500 text-white dark:text-black ' // Удалить запятую
+            ? 'border-btnAuthForm dark:border-yellow-500 bg-btnAuthForm dark:bg-yellow-500 text-white dark:text-black '
             : 'text-btnAuthForm dark:text-yellow-500 border-btnAuthForm dark:border-yellow-500 hover:bg-btnAuthForm  dark:hover:bg-yellow-500 hover:text-white hover:dark:text-black'
         }`}
       >
@@ -23,7 +23,7 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
         onClick={() => setSelectedForm('Register')}
         className={`h-10 flex items-center justify-center rounded-md border transition-all duration-200${
           selectedForm === 'Register'
-            ? 'border-btnAuthForm dark:border-yellow-500 bg-btnAuthForm dark:bg-yellow-500 text-white dark:text-black ' // Удалить запятую
+            ? 'border-btnAuthForm dark:border-yellow-500 bg-btnAuthForm dark:bg-yellow-500 text-white dark:text-black '
             : 'text-btnAuthForm dark:text-yellow-500 border-btnAuthForm dark:border-yellow-500 hover:bg-btnAuthForm  dark:hover:bg-yellow-500 hover:text-white hover:dark:text-black'
         }`}
       >

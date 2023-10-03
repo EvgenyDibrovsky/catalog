@@ -1,11 +1,25 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import dbCategory from '../../db/catalog/categoty.json';
+import axios from 'axios';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
 
-export default function CategoryCardsHonePage() {
+export default function CategoryCardsHomePage() {
+  const [categories, setCategories] = useState([]);
   const currentLanguage = useCurrentLanguage();
 
-  const data = dbCategory.map(item => {
+  useEffect(() => {
+    // Получите категории из вашего API
+    axios
+      .get('/api/categories')
+      .then(response => {
+        setCategories(response.data);
+      })
+      .catch(error => {
+        console.error('Ошибка при получении категорий:', error);
+      });
+  }, []);
+
+  const data = categories.map(item => {
     const languageSpecificData = item.category[currentLanguage];
 
     return {
