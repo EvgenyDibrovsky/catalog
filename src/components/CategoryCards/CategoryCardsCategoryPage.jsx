@@ -1,10 +1,25 @@
 import { NavLink } from 'react-router-dom';
-import dbCategory from '../../db/catalog/categoty.json';
 import useCurrentLanguage from '../../Hooks/useCurrentLanguage';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 export default function CategoryCardsHonePage() {
+  const [categories, setCategories] = useState([]);
   const currentLanguage = useCurrentLanguage();
 
-  const data = dbCategory.map(item => {
+  useEffect(() => {
+    // Получите категории из вашего API
+    axios
+      .get('/api/categories')
+      .then(response => {
+        setCategories(response.data);
+      })
+      .catch(error => {
+        console.error('Ошибка при получении категорий:', error);
+      });
+  }, []);
+
+  const data = categories.map(item => {
     const languageSpecificData = item.category[currentLanguage];
 
     return {
