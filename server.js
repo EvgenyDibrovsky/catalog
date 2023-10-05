@@ -35,10 +35,11 @@ app.get('*', (req, res) => {
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).json({ message: 'Something broke!', error: err.message });
 });
 
 const PORT = 3000;
 app.listen(PORT, () => {
+  console.log(`Database connection successful.`);
   console.log(`Server is running on port ${PORT}`);
 });
