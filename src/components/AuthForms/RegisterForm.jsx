@@ -1,21 +1,37 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
 
+const INITIAL_STATE = {
+  login: '',
+  email: '',
+  password: '',
+};
+
 class RegisterForm extends React.Component {
+  state = { ...INITIAL_STATE };
+
   handleChange = evt => {
     const { name, value, type, checked } = evt.target;
-    const finalValue = type === 'checkbox' ? checked : value;
-    this.props.onInputChange(name, finalValue);
+    this.setState({ [name]: type === 'checkbox' ? checked : value });
   };
 
   handleSubmit = evt => {
     evt.preventDefault();
-    this.props.onSubmit();
+
+    const currentState = { ...this.state };
+
+    this.props.onSubmit(currentState);
+
+    this.reset();
+  };
+
+  reset = () => {
+    this.setState({ ...INITIAL_STATE });
   };
 
   render() {
-    const { login, email, password, agreed, t } = this.props;
-
+    const { login, email, password, agreed } = this.state;
+    const { t } = this.props;
     return (
       <form onSubmit={this.handleSubmit}>
         <label className="text-black dark:text-white">
@@ -68,6 +84,7 @@ class RegisterForm extends React.Component {
           </label>
           <a
             href={process.env.PUBLIC_URL + '/regulations'}
+            // href="/terms-use-page"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[0.7rem] text-textSecondary dark:text-yellow-500 my-4 mx-auto block transition-all duration-200 hover:underline"

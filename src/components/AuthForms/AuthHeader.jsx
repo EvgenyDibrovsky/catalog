@@ -9,33 +9,15 @@ import SelectAuthForm from './SelectAuthForm';
 export default function AuthHeader() {
   const [showModal, setShowModal] = useState(false);
   const [selectedForm, setSelectedForm] = useState('Login'); // добавляем состояние для выбранной формы
-  const [formData, setFormData] = useState({
-    login: '',
-    email: '',
-    password: '',
-    agreed: false,
-  });
 
-  const handleInputChange = (name, value) => {
-    setFormData(prevState => ({ ...prevState, [name]: value }));
-  };
-
-  const handleSubmit = () => {
+  const handleSubmit = state => {
     // Обрабатываем введенные данные
-    console.log(formData);
+    console.log(state);
   };
-
   const handleCloseModal = () => {
     setShowModal(false);
-    setSelectedForm('Login');
-    setFormData({
-      login: '',
-      email: '',
-      password: '',
-      agreed: false,
-    }); // Сброс формы при закрытии модального окна
+    setSelectedForm('Login'); // добавить сброс формы при закрытии модального окна
   };
-
   return (
     <>
       <button onClick={() => setShowModal(true)}>
@@ -43,13 +25,21 @@ export default function AuthHeader() {
       </button>
       {showModal && (
         <AuthModal closeModal={handleCloseModal}>
-          {selectedForm !== 'Reset' && <SelectAuthForm selectedForm={selectedForm} setSelectedForm={setSelectedForm} />}
+          {selectedForm !== 'Reset' && (
+            <SelectAuthForm
+              selectedForm={selectedForm}
+              setSelectedForm={setSelectedForm}
+            />
+          )}
           {selectedForm === 'Login' ? (
-            <LoginForm onSubmit={handleSubmit} onInputChange={handleInputChange} formData={formData} setSelectedForm={setSelectedForm} />
+            <LoginForm
+              onSubmit={handleSubmit}
+              setSelectedForm={setSelectedForm}
+            />
           ) : selectedForm === 'Register' ? (
-            <RegisterForm onSubmit={handleSubmit} onInputChange={handleInputChange} formData={formData} />
+            <RegisterForm onSubmit={handleSubmit} />
           ) : (
-            <RessetForm onSubmit={handleSubmit} onInputChange={handleInputChange} formData={formData} />
+            <RessetForm onSubmit={handleSubmit} />
           )}
         </AuthModal>
       )}
