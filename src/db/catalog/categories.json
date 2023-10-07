@@ -1,0 +1,116 @@
+[
+  {
+    "category": {
+      "id": 1,
+      "bg": "/images/bg-category/developer.jpg",
+      "link_page": "developers",
+      "EN": {
+        "title": "Developers"
+      },
+      "PL": {
+        "title": "Deweloperzy"
+      },
+      "UK": {
+        "title": "Забудовники"
+      },
+      "RU": {
+        "title": "Застройщики"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 2,
+      "bg": "/images/bg-category/intermediaries.jpg",
+      "link_page": "intermediaries",
+      "EN": {
+        "title": "Intermediaries"
+      },
+      "PL": {
+        "title": "Pośrednicy"
+      },
+      "UK": {
+        "title": "Посередники"
+      },
+      "RU": {
+        "title": "Посредники"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 3,
+      "bg": "/images/bg-category/investments.jpg",
+      "link_page": "investments",
+      "EN": {
+        "title": "Investments"
+      },
+      "PL": {
+        "title": "Inwestycje"
+      },
+      "UK": {
+        "title": "Інвестиції"
+      },
+      "RU": {
+        "title": "Инвестиции"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 4,
+      "bg": "/images/bg-category/house.jpg",
+      "link_page": "houses",
+      "EN": {
+        "title": "Houses"
+      },
+      "PL": {
+        "title": "Domy"
+      },
+      "UK": {
+        "title": "Будинки"
+      },
+      "RU": {
+        "title": "Дома"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 5,
+      "bg": "/images/bg-category/apartments.jpg",
+      "link_page": "apartments",
+      "EN": {
+        "title": "Apartments"
+      },
+      "PL": {
+        "title": "Mieszkania"
+      },
+      "UK": {
+        "title": "Квартири"
+      },
+      "RU": {
+        "title": "Квартиры"
+      }
+    }
+  },
+  {
+    "category": {
+      "id": 6,
+      "bg": "/images/bg-category/plots.jpg",
+      "link_page": "plots",
+      "EN": {
+        "title": "Plots"
+      },
+      "PL": {
+        "title": "Działki"
+      },
+      "UK": {
+        "title": "Ділянки"
+      },
+      "RU": {
+        "title": "Участки"
+      }
+    }
+  }
+]
