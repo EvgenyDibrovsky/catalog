@@ -1,34 +1,20 @@
 import React from 'react';
 import { withTranslation } from 'react-i18next';
-const INITIAL_STATE = {
-  email: '',
-};
 
 class RessetForm extends React.Component {
-  state = { ...INITIAL_STATE };
-
   handleChange = evt => {
     const { name, value } = evt.target;
-    this.setState({ [name]: value });
+    this.props.onInputChange(name, value);
   };
 
   handleSubmit = evt => {
     evt.preventDefault();
-
-    const currentState = { ...this.state };
-
-    this.props.onSubmit(currentState);
-
-    this.reset();
-  };
-
-  reset = () => {
-    this.setState({ ...INITIAL_STATE });
+    this.props.onSubmit();
   };
 
   render() {
-    const { email } = this.state;
-    const { t } = this.props;
+    const { email, t } = this.props;
+
     return (
       <form onSubmit={this.handleSubmit}>
         <label className="text-black dark:text-white">
@@ -52,4 +38,4 @@ class RessetForm extends React.Component {
   }
 }
 
-export default withTranslation()(RessetForm); //
+export default withTranslation()(RessetForm);
