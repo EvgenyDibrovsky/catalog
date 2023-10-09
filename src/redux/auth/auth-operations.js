@@ -1,7 +1,8 @@
+// src/redux/auth/auth-operations.js
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-axios.defaults.baseURL = 'http://localhost:3000/api'; // Измените на ваш адрес сервера
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
 
 const token = {
   set(token) {
@@ -55,4 +56,27 @@ export const fetchCurrentUser = createAsyncThunk('auth/refresh', async (_, { rej
   }
 });
 
-// getState возвращает весь глобальный стейт.
+// New operations:
+export const resetPassword = createAsyncThunk('auth/resetPassword', async (email, { rejectWithValue }) => {
+  try {
+    const { data } = await axios.post('/auth/reset-password', { email });
+    return data;
+  } catch (error) {
+    return rejectWithValue(error);
+  }
+});
+
+export const refreshToken = createAsyncThunk('auth/refreshToken', async (_, { rejectWithValue, getState }) => {
+  const currentToken = getState().auth.token;
+  if (!currentToken) {
+    return rejectWithValue('No token');
+  }
+  token.set(currentToken);
+  try {
+    const { data } = await axios.post('/auth/refresh-token');
+    token.set(data.token);
+    return data;
+  } catch (error) {
+    return rejectWithValue(error);
+  }
+});
