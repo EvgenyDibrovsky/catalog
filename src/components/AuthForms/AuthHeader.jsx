@@ -3,12 +3,12 @@ import { BsPersonCircle } from 'react-icons/bs';
 import AuthModal from './AuthModal';
 import RegisterForm from './RegisterForm';
 import LoginForm from './LoginForm';
-import RessetForm from './RessetForm';
+import ResetPassword from './ResetPassword';
 import SelectAuthForm from './SelectAuthForm';
 
 export default function AuthHeader() {
   const [showModal, setShowModal] = useState(false);
-  const [selectedForm, setSelectedForm] = useState('Login'); // добавляем состояние для выбранной формы
+  const [selectedForm, setSelectedForm] = useState('Login');
   const [formData, setFormData] = useState({
     login: '',
     email: '',
@@ -20,11 +20,6 @@ export default function AuthHeader() {
     setFormData(prevState => ({ ...prevState, [name]: value }));
   };
 
-  const handleSubmit = () => {
-    // Обрабатываем введенные данные
-    console.log(formData);
-  };
-
   const handleCloseModal = () => {
     setShowModal(false);
     setSelectedForm('Login');
@@ -33,7 +28,20 @@ export default function AuthHeader() {
       email: '',
       password: '',
       agreed: false,
-    }); // Сброс формы при закрытии модального окна
+    });
+  };
+
+  const renderForm = () => {
+    switch (selectedForm) {
+      case 'Login':
+        return <LoginForm onInputChange={handleInputChange} formData={formData} setSelectedForm={setSelectedForm} />;
+      case 'Register':
+        return <RegisterForm onInputChange={handleInputChange} formData={formData} />;
+      case 'Reset':
+        return <ResetPassword onInputChange={handleInputChange} formData={formData} />;
+      default:
+        return null;
+    }
   };
 
   return (
@@ -43,14 +51,8 @@ export default function AuthHeader() {
       </button>
       {showModal && (
         <AuthModal closeModal={handleCloseModal}>
-          {selectedForm !== 'Reset' && <SelectAuthForm selectedForm={selectedForm} setSelectedForm={setSelectedForm} />}
-          {selectedForm === 'Login' ? (
-            <LoginForm onSubmit={handleSubmit} onInputChange={handleInputChange} formData={formData} setSelectedForm={setSelectedForm} />
-          ) : selectedForm === 'Register' ? (
-            <RegisterForm onSubmit={handleSubmit} onInputChange={handleInputChange} formData={formData} />
-          ) : (
-            <RessetForm onSubmit={handleSubmit} onInputChange={handleInputChange} formData={formData} />
-          )}
+          {['Login', 'Register'].includes(selectedForm) && <SelectAuthForm selectedForm={selectedForm} setSelectedForm={setSelectedForm} />}
+          {renderForm()}
         </AuthModal>
       )}
     </>
