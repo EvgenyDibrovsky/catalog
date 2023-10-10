@@ -15,10 +15,18 @@ import InvestmentsPage from '../../pages/category/InvestmentsPage';
 import HousesPage from '../../pages/category/HousesPage';
 import ApartmentsPage from '../../pages/category/ApartmentsPage';
 import PlotsPage from '../../pages/category/PlotsPage';
+// admin
 import Admin from '../../pages/Admin/AuthAdminPage';
 import MainAdmin from '../../pages/Admin/MainAdminPage';
 import HomeAdminPage from '../../pages/Admin/HomeAdminPage';
-import SettingsPage from '../../pages/Admin/SettingsPage';
+import AdminSettingsPage from '../../pages/Admin/SettingsPage';
+// admin
+// user
+import User from '../../pages/User/AuthUserPage';
+import MainUser from '../../pages/User/MainUserPage';
+import HomeUserPage from '../../pages/User/HomeUserPage';
+import UserSettingsPage from '../../pages/User/SettingsPage';
+// user
 import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage';
 import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage';
 import DevelopersReviewsPage from '../../pages/category/Developers/DevelopersReviewsPage';
@@ -90,14 +98,7 @@ export default function AppRoutes() {
           </Section>
         }
       />
-      <Route
-        path="*"
-        element={
-          <Section>
-            <PageNotFound />
-          </Section>
-        }
-      />
+
       <Route
         path="/admin"
         element={
@@ -116,8 +117,30 @@ export default function AppRoutes() {
       >
         <Route index element={<HomeAdminPage />} />
 
-        <Route path="settings" element={<SettingsPage />} />
+        <Route path="settings" element={<AdminSettingsPage />} />
       </Route>
+
+      <Route
+        path="/user"
+        element={
+          <Section noPadding>
+            <User />
+          </Section>
+        }
+      />
+      <Route
+        path="/user/profile"
+        element={
+          <Section noPadding>
+            <MainUser />
+          </Section>
+        }
+      >
+        <Route index element={<HomeUserPage />} />
+
+        <Route path="settings" element={<UserSettingsPage />} />
+      </Route>
+
       <Route
         path="*"
         element={
