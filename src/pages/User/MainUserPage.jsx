@@ -8,7 +8,7 @@ export default function MainUserPage() {
     <>
       <div className="container py-10">
         <div className="flex justify-between">
-          <h1 className="text-[1.5rem] mb-10 font-semibold text-black dark:text-white ">Админ панель</h1>
+          <h1 className="text-[1.5rem] mb-10 font-semibold text-black dark:text-white ">Пользовтельская панель</h1>
 
           <div className="group">
             <BsDoorOpen className="w-6 h-6 text-sky-500 cursor-pointer duration-200 hover:text-red-500 hover:scale-110" />

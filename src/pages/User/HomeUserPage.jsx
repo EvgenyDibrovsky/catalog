@@ -13,7 +13,7 @@ export default function HomeUserPage() {
         <h2 className="font-semibold">Статистика</h2>
       </div>
       <div className="mb-10">
-        <h2 className="font-semibold">Новіе пользователи</h2>
+        <h2 className="font-semibold">Новые пользователи</h2>
       </div>
     </>
   );
