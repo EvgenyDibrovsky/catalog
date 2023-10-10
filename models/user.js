@@ -1,25 +1,47 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const bcrypt = require('bcryptjs');
 
-const userSchema = new Schema({
+const userSchema = new mongoose.Schema({
+  login: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+  },
   email: {
     type: String,
     required: true,
     unique: true,
+    trim: true,
+    lowercase: true,
+    match: [/.+@.+\..+/, 'Invalid email format'],
   },
   password: {
     type: String,
     required: true,
+    minlength: 6,
   },
-  name: {
-    type: String,
+  agreed: {
+    type: Boolean,
     required: true,
   },
-  phone: {
+  resetPasswordToken: {
     type: String,
-    required: true,
+    default: null,
+  },
+  resetPasswordExpires: {
+    type: Date,
+    default: null,
   },
 });
 
+// Метод для сравнения паролей
+userSchema.methods.comparePassword = function (candidatePassword) {
+  return bcrypt.compare(candidatePassword, this.password);
+};
+
+// Методы и хуки для хеширования пароля перед сохранением в базе данных можно добавить позже
+
 const User = mongoose.model('User', userSchema);
+
 module.exports = User;
