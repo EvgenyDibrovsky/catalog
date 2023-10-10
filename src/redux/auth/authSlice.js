@@ -13,7 +13,7 @@ const initialState = {
 const authSlice = createSlice({
   name: 'auth',
   initialState,
-  extraReducers: builder =>
+  extraReducers: builder => {
     builder
       .addCase(register.fulfilled, state => {
         state.isLoading = false;
@@ -49,6 +49,10 @@ const authSlice = createSlice({
         state.isLoading = false;
         state.error = payload;
       })
+      .addCase(refreshToken.fulfilled, (state, { payload: { token } }) => {
+        state.token = token;
+      })
+      // After all addCase calls, now addMatcher
       .addMatcher(isAnyOf(register.pending, login.pending, logout.pending, fetchCurrentUser.pending), state => {
         state.isLoading = true;
       })
@@ -61,10 +65,8 @@ const authSlice = createSlice({
       .addMatcher(isAnyOf(register.rejected, login.rejected, logout.rejected, fetchCurrentUser.rejected), (state, { payload }) => {
         state.isLoading = false;
         state.error = payload;
-      })
-      .addCase(refreshToken.fulfilled, (state, { payload: { token } }) => {
-        state.token = token;
-      }),
+      });
+  },
 });
 
 export default authSlice.reducer;

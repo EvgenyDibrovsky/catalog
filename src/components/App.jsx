@@ -5,6 +5,9 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Loading from './Base/Loader';
 import { HelmetProvider } from 'react-helmet-async';
+import { Provider } from 'react-redux';
+import { store } from '../redux/store';
+
 // import { useLocation } from 'react-router-dom';
 
 // function ScrollToTop() {
@@ -41,16 +44,18 @@ export const App = () => {
   }
 
   return (
-    <HelmetProvider>
-      <Router basename={process.env.PUBLIC_URL}>
-        {/* <Router> */}
-        {/* <ScrollToTop /> */}
-        <div>
-          <Header theme={theme} toggleTheme={toggleTheme} />
-          <AppRoutes />
-          <Footer />
-        </div>
-      </Router>
-    </HelmetProvider>
+    <Provider store={store}>
+      <HelmetProvider>
+        <Router basename={process.env.PUBLIC_URL}>
+          {/* <Router> */}
+          {/* <ScrollToTop /> */}
+          <div>
+            <Header theme={theme} toggleTheme={toggleTheme} />
+            <AppRoutes />
+            <Footer />
+          </div>
+        </Router>
+      </HelmetProvider>
+    </Provider>
   );
 };
