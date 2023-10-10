@@ -7,17 +7,18 @@ export default function CategoryCardsHonePage() {
   const [categories, setCategories] = useState([]);
   const currentLanguage = useCurrentLanguage();
 
+  const API_URL = process.env.REACT_APP_API_URL;
+  console.log(API_URL);
   useEffect(() => {
-    // Получите категории из вашего API
     axios
-      .get('/api/categories')
+      .get(`${API_URL}/api/categories`)
       .then(response => {
         setCategories(response.data);
       })
       .catch(error => {
         console.error('Ошибка при получении категорий:', error);
       });
-  }, []);
+  }, [API_URL]);
 
   const data = categories.map(item => {
     const languageSpecificData = item.category[currentLanguage];

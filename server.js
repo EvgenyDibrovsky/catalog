@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const categoriesRoute = require('./routes/categories');
-const authRoutes = require('./routes/auth');
+// const authRoutes = require('./routes/auth');
 const cors = require('cors'); // You may need to install this using npm
 
 const app = express();
@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Use routes
 app.use('/api/categories', categoriesRoute);
-app.use('/api/auth', authRoutes);
+// app.use('/api/auth', authRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -38,7 +38,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Something broke!', error: err.message });
 });
 
-const PORT = 3000;
+const PORT = 7000;
 app.listen(PORT, () => {
   console.log(`Database connection successful.`);
   console.log(`Server is running on port ${PORT}`);
