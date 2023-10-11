@@ -1,27 +1,42 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { BsFillHouseFill, BsChevronRight } from 'react-icons/bs';
+import React, { useEffect, useState } from 'react'
+import { Link, useLocation, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import axios from 'axios'
+import { BsFillHouseFill, BsChevronRight } from 'react-icons/bs'
+import useCurrentLanguage from '../../Hooks/useCurrentLanguage'
 
 const Breadcrumb = () => {
-  const { t } = useTranslation();
-  const location = useLocation();
-  const { developerId } = useParams();
-  const [data, setData] = useState(null);
+  const { t } = useTranslation()
+  const location = useLocation()
+  const { developerId } = useParams()
+  const API_URL = process.env.REACT_APP_API_URL
+  const [categories, setCategories] = useState([])
+  const [developerData, setDeveloperData] = useState(null)
+  const currentLanguage = useCurrentLanguage()
+  useEffect(() => {
+    axios
+      .get(`${API_URL}/api/categories`)
+      .then(({ data }) => {
+        setCategories(data)
+      })
+      .catch(error => {
+        console.error('Ошибка при получении категорий:', error)
+      })
+  }, [API_URL])
 
   useEffect(() => {
     if (developerId) {
       import(`../../db/catalog/bd-developers/developer_${developerId}.json`)
         .then(({ default: developer }) => {
-          setData(developer.developer_page_item);
+          setDeveloperData(developer.developer_page_item)
         })
         .catch(error => {
-          console.error('Failed to load developer data', error);
-        });
+          console.error('Failed to load developer data', error)
+        })
     }
-  }, [developerId]);
+  }, [developerId])
 
-  const pathnames = location.pathname.split('/').filter(x => x);
+  const pathnames = location.pathname.split('/').filter(x => x)
 
   return (
     <nav aria-label="breadcrumb">
@@ -38,41 +53,63 @@ const Breadcrumb = () => {
         )}
 
         {pathnames.map((name, index) => {
-          const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
-          const isLast = index === pathnames.length - 1;
+          const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`
+          const isLast = index === pathnames.length - 1
+          const category = categories.find(
+            cat => cat.category.link_page === name
+          )
 
-          let translationKey = `pages.${name}.title`;
-
-          if (name === developerId && data) {
+          if (category) {
             return (
-              <li key={name} className="breadcrumb-item active flex items-center gap-2" aria-current="page">
-                <BsChevronRight className="w-3 h-3  text-slate-400 dark:text-yellow-200" />
-                {data.name_company}
+              <li
+                key={name}
+                className={`breadcrumb-item ${
+                  isLast ? 'active' : ''
+                } flex items-center gap-2`}>
+                <BsChevronRight className="w-3 h-3 text-slate-400 dark:text-yellow-200" />
+                {isLast ? (
+                  category.category[currentLanguage].title
+                ) : (
+                  <Link to={routeTo}>
+                    {category.category[currentLanguage].title}
+                  </Link>
+                )}
               </li>
-            );
+            )
           }
 
-          if (name === 'developers') {
-            translationKey = 'pages_category.developers.title';
-          } else if (['about', 'projects', 'reviews'].includes(name) && pathnames.includes('developers')) {
-            translationKey = `pages_category.developers.page_item.${name}`;
+          if (name === developerId && developerData) {
+            return (
+              <li
+                key={name}
+                className={`breadcrumb-item ${
+                  isLast ? 'active' : ''
+                } flex items-center gap-2`}>
+                <BsChevronRight className="w-3 h-3 text-slate-400 dark:text-yellow-200" />
+                {developerData.name_company}
+              </li>
+            )
           }
 
-          return isLast ? (
-            <li key={name} className="breadcrumb-item active flex items-center gap-2" aria-current="page">
-              <BsChevronRight className="w-3 h-3  text-slate-400 dark:text-yellow-200" />
-              {t(translationKey)}
+          // Возвращаем стандартное значение в случае, если это не категория или developerId
+          return (
+            <li
+              key={name}
+              className={`breadcrumb-item ${
+                isLast ? 'active' : ''
+              } flex items-center gap-2`}>
+              <BsChevronRight className="w-3 h-3 text-slate-400 dark:text-yellow-200" />
+              {isLast ? (
+                t(`pages.${name}.title`)
+              ) : (
+                <Link to={routeTo}>{t(`pages.${name}.title`)}</Link>
+              )}
             </li>
-          ) : (
-            <li key={name} className="breadcrumb-item flex items-center gap-2">
-              <BsChevronRight className="w-3 h-3  text-slate-400 dark:text-yellow-200" />
-              <Link to={routeTo}>{t(translationKey)}</Link>
-            </li>
-          );
+          )
         })}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Breadcrumb;
+export default Breadcrumb

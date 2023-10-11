@@ -6,7 +6,9 @@ import useCurrentLanguage from '../../Hooks/useCurrentLanguage'
 export default function CategoryCardsHomePage() {
   const [categories, setCategories] = useState([])
   const currentLanguage = useCurrentLanguage()
+
   const API_URL = process.env.REACT_APP_API_URL
+  console.log(API_URL)
 
   useEffect(() => {
     axios
@@ -39,12 +41,12 @@ export default function CategoryCardsHomePage() {
     <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
       {data.map(({ id, link_page, bg, title }) => (
         <li
-          className="p-0 h-48 bg-hero-filter bg-cover bg-center bg-no-repeat hover:shadow-md hover:shadow-gray-400 dark:hover:shadow-gray-400 duration-200 hover:p-6 group"
+          className="p-0 h-48 bg-hero-filter bg-cover bg-center bg-no-repeat shadow-md shadow-gray-400 dark:shadow-yellow-500 duration-200 hover:p-6"
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL + bg})`,
           }}>
           <Link key={id} to={`/catalog/${link_page}`}>
-            <div className="w-full h-full flex justify-center items-center bg-bgDark group-hover:border-2 group-hover:border-sky-500 dark:group-hover:border-yellow-500">
+            <div className="w-full h-full flex justify-center items-center bg-bgDark">
               <h3 className=" text-[1.5rem] text-white font-semibold ">
                 {title}
               </h3>

@@ -35,6 +35,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<About />} />
+
       <Route path="/catalog" element={<Catalog />}>
         <Route path="developers" element={<Developers />} />
         <Route path="developers/:developerId" element={<DevelopersItemPage />}>
@@ -57,14 +58,12 @@ export default function AppRoutes() {
       <Route path="/admin" element={<Admin />} />
       <Route path="/admin/main" element={<MainAdmin />}>
         <Route index element={<HomeAdminPage />} />
-
         <Route path="settings" element={<AdminSettingsPage />} />
       </Route>
 
       <Route path="/user" element={<User />} />
       <Route path="/user/profile" element={<MainUser />}>
         <Route index element={<HomeUserPage />} />
-
         <Route path="settings" element={<UserSettingsPage />} />
       </Route>
 
