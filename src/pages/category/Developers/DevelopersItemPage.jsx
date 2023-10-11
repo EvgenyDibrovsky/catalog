@@ -1,7 +1,7 @@
-import DevelopersSlider from 'components/Category/Developers/DevelopersSlider';
-import DeveloperGeneralItem from '../../../components/Category/Developers/DeveloperGeneralItem';
+import DevelopersSlider from 'components/Category/Developers/DevelopersSlider'
+import DeveloperGeneralItem from '../../../components/Category/Developers/DeveloperGeneralItem'
 
-export default function DevelopersItemPage() {
+const DevelopersItemPage = () => {
   return (
     <>
       <div className="mb-10">
@@ -11,5 +11,6 @@ export default function DevelopersItemPage() {
         <DeveloperGeneralItem />
       </div>
     </>
-  );
+  )
 }
+export default DevelopersItemPage

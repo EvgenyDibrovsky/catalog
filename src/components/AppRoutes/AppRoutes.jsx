@@ -1,67 +1,45 @@
 // AppRoutes.js
-import { Routes, Route, Navigate } from 'react-router-dom';
-import Section from '../PageSettings/Section';
-
-import About from '../../pages/AboutPage';
-import Catalog from '../../pages/CatalogPage';
-import Contact from '../../pages/ContactPage';
-import HomePage from '../../pages/HomePage';
-import RegulationsPage from '../../pages/RegulationsPage';
-import PageNotFound from '../../pages/PageNotFound';
-import Offer from '../../pages/OfferPage';
-import Developers from '../../pages/category/Developers/DevelopersPage';
-import IntermediariesPage from '../../pages/category/IntermediariesPage';
-import InvestmentsPage from '../../pages/category/InvestmentsPage';
-import HousesPage from '../../pages/category/HousesPage';
-import ApartmentsPage from '../../pages/category/ApartmentsPage';
-import PlotsPage from '../../pages/category/PlotsPage';
+import { Routes, Route, Navigate } from 'react-router-dom'
+import About from '../../pages/AboutPage'
+import Catalog from '../../pages/CatalogPage'
+import Contact from '../../pages/ContactPage'
+import HomePage from '../../pages/HomePage'
+import RegulationsPage from '../../pages/RegulationsPage'
+import PageNotFound from '../../pages/PageNotFound'
+import Offer from '../../pages/OfferPage'
+import Developers from '../../pages/category/Developers/DevelopersPage'
+import IntermediariesPage from '../../pages/category/IntermediariesPage'
+import InvestmentsPage from '../../pages/category/InvestmentsPage'
+import HousesPage from '../../pages/category/HousesPage'
+import ApartmentsPage from '../../pages/category/ApartmentsPage'
+import PlotsPage from '../../pages/category/PlotsPage'
 // admin
-import Admin from '../../pages/Admin/AuthAdminPage';
-import MainAdmin from '../../pages/Admin/MainAdminPage';
-import HomeAdminPage from '../../pages/Admin/HomeAdminPage';
-import AdminSettingsPage from '../../pages/Admin/SettingsPage';
+import Admin from '../../pages/Admin/AuthAdminPage'
+import MainAdmin from '../../pages/Admin/MainAdminPage'
+import HomeAdminPage from '../../pages/Admin/HomeAdminPage'
+import AdminSettingsPage from '../../pages/Admin/SettingsPage'
 // admin
 // user
-import User from '../../pages/User/AuthUserPage';
-import MainUser from '../../pages/User/MainUserPage';
-import HomeUserPage from '../../pages/User/HomeUserPage';
-import UserSettingsPage from '../../pages/User/SettingsPage';
+import User from '../../pages/User/AuthUserPage'
+import MainUser from '../../pages/User/MainUserPage'
+import HomeUserPage from '../../pages/User/HomeUserPage'
+import UserSettingsPage from '../../pages/User/SettingsPage'
 // user
-import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage';
-import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage';
-import DevelopersReviewsPage from '../../pages/category/Developers/DevelopersReviewsPage';
-import DevelopersAboutPage from '../../pages/category/Developers/DevelopersAboutPage';
+import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage'
+import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage'
+import DevelopersReviewsPage from '../../pages/category/Developers/DevelopersReviewsPage'
+import DevelopersAboutPage from '../../pages/category/Developers/DevelopersAboutPage'
 
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <Section noPadding>
-            <HomePage />
-          </Section>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <Section>
-            <About />
-          </Section>
-        }
-      />
-
-      <Route
-        path="/catalog"
-        element={
-          <Section noPadding>
-            <Catalog />
-          </Section>
-        }
-      >
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/catalog" element={<Catalog />}>
         <Route path="developers" element={<Developers />} />
-        <Route path="developers/:developerId/*" element={<DevelopersItemPage />}>
+        <Route
+          path="developers/:developerId/*"
+          element={<DevelopersItemPage />}>
           <Route index element={<Navigate to="about" replace />} />
           <Route path="about" element={<DevelopersAboutPage />} />
           <Route path="projects" element={<DevelopersProjectsPage />} />
@@ -74,81 +52,25 @@ export default function AppRoutes() {
         <Route path="plots" element={<PlotsPage />} />
       </Route>
 
-      <Route
-        path="/offer"
-        element={
-          <Section>
-            <Offer />
-          </Section>
-        }
-      />
-      <Route
-        path="/contact"
-        element={
-          <Section>
-            <Contact />
-          </Section>
-        }
-      />
-      <Route
-        path="/regulations"
-        element={
-          <Section>
-            <RegulationsPage />
-          </Section>
-        }
-      />
+      <Route path="/offer" element={<Offer />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/regulations" element={<RegulationsPage />} />
 
-      <Route
-        path="/admin"
-        element={
-          <Section noPadding>
-            <Admin />
-          </Section>
-        }
-      />
-      <Route
-        path="/admin/main"
-        element={
-          <Section noPadding>
-            <MainAdmin />
-          </Section>
-        }
-      >
+      <Route path="/admin" element={<Admin />} />
+      <Route path="/admin/main" element={<MainAdmin />}>
         <Route index element={<HomeAdminPage />} />
 
         <Route path="settings" element={<AdminSettingsPage />} />
       </Route>
 
-      <Route
-        path="/user"
-        element={
-          <Section noPadding>
-            <User />
-          </Section>
-        }
-      />
-      <Route
-        path="/user/profile"
-        element={
-          <Section noPadding>
-            <MainUser />
-          </Section>
-        }
-      >
+      <Route path="/user" element={<User />} />
+      <Route path="/user/profile" element={<MainUser />}>
         <Route index element={<HomeUserPage />} />
 
         <Route path="settings" element={<UserSettingsPage />} />
       </Route>
 
-      <Route
-        path="*"
-        element={
-          <Section>
-            <PageNotFound />
-          </Section>
-        }
-      />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
-  );
+  )
 }
