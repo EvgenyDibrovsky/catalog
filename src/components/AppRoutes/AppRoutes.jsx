@@ -37,9 +37,7 @@ export default function AppRoutes() {
       <Route path="/about" element={<About />} />
       <Route path="/catalog" element={<Catalog />}>
         <Route path="developers" element={<Developers />} />
-        <Route
-          path="developers/:developerId/*"
-          element={<DevelopersItemPage />}>
+        <Route path="developers/:developerId" element={<DevelopersItemPage />}>
           <Route index element={<Navigate to="about" replace />} />
           <Route path="about" element={<DevelopersAboutPage />} />
           <Route path="projects" element={<DevelopersProjectsPage />} />
