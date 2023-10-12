@@ -90,8 +90,6 @@ const Breadcrumb = () => {
               </li>
             )
           }
-
-          // Возвращаем стандартное значение в случае, если это не категория или developerId
           return (
             <li
               key={name}
