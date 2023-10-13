@@ -44,6 +44,18 @@
       "title": "Regulamin",
       "sub_title": "Podtytuł"
     },
+    "projects": {
+     "meta_title": "Projekty",
+      "meta_description": "404",
+      "title": "Projekty",
+      "sub_title": "404"
+    },
+   "reviews": {
+      "meta_title": "Opinie klientów",
+      "meta_description": "404",
+      "title": "Opinie klientów",
+      "sub_title": "404"
+    },
     "not_found": {
       "meta_title": "Strona nie znaleziona",
       "meta_description": "404",
