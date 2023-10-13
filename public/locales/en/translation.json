@@ -44,6 +44,18 @@
       "title": "Regulations",
       "sub_title": "Subtitle"
     },
+    "projects": {
+      "meta_title": "Projects",
+      "meta_description": "Meta Description",
+      "title": "Projects",
+      "sub_title": "Subtitle"
+    },
+    "reviews": {
+      "meta_title": "Customer reviews",
+      "meta_description": "Meta Description",
+      "title": "Customer reviews",
+      "sub_title": "Subtitle"
+    },
     "not_found": {
       "meta_title": "Page Not Found",
       "meta_description": "404",

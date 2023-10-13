@@ -44,6 +44,18 @@
       "title": "Регламент",
       "sub_title": "Подзаголовок"
     },
+    "projects": {
+      "meta_title": "Проекты",
+      "meta_description": "Meta Description",
+      "title": "Проекты",
+      "sub_title": "Subtitle"
+    },
+    "reviews": {
+      "meta_title": "Отзывы клиентов",
+      "meta_description": "Meta Description",
+      "title": "Отзывы клиентов",
+      "sub_title": "Subtitle"
+    },
     "not_found": {
       "meta_title": "Страница не найдена",
       "meta_description": "404",
