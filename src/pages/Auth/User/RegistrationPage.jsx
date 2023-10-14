@@ -1,23 +1,34 @@
-import LoginAdmin from '../../../components/Admin/LoginAdmin'
-import Section from '../../../components/PageSettings/Section'
+import RegisterForm from '../../../components/AuthForms/RegisterForm'
+import React, { useState } from 'react'
 
-const AuthAdminPage = () => {
+const RegistrationPage = () => {
+  const [formData, setFormData] = useState({
+    login: '',
+    email: '',
+    password: '',
+    agreed: false,
+  })
+
+  const onInputChange = (name, value) => {
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value,
+    }))
+  }
+
   return (
     <>
-      <Section noPadding>
-        <div className="flex flex-col lg:flex-row lg:min-h-[30rem]">
-          <div className="hidden relative lg:flex w-6/12 bg-admin-login bg-cover bg-no-repeat items-center justify-center">
-            <div className="absolute top-0 left-0 w-full h-full bg-bgDark"></div>
-            <h1 className="relative w-6/12 text-[2rem] font-semibold text-center text-white">
-              Регистрация
-            </h1>
-          </div>
-          <div className="w-full py-20 lg:w-6/12 flex flex-col items-center justify-center bg-gradient-to-r from-sky-200 via-white to-sky-100 dark:from-yellow-200  dark:via-white  dark:to-yellow-100 ">
-            <LoginAdmin />
-          </div>
-        </div>
-      </Section>
+      <div className="flex flex-col lg:flex-row justify-center mt-10">
+        <RegisterForm
+          login={formData.login}
+          email={formData.email}
+          password={formData.password}
+          agreed={formData.agreed}
+          onInputChange={onInputChange}
+          formData={formData}
+        />
+      </div>
     </>
   )
 }
-export default AuthAdminPage
+export default RegistrationPage

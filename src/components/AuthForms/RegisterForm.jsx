@@ -1,24 +1,32 @@
-import React from 'react';
-import { withTranslation } from 'react-i18next';
-import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/auth-operations';
+import React from 'react'
+import { withTranslation } from 'react-i18next'
+import { useDispatch } from 'react-redux'
+import { register } from '../../redux/auth/auth-operations'
 
-function RegisterForm({ login, email, password, agreed, t, onInputChange, formData }) {
-  const dispatch = useDispatch();
+function RegisterForm({
+  login,
+  email,
+  password,
+  agreed,
+  t,
+  onInputChange,
+  formData,
+}) {
+  const dispatch = useDispatch()
 
   const handleChange = evt => {
-    const { name, value, type, checked } = evt.target;
-    const finalValue = type === 'checkbox' ? checked : value;
-    onInputChange(name, finalValue);
-  };
+    const { name, value, type, checked } = evt.target
+    const finalValue = type === 'checkbox' ? checked : value
+    onInputChange(name, finalValue)
+  }
 
   const handleSubmit = evt => {
-    evt.preventDefault();
-    dispatch(register(formData));
-  };
+    evt.preventDefault()
+    dispatch(register(formData))
+  }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="w-full">
       <label className="text-black dark:text-white">
         {t('forms.registration.login')}
         <input
@@ -71,8 +79,7 @@ function RegisterForm({ login, email, password, agreed, t, onInputChange, formDa
           href={process.env.PUBLIC_URL + '/regulations'}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[0.7rem] text-textSecondary dark:text-yellow-500 my-4 mx-auto block transition-all duration-200 hover:underline"
-        >
+          className="text-[0.7rem] text-textSecondary dark:text-yellow-500 my-4 mx-auto block transition-all duration-200 hover:underline">
           ({t('forms.registration.regulations_page')})
         </a>
       </span>
@@ -80,7 +87,7 @@ function RegisterForm({ login, email, password, agreed, t, onInputChange, formDa
         {t('forms.registration.btn_registration')}
       </button>
     </form>
-  );
+  )
 }
 
-export default withTranslation()(RegisterForm);
+export default withTranslation()(RegisterForm)
