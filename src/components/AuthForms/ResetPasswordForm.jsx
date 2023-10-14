@@ -1,20 +1,21 @@
-import React from 'react';
-import { withTranslation } from 'react-i18next';
-import { useDispatch } from 'react-redux';
-import { resetPassword } from '../../redux/auth/auth-operations';
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import { useTranslation } from 'react-i18next'
+import { resetPassword } from '../../redux/auth/auth-operations'
 
-function ResetPassword({ email, t, onInputChange, formData }) {
-  const dispatch = useDispatch();
+function ResetPasswordForm({ email, onInputChange, formData }) {
+  const { t } = useTranslation()
+  const dispatch = useDispatch()
 
   const handleChange = evt => {
-    const { name, value } = evt.target;
-    onInputChange(name, value);
-  };
+    const { name, value } = evt.target
+    onInputChange(name, value)
+  }
 
   const handleSubmit = evt => {
-    evt.preventDefault();
-    dispatch(resetPassword(formData));
-  };
+    evt.preventDefault()
+    dispatch(resetPassword(formData))
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -34,7 +35,7 @@ function ResetPassword({ email, t, onInputChange, formData }) {
         {t('forms.password_recovery.btn_password_recovery')}
       </button>
     </form>
-  );
+  )
 }
 
-export default withTranslation()(ResetPassword);
+export default ResetPasswordForm

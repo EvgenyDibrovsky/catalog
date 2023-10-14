@@ -56,6 +56,8 @@ module.exports = {
         bgContainer: '#F3F3F3',
         //Content
         darkBgContent: '#1f1f1f',
+        //Btn
+        darkBgBtn: '#1f1f1f',
 
         bgCardsItem: '#ffffff',
         textPrimary: '#000',
@@ -81,9 +83,10 @@ module.exports = {
         'admin-login': "url('images/bg/bg-admin.jpg')",
       },
       boxShadow: {
-        'md-up': '0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 9px 0px rgba(0, 0, 0, 0.06)',
+        'md-up':
+          '0 0px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 9px 0px rgba(0, 0, 0, 0.06)',
       },
     },
   },
   plugins: [],
-};
+}

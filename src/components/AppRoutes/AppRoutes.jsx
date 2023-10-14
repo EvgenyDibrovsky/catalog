@@ -32,7 +32,7 @@ import DevelopersAboutPage from '../../pages/category/Developers/DevelopersAbout
 import AuthUser from '../../pages/Auth/User/AuthUserPage'
 import Register from '../../pages/Auth/User/RegistrationPage'
 import Login from '../../pages/Auth/User/LoginPage'
-import ResetPassword from '../../pages/Auth/User/ResetPassword'
+import ResetPassword from '../../pages/Auth/User/ResetPasswordPage'
 
 export default function AppRoutes() {
   return (
@@ -61,7 +61,7 @@ export default function AppRoutes() {
         <Route index element={<HomeAdminPage />} />
         <Route path="settings" element={<AdminSettingsPage />} />
       </Route>
-      <Route path="/auth-user" element={<AuthUser />}>
+      <Route path="/user" element={<AuthUser />}>
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />} />
         <Route path="reset-password" element={<ResetPassword />} />
