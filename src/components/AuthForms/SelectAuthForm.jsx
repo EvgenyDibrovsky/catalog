@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
-import { BsPersonPlus, BsPerson } from 'react-icons/bs';
+import { useTranslation } from 'react-i18next'
+import { BsPersonPlus, BsPerson } from 'react-icons/bs'
 
 export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 my-5">
       <button
@@ -11,8 +11,7 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
           selectedForm === 'Login'
             ? 'border-btnAuthForm dark:border-yellow-500 bg-btnAuthForm dark:bg-yellow-500 text-white dark:text-black '
             : 'text-btnAuthForm dark:text-yellow-500 border-btnAuthForm dark:border-yellow-500 hover:bg-btnAuthForm  dark:hover:bg-yellow-500 hover:text-white hover:dark:text-black'
-        }`}
-      >
+        }`}>
         <span className="flex items-center justify-center gap-2">
           <BsPerson />
           {t('forms.select_forms.authorization')}
@@ -25,13 +24,12 @@ export default function SelectAuthForm({ selectedForm, setSelectedForm }) {
           selectedForm === 'Register'
             ? 'border-btnAuthForm dark:border-yellow-500 bg-btnAuthForm dark:bg-yellow-500 text-white dark:text-black '
             : 'text-btnAuthForm dark:text-yellow-500 border-btnAuthForm dark:border-yellow-500 hover:bg-btnAuthForm  dark:hover:bg-yellow-500 hover:text-white hover:dark:text-black'
-        }`}
-      >
+        }`}>
         <span className="flex items-center justify-center gap-2">
           <BsPersonPlus />
           {t('forms.select_forms.registration')}
         </span>
       </button>
     </div>
-  );
+  )
 }

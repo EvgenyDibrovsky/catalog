@@ -14,28 +14,31 @@ import HousesPage from '../../pages/category/HousesPage'
 import ApartmentsPage from '../../pages/category/ApartmentsPage'
 import PlotsPage from '../../pages/category/PlotsPage'
 // admin
-import Admin from '../../pages/Admin/AuthAdminPage'
-import MainAdmin from '../../pages/Admin/MainAdminPage'
-import HomeAdminPage from '../../pages/Admin/HomeAdminPage'
-import AdminSettingsPage from '../../pages/Admin/SettingsPage'
+import AuthAdmin from '../../pages/Auth/Admin/AuthAdminPage'
+import MainAdmin from '../../pages/Auth/Admin/MainAdminPage'
+import HomeAdminPage from '../../pages/Auth/Admin/HomeAdminPage'
+import AdminSettingsPage from '../../pages/Auth/Admin/SettingsPage'
 // admin
 // user
-import User from '../../pages/User/AuthUserPage'
-import MainUser from '../../pages/User/MainUserPage'
-import HomeUserPage from '../../pages/User/HomeUserPage'
-import UserSettingsPage from '../../pages/User/SettingsPage'
+import MainUser from '../../pages/Auth/User/MainUserPage'
+import HomeUserPage from '../../pages/Auth/User/HomeUserPage'
+import UserSettingsPage from '../../pages/Auth/User/SettingsPage'
 // user
 import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage'
 import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage'
 import DevelopersReviewsPage from '../../pages/category/Developers/DevelopersReviewsPage'
 import DevelopersAboutPage from '../../pages/category/Developers/DevelopersAboutPage'
+//Auth
+import AuthUser from '../../pages/Auth/User/AuthUserPage'
+import Register from '../../pages/Auth/User/RegistrationPage'
+import Login from '../../pages/Auth/User/LoginPage'
+import ResetPassword from '../../pages/Auth/User/ResetPassword'
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<About />} />
-
       <Route path="/catalog" element={<Catalog />}>
         <Route path="developers" element={<Developers />} />
         <Route path="developers/:developerId" element={<DevelopersItemPage />}>
@@ -50,23 +53,23 @@ export default function AppRoutes() {
         <Route path="apartments" element={<ApartmentsPage />} />
         <Route path="plots" element={<PlotsPage />} />
       </Route>
-
       <Route path="/offer" element={<Offer />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/regulations" element={<RegulationsPage />} />
-
-      <Route path="/admin" element={<Admin />} />
+      <Route path="/admin" element={<AuthAdmin />} />
       <Route path="/admin/main" element={<MainAdmin />}>
         <Route index element={<HomeAdminPage />} />
         <Route path="settings" element={<AdminSettingsPage />} />
       </Route>
-
-      <Route path="/user" element={<User />} />
+      <Route path="/auth-user" element={<AuthUser />}>
+        <Route path="register" element={<Register />} />
+        <Route path="login" element={<Login />} />
+        <Route path="reset-password" element={<ResetPassword />} />
+      </Route>
       <Route path="/user/profile" element={<MainUser />}>
         <Route index element={<HomeUserPage />} />
         <Route path="settings" element={<UserSettingsPage />} />
       </Route>
-
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )

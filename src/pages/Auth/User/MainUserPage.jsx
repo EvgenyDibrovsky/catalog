@@ -1,17 +1,17 @@
 import { BsDoorOpen } from 'react-icons/bs'
-import ClockDate from '../../components/Widgets/ClockDate/ClockDate'
-import QuoteGenerator from '../../components/Widgets/QuoteGenerator/QuoteGenerator'
+import ClockDate from '../../../components/Widgets/ClockDate/ClockDate'
+import QuoteGenerator from '../../../components/Widgets/QuoteGenerator/QuoteGenerator'
 import { NavLink, Outlet } from 'react-router-dom'
-import Section from '../../components/PageSettings/Section'
+import Section from '../../../components/PageSettings/Section'
 
-const MainAdminPage = () => {
+const MainUserPage = () => {
   return (
     <>
       <Section noPadding>
         <div className="container py-10">
           <div className="flex justify-between">
             <h1 className="text-[1.5rem] mb-10 font-semibold text-black dark:text-white ">
-              Админ панель
+              Пользовтельская панель
             </h1>
 
             <div className="group">
@@ -52,4 +52,4 @@ const MainAdminPage = () => {
     </>
   )
 }
-export default MainAdminPage
+export default MainUserPage

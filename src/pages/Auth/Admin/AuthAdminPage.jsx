@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
-import LoginAdmin from '../../components/Admin/LoginAdmin'
-import Section from '../../components/PageSettings/Section'
+import LoginAdmin from '../../../components/Admin/LoginAdmin'
+import Section from '../../../components/PageSettings/Section'
 
-const AuthUserPage = () => {
+const AuthAdminPage = () => {
   const { t } = useTranslation()
   return (
     <>
@@ -22,4 +22,4 @@ const AuthUserPage = () => {
     </>
   )
 }
-export default AuthUserPage
+export default AuthAdminPage
