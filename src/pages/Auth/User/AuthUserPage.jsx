@@ -9,18 +9,22 @@ const AuthUserPage = () => {
   const getTitle = () => {
     if (location.pathname.includes('register')) {
       return t('forms.select_forms.registration')
-    } else if (location.pathname.includes('login')) {
+    } else if (
+      location.pathname.includes('login') &&
+      !location.pathname.includes('reset-password')
+    ) {
       return t('forms.select_forms.authorization')
-    } else if (location.pathname.includes('password-recovery')) {
+    } else if (location.pathname.includes('reset-password')) {
       return t('forms.password_recovery.btn_password_recovery')
     } else {
-      return 'Логин'
+      return 'Добро пожаловать'
     }
   }
+
   return (
     <>
-      <div className="mt-20 h-[calc(100vh-17.99rem)]">
-        <div className="w-full h-full flex ">
+      <div className="mt-20">
+        <div className="w-full min-h-[calc(100vh-17.99rem)] flex ">
           <div className="hidden relative lg:flex w-6/12 bg-admin-login bg-cover bg-no-repeat items-center justify-center">
             <div className="absolute top-0 left-0 w-full h-full bg-bgDark"></div>
             <h1 className="relative w-6/12 text-[2rem] font-semibold text-center text-white">
