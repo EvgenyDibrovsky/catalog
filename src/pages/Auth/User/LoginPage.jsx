@@ -1,6 +1,6 @@
 import LoginForm from '../../../components/AuthForms/LoginForm'
 import React, { useState } from 'react'
-
+import { Outlet } from 'react-router-dom'
 const LoginPage = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -24,6 +24,7 @@ const LoginPage = () => {
           formData={formData}
         />
       </div>
+      <Outlet />
     </>
   )
 }

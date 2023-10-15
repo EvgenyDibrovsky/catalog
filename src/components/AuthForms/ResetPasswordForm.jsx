@@ -18,7 +18,7 @@ function ResetPasswordForm({ email, onInputChange, formData }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="w-full">
       <label className="text-black dark:text-white">
         {t('forms.password_recovery.email')}
         <input

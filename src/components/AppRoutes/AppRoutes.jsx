@@ -63,8 +63,9 @@ export default function AppRoutes() {
       </Route>
       <Route path="/user" element={<AuthUser />}>
         <Route path="register" element={<Register />} />
-        <Route path="login" element={<Login />} />
-        <Route path="reset-password" element={<ResetPassword />} />
+        <Route path="login" element={<Login />}>
+          <Route path="reset-password" element={<ResetPassword />} />
+        </Route>
       </Route>
       <Route path="/user/profile" element={<MainUser />}>
         <Route index element={<HomeUserPage />} />

@@ -1,8 +1,8 @@
-import NavMenu from './NavMenu';
-import ToggleTheme from './ToggleTheme';
-import ToggleLang from './ToggleLang';
-import AuthHeader from '../AuthForms/AuthHeader';
-import Logo from './Logo';
+import NavMenu from './NavMenu'
+import ToggleTheme from './ToggleTheme'
+import ToggleLang from './ToggleLang'
+import AuthHeader from '../AuthForms/AuthHeader.jsx'
+import Logo from './Logo'
 
 export default function Header({ theme, toggleTheme }) {
   return (
@@ -24,5 +24,5 @@ export default function Header({ theme, toggleTheme }) {
         </div>
       </div>
     </header>
-  );
+  )
 }

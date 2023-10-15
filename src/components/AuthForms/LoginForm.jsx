@@ -2,15 +2,8 @@ import React from 'react'
 import { withTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'
 import { login } from '../../redux/auth/auth-operations'
-
-function LoginForm({
-  email,
-  password,
-  t,
-  onInputChange,
-  formData,
-  setSelectedForm,
-}) {
+import { Link } from 'react-router-dom'
+function LoginForm({ email, password, t, onInputChange, formData }) {
   const dispatch = useDispatch()
 
   const handleChange = evt => {
@@ -52,12 +45,13 @@ function LoginForm({
       <button type="submit" className="btn-sign-up-form">
         {t('forms.authorization.btn_authorization')}
       </button>
-      <button
-        type="button"
-        onClick={() => setSelectedForm('Reset')}
-        className="text-textSecondary dark:text-white my-4 mx-auto block transition-all duration-200 hover:underline">
-        {t('forms.authorization.btn_password_recovery')}
-      </button>
+      <Link to="reset-password">
+        <button
+          type="button"
+          className="text-textSecondary dark:text-white my-4 mx-auto block transition-all duration-200 hover:underline">
+          {t('forms.authorization.btn_password_recovery')}
+        </button>
+      </Link>
     </form>
   )
 }
