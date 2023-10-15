@@ -63,7 +63,7 @@ function RegisterForm({
           className="w-full h-10 bg-white dark:bg-black border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2 mb-5"
         />
       </label>
-      <span className="flex items-center">
+      <span className="flex items-center justify-between">
         <label className="flex items-center text-[0.7rem]">
           <input
             type="checkbox"
@@ -79,7 +79,7 @@ function RegisterForm({
           href={process.env.PUBLIC_URL + '/regulations'}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[0.7rem] text-textSecondary dark:text-yellow-500 my-4 mx-auto block transition-all duration-200 hover:underline">
+          className="text-[0.7rem] text-textSecondary dark:text-yellow-500 my-4 block transition-all duration-200 hover:underline">
           ({t('forms.registration.regulations_page')})
         </a>
       </span>

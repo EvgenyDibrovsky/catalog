@@ -1,52 +1,102 @@
-const User = require('../models/user'); // ваша модель пользователя
-const bcrypt = require('bcryptjs');
+const User = require('../models/User')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
 
 exports.register = async (req, res) => {
   try {
-    const { login, email, password } = req.body;
+    const { login, email, password, agreed } = req.body
 
-    // Проверка существующего пользователя
-    let user = await User.findOne({ email });
+    // Проверить, существует ли пользователь
+    let user = await User.findOne({ email })
     if (user) {
-      return res.status(400).json({ msg: 'User already exists' });
+      return res.status(400).json({ errors: [{ msg: 'User already exists' }] })
     }
 
-    // Хеширование пароля
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(password, salt);
+    // Создать нового пользователя
+    user = new User({
+      login,
+      email,
+      password,
+      agreed,
+    })
 
-    user = new User({ login, email, password: hashedPassword });
-    await user.save();
+    // Хешировать пароль
+    const salt = await bcrypt.genSalt(10)
+    user.password = await bcrypt.hash(password, salt)
 
-    res.status(201).json({ msg: 'User registered successfully' });
-  } catch (error) {
-    console.error(error.message);
-    res.status(500).send('Server error');
+    await user.save()
+
+    // Вернуть JWT
+    const payload = {
+      user: {
+        id: user.id,
+      },
+    }
+
+    jwt.sign(
+      payload,
+      process.env.JWT_SECRET,
+      { expiresIn: '5h' },
+      (err, token) => {
+        if (err) throw err
+        res.json({ token })
+      }
+    )
+  } catch (err) {
+    console.error(err.message)
+    res.status(500).send('Server error')
   }
-};
+}
 
 exports.login = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, password } = req.body
 
-    let user = await User.findOne({ email });
+    // Проверить существует ли пользователь
+    let user = await User.findOne({ email })
     if (!user) {
-      return res.status(400).json({ msg: 'Invalid credentials' });
+      return res.status(400).json({ errors: [{ msg: 'Invalid Credentials' }] })
     }
 
-    const isMatch = await bcrypt.compare(password, user.password);
+    // Проверить пароль
+    const isMatch = await bcrypt.compare(password, user.password)
     if (!isMatch) {
-      return res.status(400).json({ msg: 'Invalid credentials' });
+      return res.status(400).json({ errors: [{ msg: 'Invalid Credentials' }] })
     }
 
-    res.status(200).json({ msg: 'User logged in successfully' });
-  } catch (error) {
-    console.error(error.message);
-    res.status(500).send('Server error');
-  }
-};
+    // Вернуть JWT
+    const payload = {
+      user: {
+        id: user.id,
+      },
+    }
 
-exports.resetPassword = (req, res) => {
-  // Здесь будет логика для восстановления пароля, например, отправка письма на почту и т.д.
-  res.status(501).send('Not implemented yet');
-};
+    jwt.sign(
+      payload,
+      process.env.JWT_SECRET,
+      { expiresIn: '5h' },
+      (err, token) => {
+        if (err) throw err
+        res.json({ token })
+      }
+    )
+  } catch (err) {
+    console.error(err.message)
+    res.status(500).send('Server error')
+  }
+}
+
+exports.resetPassword = async (req, res) => {
+  // TODO: Реализуйте логику сброса пароля.
+  // Например: отправьте письмо с ссылкой для сброса пароля на указанный email.
+}
+
+exports.getUserProfile = async (req, res) => {
+  try {
+    const user = await User.findById(req.user.id).select('-password')
+    res.json(user)
+  } catch (err) {
+    console.error(err.message)
+    res.status(500).send('Server error')
+  }
+}

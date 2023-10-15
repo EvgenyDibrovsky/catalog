@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const mongoose = require('mongoose')
+const bcrypt = require('bcryptjs')
 
 const userSchema = new mongoose.Schema({
   login: {
@@ -33,15 +33,23 @@ const userSchema = new mongoose.Schema({
     type: Date,
     default: null,
   },
-});
+})
 
 // Метод для сравнения паролей
 userSchema.methods.comparePassword = function (candidatePassword) {
-  return bcrypt.compare(candidatePassword, this.password);
-};
-
+  return bcrypt.compare(candidatePassword, this.password)
+}
+// Pre-save хук для хеширования пароля перед сохранением в базе данных
+userSchema.pre('save', async function (next) {
+  if (!this.isModified('password')) {
+    return next()
+  }
+  const salt = await bcrypt.genSalt(10)
+  this.password = await bcrypt.hash(this.password, salt)
+  next()
+})
 // Методы и хуки для хеширования пароля перед сохранением в базе данных можно добавить позже
 
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema)
 
-module.exports = User;
+module.exports = User
