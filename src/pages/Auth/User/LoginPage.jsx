@@ -1,7 +1,12 @@
 import LoginForm from '../../../components/AuthForms/LoginForm'
-import React, { useState } from 'react'
-import { Outlet } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Outlet, useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+
 const LoginPage = () => {
+  const navigate = useNavigate()
+  const isAuthenticated = useSelector(state => state.auth.isAuthenticated)
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -13,6 +18,13 @@ const LoginPage = () => {
       [name]: value,
     }))
   }
+
+  // Перенаправление после успешной аутентификации
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate('/user/profile')
+    }
+  }, [isAuthenticated, navigate])
 
   return (
     <>
@@ -28,4 +40,5 @@ const LoginPage = () => {
     </>
   )
 }
+
 export default LoginPage

@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { withTranslation } from 'react-i18next'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../../redux/auth/auth-operations'
+import { selectAuthError } from '../../redux/auth/auth-selectors'
 import { Link } from 'react-router-dom'
+
 function LoginForm({ email, password, t, onInputChange, formData }) {
   const dispatch = useDispatch()
+  const loginError = useSelector(selectAuthError) // Получаем ошибку из Redux
+  const [success, setSuccess] = useState(false)
 
   const handleChange = evt => {
     const { name, value } = evt.target
@@ -14,6 +18,13 @@ function LoginForm({ email, password, t, onInputChange, formData }) {
   const handleSubmit = evt => {
     evt.preventDefault()
     dispatch(login(formData))
+      .unwrap()
+      .then(() => {
+        setSuccess(true) // Устанавливаем состояние успешного входа
+        onInputChange('email', '') // Очищаем поля
+        onInputChange('password', '')
+      })
+      .catch(() => setSuccess(false))
   }
 
   return (
@@ -42,6 +53,18 @@ function LoginForm({ email, password, t, onInputChange, formData }) {
           className="w-full h-10 bg-white dark:bg-black  border border-borderLabelForm dark:border-white px-2 rounded-md focus:outline-none mt-2 mb-5"
         />
       </label>
+      <div>
+        {success && (
+          <div className="flex justify-center items-center bg-green-700 text-white py-4 px-2 my-4">
+            Вход успешно выполнен!
+          </div>
+        )}
+        {loginError && (
+          <div className="flex justify-center items-center bg-red-500 text-white py-4 px-2 my-4">
+            {loginError}
+          </div>
+        )}
+      </div>
       <button type="submit" className="btn-sign-up-form">
         {t('forms.authorization.btn_authorization')}
       </button>

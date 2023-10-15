@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { withTranslation } from 'react-i18next'
 import { useDispatch } from 'react-redux'
 import { register } from '../../redux/auth/auth-operations'
-
+import { useSelector } from 'react-redux'
+import { selectAuthError } from '../../redux/auth/auth-selectors'
 function RegisterForm({
   login,
   email,
@@ -13,6 +14,8 @@ function RegisterForm({
   formData,
 }) {
   const dispatch = useDispatch()
+  const registrationError = useSelector(selectAuthError) // Получаем ошибку из Redux
+  const [success, setSuccess] = useState(false)
 
   const handleChange = evt => {
     const { name, value, type, checked } = evt.target
@@ -23,6 +26,15 @@ function RegisterForm({
   const handleSubmit = evt => {
     evt.preventDefault()
     dispatch(register(formData))
+      .unwrap()
+      .then(() => {
+        setSuccess(true) // Устанавливаем состояние успешной регистрации
+        onInputChange('login', '') // Очищаем поля
+        onInputChange('email', '')
+        onInputChange('password', '')
+        onInputChange('agreed', false)
+      })
+      .catch(() => setSuccess(false))
   }
 
   return (
@@ -83,6 +95,18 @@ function RegisterForm({
           ({t('forms.registration.regulations_page')})
         </a>
       </span>
+      <div>
+        {success && (
+          <div className="flex justify-center items-center bg-green-700 text-white py-4 px-2 my-4">
+            Регистрация успешна!
+          </div>
+        )}
+        {registrationError && (
+          <div className="flex justify-center items-center bg-red-500 text-white py-4 px-2 my-4">
+            {registrationError}
+          </div>
+        )}
+      </div>
       <button type="submit" disabled={!agreed} className="btn-sign-up-form">
         {t('forms.registration.btn_registration')}
       </button>

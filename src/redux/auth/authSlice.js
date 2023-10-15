@@ -12,6 +12,7 @@ import {
 const initialState = {
   user: { name: '', email: '' },
   token: null,
+  isAuthenticated: false, // добавьте это
   isLoading: false,
   error: null,
   isFetchingCurrentUser: false,
@@ -27,12 +28,14 @@ const authSlice = createSlice({
         state.error = null
         state.token = null
         state.user = { name: '', email: '' }
+        state.isAuthenticated = false // обновляем состояние
       })
       .addCase(logout.fulfilled, state => {
         state.isLoading = false
         state.error = null
         state.token = null
         state.user = { name: '', email: '' }
+        state.isAuthenticated = false // добавьте это
       })
       .addCase(fetchCurrentUser.pending, state => {
         state.isFetchingCurrentUser = true
@@ -59,13 +62,13 @@ const authSlice = createSlice({
       .addCase(refreshToken.fulfilled, (state, { payload: { token } }) => {
         state.token = token
       })
-      // After all addCase calls, now addMatcher
       .addMatcher(
         isAnyOf(
           register.pending,
           login.pending,
           logout.pending,
-          fetchCurrentUser.pending
+          fetchCurrentUser.pending,
+          resetPassword.pending
         ),
         state => {
           state.isLoading = true
@@ -78,6 +81,7 @@ const authSlice = createSlice({
           state.error = null
           state.token = token
           state.user = user
+          state.isAuthenticated = true
         }
       )
       .addMatcher(
@@ -85,7 +89,8 @@ const authSlice = createSlice({
           register.rejected,
           login.rejected,
           logout.rejected,
-          fetchCurrentUser.rejected
+          fetchCurrentUser.rejected,
+          resetPassword.rejected
         ),
         (state, { payload }) => {
           state.isLoading = false

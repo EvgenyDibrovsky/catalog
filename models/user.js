@@ -39,6 +39,7 @@ const userSchema = new mongoose.Schema({
 userSchema.methods.comparePassword = function (candidatePassword) {
   return bcrypt.compare(candidatePassword, this.password)
 }
+
 // Pre-save хук для хеширования пароля перед сохранением в базе данных
 userSchema.pre('save', async function (next) {
   if (!this.isModified('password')) {
@@ -48,7 +49,6 @@ userSchema.pre('save', async function (next) {
   this.password = await bcrypt.hash(this.password, salt)
   next()
 })
-// Методы и хуки для хеширования пароля перед сохранением в базе данных можно добавить позже
 
 const User = mongoose.model('User', userSchema)
 
