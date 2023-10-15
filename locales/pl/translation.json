@@ -151,9 +151,9 @@
       "regulations_page": "Regulamin"
     },
     "password_recovery": {
-      "email": "Email",
-      "enter_email": "Wprowadź email",
-      "btn_password_recovery": "Odzyskaj hasło"
+    "email": "E-mail do odzyskiwania hasła",
+    "enter_email": "Wprowadź e-mail do odzyskiwania hasła",
+    "btn_password_recovery": "Odzyskaj hasło"
     }
   },
   "social_links": {

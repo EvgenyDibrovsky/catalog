@@ -151,8 +151,8 @@
       "regulations_page": "Regulations"
     },
     "password_recovery": {
-      "email": "Email",
-      "enter_email": "Enter Email",
+      "email": "Email for password recovery",
+      "enter_email": "Enter email for password recovery",
       "btn_password_recovery": "Recover Password"
     }
   },

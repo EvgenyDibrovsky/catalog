@@ -151,8 +151,8 @@
       "regulations_page": "Регламент"
     },
     "password_recovery": {
-      "email": "Email",
-      "enter_email": "Введите email",
+      "email": "Email для восстановления пароля",
+      "enter_email": "Введите email для восстановления пароля",
       "btn_password_recovery": "Восстановить пароль"
     }
   },
