@@ -1,7 +1,9 @@
 const HomeProfilePage = () => {
   return (
     <>
-      <div className="flex justify-center items-center">Добро пожаловать</div>
+      <div className="h-full flex justify-center items-center text-[2rem] ">
+        Добро пожаловать
+      </div>
     </>
   )
 }
