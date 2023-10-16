@@ -11,7 +11,7 @@ const ProfilePage = props => {
         <div className="container py-10">
           <div className="flex justify-between">
             <h1 className="text-[1.2rem] mb-5 font-semibold text-black dark:text-white ">
-              Пользовтельская панель
+              Панель управления
             </h1>
             <div className="group">
               <Logout />
