@@ -23,7 +23,7 @@ const ProfilePage = props => {
           <div className="w-full sm:flex sm:gap-10">
             <div className="w-full sm:w-5/12 md:w-4/12 lg:w-3/12 mb-10">
               <ProfileUserNavMenu />
-              <div>
+              <div className="hidden md:block">
                 <QuoteGenerator />
               </div>
             </div>

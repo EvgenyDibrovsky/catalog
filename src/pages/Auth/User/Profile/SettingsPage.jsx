@@ -1,7 +1,11 @@
+import Section from '../../../../components/PageSettings/Section'
+
 const SettingsPage = () => {
   return (
     <>
-      <h1>страница настроек</h1>
+      <Section>
+        <h1 className="container py-10">Страница настроек</h1>
+      </Section>
     </>
   )
 }

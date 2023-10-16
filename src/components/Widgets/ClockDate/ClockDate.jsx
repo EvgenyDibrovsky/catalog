@@ -14,11 +14,11 @@ export default function CurrentDateTime() {
   return (
     <>
       <div className="flex items-center justify-start gap-2 ">
-        <p className="text-[1rem] text-black dark:text-white">
+        <p className="text-[1rem] text-neutral-500 dark:text-white">
           {currentDate.toLocaleDateString()}
         </p>
-        <span className="text-[1rem] text-black dark:text-white">/</span>
-        <p className="text-[1rem] text-black dark:text-white ">
+        <span className="text-[1rem] text-neutral-500 dark:text-white">/</span>
+        <p className="text-[1rem] text-neutral-500 dark:text-white ">
           {currentDate.toLocaleTimeString()}
         </p>
       </div>

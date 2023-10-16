@@ -1,6 +1,6 @@
-import paypal from '../../images/paypal.svg';
-import mastercard from '../../images/mastercard.svg';
-import visa from '../../images/visa.svg';
+import paypal from '../../images/paypal.svg'
+import mastercard from '../../images/mastercard.svg'
+import visa from '../../images/visa.svg'
 
 export default function PayLogo() {
   return (
@@ -17,5 +17,5 @@ export default function PayLogo() {
         </li>
       </ul>
     </>
-  );
+  )
 }

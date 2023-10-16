@@ -1,7 +1,7 @@
 const HomeProfilePage = () => {
   return (
     <>
-      <ul className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4 mb-10">
+      <ul className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
         <li className="h-20 flex justify-center items-center border border-sky-500 dark:shadow-yellow-500">
           btn 1
         </li>

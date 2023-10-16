@@ -25,6 +25,7 @@ import ProfilePage from '../../pages/Auth/User/Profile/ProfilePage'
 import HomeProfilePage from '../../pages/Auth/User/Profile/HomeProfilePage'
 import ControlPanelPage from '../../pages/Auth/User/Profile/ControlPanelPage'
 import SettingsProfilePage from '../../pages/Auth/User/Profile/SettingsPage'
+import AddPage from '../../pages/Auth/User/Profile/AddPage'
 // user
 import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage'
 import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage'
@@ -91,6 +92,7 @@ export default function AppRoutes() {
         <Route index element={<HomeProfilePage />} />
         <Route path="control-panel" element={<ControlPanelPage />} />
         <Route path="settings" element={<SettingsProfilePage />} />
+        <Route path="add" element={<AddPage />} />
       </Route>
 
       <Route path="*" element={<PageNotFound />} />
