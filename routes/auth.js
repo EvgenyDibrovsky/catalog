@@ -12,7 +12,14 @@ router.post('/login', authController.login)
 // Восстановление пароля
 router.post('/reset-password', authController.resetPassword)
 
+router.post('/logout', authController.logout)
+
 // Защищенный маршрут, который требует аутентификацию
-router.get('/profile', authMiddleware, authController.getUserProfile)
+router.get(
+  '/profile',
+  authMiddleware,
+  authController.checkTokenRevoked,
+  authController.getUserProfile
+)
 
 module.exports = router

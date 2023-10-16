@@ -43,9 +43,14 @@ export const login = createAsyncThunk(
 
 export const logout = createAsyncThunk(
   'auth/logout',
-  async (_, { rejectWithValue }) => {
+  async (_, { rejectWithValue, getState }) => {
+    // Добавьте getState здесь
     try {
-      await axios.post('/auth/logout')
+      const currentToken = getState().auth.token
+      if (currentToken) {
+        token.set(currentToken)
+      }
+      await axios.post('/api/auth/logout')
       token.unset()
     } catch (error) {
       return rejectWithValue(error.message)

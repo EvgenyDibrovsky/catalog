@@ -34,6 +34,9 @@ import Register from '../../pages/Auth/User/RegistrationPage'
 import Login from '../../pages/Auth/User/LoginPage'
 import ResetPassword from '../../pages/Auth/User/ResetPasswordPage'
 
+import { PrivateRoute } from '../../components/routes/PrivateRoute'
+import { PublicRoute } from '../../components/routes/PublicRoute'
+
 export default function AppRoutes() {
   return (
     <Routes>
@@ -61,16 +64,31 @@ export default function AppRoutes() {
         <Route index element={<HomeAdminPage />} />
         <Route path="settings" element={<AdminSettingsPage />} />
       </Route>
-      <Route path="/user" element={<AuthUser />}>
+
+      <Route
+        path="/user"
+        element={
+          <PublicRoute restricted={true}>
+            <AuthUser />
+          </PublicRoute>
+        }>
         <Route path="register" element={<Register />} />
         <Route path="login" element={<Login />}>
           <Route path="reset-password" element={<ResetPassword />} />
         </Route>
       </Route>
-      <Route path="/user/profile" element={<MainUser />}>
+
+      <Route
+        path="/user/profile"
+        element={
+          <PrivateRoute>
+            <MainUser />
+          </PrivateRoute>
+        }>
         <Route index element={<HomeUserPage />} />
         <Route path="settings" element={<UserSettingsPage />} />
       </Route>
+
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   )

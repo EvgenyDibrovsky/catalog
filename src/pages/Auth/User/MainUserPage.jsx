@@ -1,25 +1,9 @@
-import { BsDoorOpen } from 'react-icons/bs'
 import ClockDate from '../../../components/Widgets/ClockDate/ClockDate'
 import QuoteGenerator from '../../../components/Widgets/QuoteGenerator/QuoteGenerator'
 import { NavLink, Outlet } from 'react-router-dom'
 import Section from '../../../components/PageSettings/Section'
-import AuthProtection from '../../../components/AppRoutes/AuthProtection'
-
-import { useDispatch } from 'react-redux'
-import { logout } from '../../../redux/auth/auth-operations'
-import { useNavigate } from 'react-router-dom'
-
+import Logout from '../../../components/AuthForms/Logout'
 const MainUserPage = props => {
-  AuthProtection()
-
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
-
-  const handleLogout = async () => {
-    await dispatch(logout())
-    navigate('/')
-  }
-
   return (
     <>
       <Section noPadding>
@@ -30,9 +14,7 @@ const MainUserPage = props => {
             </h1>
 
             <div className="group">
-              <button onClick={handleLogout}>
-                <BsDoorOpen className="w-6 h-6 text-sky-500 cursor-pointer duration-200 hover:text-red-500 hover:scale-110" />
-              </button>
+              <Logout />
             </div>
           </div>
           <div className="w-full sm:flex sm:gap-10">
