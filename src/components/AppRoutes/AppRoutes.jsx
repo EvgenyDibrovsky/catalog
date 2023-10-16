@@ -14,15 +14,17 @@ import HousesPage from '../../pages/category/HousesPage'
 import ApartmentsPage from '../../pages/category/ApartmentsPage'
 import PlotsPage from '../../pages/category/PlotsPage'
 // admin
-import AuthAdmin from '../../pages/Auth/Admin/AuthAdminPage'
-import MainAdmin from '../../pages/Auth/Admin/MainAdminPage'
-import HomeAdminPage from '../../pages/Auth/Admin/HomeAdminPage'
-import AdminSettingsPage from '../../pages/Auth/Admin/SettingsPage'
+// import AuthAdmin from '../../pages/Auth/Admin/AuthAdminPage'
+// import MainAdmin from '../../pages/Auth/Admin/MainAdminPage'
+// import HomeAdminPage from '../../pages/Auth/Admin/HomeAdminPage'
+// import AdminSettingsPage from '../../pages/Auth/Admin/SettingsPage'
 // admin
+
 // user
-import MainUser from '../../pages/Auth/User/MainUserPage'
-import HomeUserPage from '../../pages/Auth/User/HomeUserPage'
-import UserSettingsPage from '../../pages/Auth/User/SettingsPage'
+import ProfilePage from '../../pages/Auth/User/Profile/ProfilePage'
+import HomeProfilePage from '../../pages/Auth/User/Profile/HomeProfilePage'
+import ControlPanelPage from '../../pages/Auth/User/Profile/ControlPanelPage'
+import SettingsProfilePage from '../../pages/Auth/User/Profile/SettingsPage'
 // user
 import DevelopersItemPage from '../../pages/category/Developers/DevelopersItemPage'
 import DevelopersProjectsPage from '../../pages/category/Developers/DevelopersProjectsPage'
@@ -59,11 +61,12 @@ export default function AppRoutes() {
       <Route path="/offer" element={<Offer />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/regulations" element={<RegulationsPage />} />
-      <Route path="/admin" element={<AuthAdmin />} />
+
+      {/* <Route path="/admin" element={<AuthAdmin />} />
       <Route path="/admin/main" element={<MainAdmin />}>
         <Route index element={<HomeAdminPage />} />
         <Route path="settings" element={<AdminSettingsPage />} />
-      </Route>
+      </Route> */}
 
       <Route
         path="/user"
@@ -82,11 +85,12 @@ export default function AppRoutes() {
         path="/user/profile"
         element={
           <PrivateRoute>
-            <MainUser />
+            <ProfilePage />
           </PrivateRoute>
         }>
-        <Route index element={<HomeUserPage />} />
-        <Route path="settings" element={<UserSettingsPage />} />
+        <Route index element={<HomeProfilePage />} />
+        <Route path="control-panel" element={<ControlPanelPage />} />
+        <Route path="settings" element={<SettingsProfilePage />} />
       </Route>
 
       <Route path="*" element={<PageNotFound />} />

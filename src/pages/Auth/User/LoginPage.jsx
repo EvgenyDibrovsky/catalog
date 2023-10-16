@@ -22,7 +22,7 @@ const LoginPage = () => {
   // Перенаправление после успешной аутентификации
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/user/profile')
+      navigate('/profile')
     }
   }, [isAuthenticated, navigate])
 
