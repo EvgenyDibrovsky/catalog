@@ -6,9 +6,7 @@ export default function AuthHeader() {
   return (
     <>
       <Link to="/user/">
-        <button>
-          <BsPersonCircle className="text-[1.2rem] text-black dark:text-white" />
-        </button>
+        <BsPersonCircle className="cursor-pointer text-[1.2rem] text-black dark:text-white" />
       </Link>
     </>
   )

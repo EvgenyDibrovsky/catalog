@@ -89,7 +89,6 @@ exports.resetPassword = async (req, res) => {
   try {
     const { email } = req.body
 
-    // Проверить, существует ли пользователь
     let user = await User.findOne({ email })
     if (!user) {
       return res.status(400).json({
@@ -101,12 +100,10 @@ exports.resetPassword = async (req, res) => {
       })
     }
 
-    // Генерация токена для сброса пароля (это пример и может потребовать дополнительной настройки)
     const resetToken = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
       expiresIn: '1h',
     })
 
-    // Сохраните этот токен в вашей модели User (если у вас такой столбец отсутствует, вам нужно будет его добавить)
     const expiryDate = new Date()
     expiryDate.setHours(expiryDate.getHours() + 1)
 
@@ -114,10 +111,34 @@ exports.resetPassword = async (req, res) => {
     user.resetPasswordExpires = expiryDate
     await user.save()
 
-    // TODO: Отправьте письмо пользователю с ссылкой для сброса пароля, содержащей resetToken.
+    // Создание транспорта для отправки письма
+    let transporter = nodemailer.createTransport({
+      service: 'gmail', // Например, используем Gmail
+      auth: {
+        user: process.env.EMAIL_USER, // Ваш email
+        pass: process.env.EMAIL_PASS, // Ваш пароль от email
+      },
+    })
+
+    // Сообщение для отправки
+    let mailOptions = {
+      from: process.env.EMAIL_USER, // Отправитель
+      to: email, // Получатель
+      subject: 'Сброс пароля',
+      text: `Для сброса пароля перейдите по следующей ссылке: http://yourwebsite.com/reset/${resetToken}`, // Ссылка для сброса пароля
+    }
+
+    // Отправка письма
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.error('Error sending the email:', error)
+        return res.status(500).send('Ошибка при отправке письма.')
+      }
+      console.log('Email sent: ' + info.response)
+    })
 
     res.status(200).json({
-      msg: 'Мы отправили автоматически сгенерированный пароль на указанный email. Проверьте свою почту.',
+      msg: 'Мы отправили письмо со ссылкой для сброса пароля на указанный email. Проверьте свою почту.',
     })
   } catch (err) {
     console.error(err.message)
