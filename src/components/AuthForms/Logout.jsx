@@ -21,7 +21,7 @@ export default function Logout() {
 
   return (
     <button onClick={handleLogout}>
-      <BsDoorOpen className="w-6 h-6 text-sky-500 cursor-pointer duration-200 hover:text-red-500 hover:scale-110" />
+      <BsDoorOpen className="w-6 h-6 text-sky-500 dark:text-yellow-500 duration-200 hover:text-red-500 dark:hover:text-red-500  hover:scale-110" />
     </button>
   )
 }

@@ -10,18 +10,18 @@ const ProfilePage = props => {
       <Section noPadding>
         <div className="container py-10">
           <div className="flex justify-between">
-            <h1 className="text-[1.5rem] mb-10 font-semibold text-black dark:text-white ">
+            <h1 className="text-[1.2rem] mb-5 font-semibold text-black dark:text-white ">
               Пользовтельская панель
             </h1>
             <div className="group">
               <Logout />
             </div>
           </div>
+          <div className="mb-5">
+            <ClockDate />
+          </div>
           <div className="w-full sm:flex sm:gap-10">
             <div className="w-full sm:w-5/12 md:w-4/12 lg:w-3/12 mb-10">
-              <div className="mb-10">
-                <ClockDate />
-              </div>
               <ProfileUserNavMenu />
               <div>
                 <QuoteGenerator />
