@@ -3,7 +3,7 @@ const PayPage = () => {
   return (
     <>
       <div className="mb-5">
-        <h1>Страница оплаты и счетов</h1>
+        <h2 className="text-[1.25rem]">Пакеты подписки</h2>
       </div>
 
       <ul className="grid grid-cols-3 gap-4">
