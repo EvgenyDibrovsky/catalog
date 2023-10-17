@@ -6,8 +6,8 @@ const PayPage = () => {
         <h2 className="text-[1.25rem]">Пакеты подписки</h2>
       </div>
 
-      <ul className="grid grid-cols-3 gap-4">
-        <li className="p-5 bg-white dark:bg-neutral-900 shadow-md dark:shadow-white duration-200 hover:scale-110">
+      <ul className="grid grid-cols-3 gap-8">
+        <li className="p-5 bg-white dark:bg-neutral-900 shadow-md dark:shadow-white duration-200 group">
           <h3 className="text-center text-[1.25rem] mb-5 text-sky-500 dark:text-yellow-500">
             Пакет "Base"
           </h3>
@@ -33,12 +33,12 @@ const PayPage = () => {
               <p className="text-[1rem] text-black dark:text-white">Опция 1</p>
             </li>
           </ul>
-          <button className="w-full justify-center items-center border border-green-600 dark:border-yellow-500 bg-white dark:bg-transparent duration-200 hover:bg-green-600 dark:hover:bg-yellow-500 text-green-600 dark:text-white hover:text-white py-2 px-4 mt-5">
+          <button className="w-full justify-center items-center border border-green-600 dark:border-yellow-500 bg-white dark:bg-transparent duration-200 group-hover:bg-green-600 dark:group-hover:bg-yellow-500 text-green-600 dark:text-white group-hover:text-white dark:group-hover:text-black py-2 px-4 mt-5">
             Оформить
           </button>
         </li>
 
-        <li className="p-5 bg-white dark:bg-neutral-900 shadow-md dark:shadow-white duration-200 hover:scale-110">
+        <li className="p-5 bg-white dark:bg-neutral-900 shadow-md dark:shadow-white duration-200 group scale-110">
           <h3 className="text-center text-[1.25rem] mb-5 text-sky-500 dark:text-yellow-500">
             Пакет "Advanced"
           </h3>
@@ -64,12 +64,12 @@ const PayPage = () => {
               <p className="text-[1rem] text-black dark:text-white">Опция 1</p>
             </li>
           </ul>
-          <button className="w-full justify-center items-center border border-green-600 dark:border-yellow-500 bg-white dark:bg-transparent duration-200 hover:bg-green-600 dark:hover:bg-yellow-500 text-green-600 dark:text-white hover:text-white py-2 px-4 mt-5">
+          <button className="w-full justify-center items-center border border-green-600 dark:border-yellow-500 bg-white dark:bg-transparent duration-200 group-hover:bg-green-600 dark:group-hover:bg-yellow-500 text-green-600 dark:text-white group-hover:text-white dark:group-hover:text-black py-2 px-4 mt-5">
             Оформить
           </button>
         </li>
 
-        <li className="p-5 bg-white dark:bg-neutral-900 shadow-md dark:shadow-white duration-200 hover:scale-110">
+        <li className="p-5 bg-white dark:bg-neutral-900 shadow-md dark:shadow-white duration-200 group">
           <h3 className="text-center text-[1.25rem] mb-5 text-sky-500 dark:text-yellow-500">
             Пакет "Pro"
           </h3>
@@ -95,7 +95,7 @@ const PayPage = () => {
               <p className="text-[1rem] text-black dark:text-white">Опция 1</p>
             </li>
           </ul>
-          <button className="w-full justify-center items-center border border-green-600 dark:border-yellow-500 bg-white dark:bg-transparent duration-200 hover:bg-green-600 dark:hover:bg-yellow-500 text-green-600 dark:text-white hover:text-white py-2 px-4 mt-5">
+          <button className="w-full justify-center items-center border border-green-600 dark:border-yellow-500 bg-white dark:bg-transparent duration-200 group-hover:bg-green-600 dark:group-hover:bg-yellow-500 text-green-600 dark:text-white group-hover:text-white dark:group-hover:text-black py-2 px-4 mt-5">
             Оформить
           </button>
         </li>
