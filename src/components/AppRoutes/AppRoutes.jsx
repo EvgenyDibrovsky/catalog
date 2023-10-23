@@ -14,10 +14,10 @@ import HousesPage from '../../pages/category/HousesPage'
 import ApartmentsPage from '../../pages/category/ApartmentsPage'
 import PlotsPage from '../../pages/category/PlotsPage'
 // admin
-// import AuthAdmin from '../../pages/Auth/Admin/AuthAdminPage'
-// import MainAdmin from '../../pages/Auth/Admin/MainAdminPage'
-// import HomeAdminPage from '../../pages/Auth/Admin/HomeAdminPage'
-// import AdminSettingsPage from '../../pages/Auth/Admin/SettingsPage'
+import AuthAdmin from '../../pages/Auth/Admin/AuthAdminPage'
+import MainAdmin from '../../pages/Auth/Admin/MainAdminPage'
+import HomeAdminPage from '../../pages/Auth/Admin/HomeAdminPage'
+import AdminSettingsPage from '../../pages/Auth/Admin/SettingsPage'
 // admin
 
 // user
@@ -64,11 +64,11 @@ export default function AppRoutes() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/regulations" element={<RegulationsPage />} />
 
-      {/* <Route path="/admin" element={<AuthAdmin />} />
+      <Route path="/admin" element={<AuthAdmin />} />
       <Route path="/admin/main" element={<MainAdmin />}>
         <Route index element={<HomeAdminPage />} />
         <Route path="settings" element={<AdminSettingsPage />} />
-      </Route> */}
+      </Route>
 
       <Route
         path="/user"
